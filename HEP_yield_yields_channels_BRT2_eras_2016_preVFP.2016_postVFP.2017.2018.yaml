@@ -1,0 +1,133 @@
+tables:
+- name: obs
+  independent_variables:
+  - header:
+      name: Bin
+      units: ''
+    values:
+    - value: '3'
+    - value: '4'
+    - value: '5'
+    - value: '6'
+    - value: '7'
+    - value: '8'
+    - value: '9'
+    - value: '10'
+    - value: total
+  dependent_variables:
+  - header:
+      name: Yield_2016_preVFP.2016_postVFP.2017.2018
+      units: ''
+    values:
+    - value: 66.0
+      errors: []
+    - value: 4.0
+      errors: []
+    - value: 5.0
+      errors: []
+    - value: 2.0
+      errors: []
+    - value: 0.0
+      errors: []
+    - value: 2.0
+      errors: []
+    - value: 2.0
+      errors: []
+    - value: 0.0
+      errors: []
+    - value: 81.0
+      errors: []
+- name: misid
+  independent_variables:
+  - header:
+      name: Bin
+      units: ''
+    values:
+    - value: '3'
+    - value: '4'
+    - value: '5'
+    - value: '6'
+    - value: '7'
+    - value: '8'
+    - value: '9'
+    - value: '10'
+    - value: total
+  dependent_variables:
+  - header:
+      name: Yield_2016_preVFP.2016_postVFP.2017.2018
+      units: ''
+    values:
+    - value: 67.29947371176775
+      errors: [{symerror: 2.9947799328595646, label: stat}, {symerror: 22.952027218422504,
+          label: syst}]
+    - value: 8.142823063573346
+      errors: [{symerror: 0.8958640271164725, label: stat}, {symerror: 1.996909806560452,
+          label: syst}]
+    - value: 2.142949379588348
+      errors: [{symerror: 0.47893327543603315, label: stat}, {symerror: 0.7062989758451924,
+          label: syst}]
+    - value: 2.463838077124819
+      errors: [{symerror: 0.3063261828095426, label: stat}, {symerror: 1.3228865482819243,
+          label: syst}]
+    - value: 0.6900083209278498
+      errors: [{symerror: 0.17756909471313317, label: stat}, {symerror: 0.2890935421681219,
+          label: syst}]
+    - value: 0.4667423721388168
+      errors: [{symerror: 0.16619261075688688, label: stat}, {symerror: 0.299585130746314,
+          label: syst}]
+    - value: 1.1962255844557268
+      errors: [{symerror: 0.21198009271097545, label: stat}, {symerror: 0.5372280217269806,
+          label: syst}]
+    - value: 0.15466958684836685
+      errors: [{symerror: 0.08381303148053713, label: stat}, {symerror: 0.09448667102243037,
+          label: syst}]
+    - value: 82.55673009642506
+      errors: [{symerror: 3.1946209423268632, label: stat}, {symerror: 26.77241841673596,
+          label: syst}]
+- name: total_bkg
+  independent_variables:
+  - header:
+      name: Bin
+      units: ''
+    values:
+    - value: '3'
+    - value: '4'
+    - value: '5'
+    - value: '6'
+    - value: '7'
+    - value: '8'
+    - value: '9'
+    - value: '10'
+    - value: total
+  dependent_variables:
+  - header:
+      name: Yield_2016_preVFP.2016_postVFP.2017.2018
+      units: ''
+    values:
+    - value: 67.29947371176775
+      errors: [{symerror: 2.9947799328595646, label: stat}, {symerror: 22.952027218422504,
+          label: syst}]
+    - value: 8.142823063573346
+      errors: [{symerror: 0.8958640271164725, label: stat}, {symerror: 1.996909806560452,
+          label: syst}]
+    - value: 2.142949379588348
+      errors: [{symerror: 0.47893327543603315, label: stat}, {symerror: 0.7062989758451924,
+          label: syst}]
+    - value: 2.463838077124819
+      errors: [{symerror: 0.3063261828095426, label: stat}, {symerror: 1.3228865482819243,
+          label: syst}]
+    - value: 0.6900083209278498
+      errors: [{symerror: 0.17756909471313317, label: stat}, {symerror: 0.2890935421681219,
+          label: syst}]
+    - value: 0.4667423721388168
+      errors: [{symerror: 0.16619261075688688, label: stat}, {symerror: 0.299585130746314,
+          label: syst}]
+    - value: 1.1962255844557268
+      errors: [{symerror: 0.21198009271097545, label: stat}, {symerror: 0.5372280217269806,
+          label: syst}]
+    - value: 0.15466958684836685
+      errors: [{symerror: 0.08381303148053713, label: stat}, {symerror: 0.09448667102243037,
+          label: syst}]
+    - value: 82.55673009642506
+      errors: [{symerror: 3.1946209423268632, label: stat}, {symerror: 26.77241841673596,
+          label: syst}]

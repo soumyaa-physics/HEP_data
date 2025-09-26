@@ -2,7 +2,7 @@ import yaml
 import argparse
 import os
 
-parser = argparse.ArgumentParser(description="Convert nested raw YAML to a single HEPData-style YAML file with all methods as tables")
+parser = argparse.ArgumentParser(description="Convert systematic uncertainties")
 parser.add_argument("input_file", help="Path to the raw YAML file")
 parser.add_argument("-o", "--output_dir", default=".", help="Directory to save the single YAML file")
 args = parser.parse_args()

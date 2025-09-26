@@ -1,0 +1,862 @@
+tables:
+- name: observed
+  independent_variables:
+  - header:
+      name: m_stau [GeV]
+      units: GeV
+    values:
+    - value: 90.0
+    - value: 100.0
+    - value: 125.0
+    - value: 150.0
+    - value: 175.0
+    - value: 200.0
+    - value: 225.0
+    - value: 250.0
+    - value: 275.0
+    - value: 300.0
+    - value: 350.0
+    - value: 400.0
+    - value: 450.0
+    - value: 500.0
+    - value: 550.0
+    - value: 600.0
+  dependent_variables:
+  - header:
+      name: 95% CL limit
+      units: fb
+    values:
+    - value: 295.6472077534361
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 192.4416121650617
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 99.79776650666274
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 48.428777716423056
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 26.29182952849521
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 15.818336314857294
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 10.86920802229925
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 8.130897396050738
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 6.512764665074212
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 5.422297006913589
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 4.188116592085136
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 3.443870167675169
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 3.0335960525289534
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 2.757717933943744
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 2.5252201846272735
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 2.4039740356823187
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+- name: expected
+  independent_variables:
+  - header:
+      name: m_stau [GeV]
+      units: GeV
+    values:
+    - value: 90.0
+    - value: 100.0
+    - value: 125.0
+    - value: 150.0
+    - value: 175.0
+    - value: 200.0
+    - value: 225.0
+    - value: 250.0
+    - value: 275.0
+    - value: 300.0
+    - value: 350.0
+    - value: 400.0
+    - value: 450.0
+    - value: 500.0
+    - value: 550.0
+    - value: 600.0
+  dependent_variables:
+  - header:
+      name: 95% CL limit
+      units: fb
+    values:
+    - value: 149.49298080772024
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 103.53252306042585
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 58.433586635887686
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 31.31688500853339
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 17.818414921954986
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 10.69937801324981
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 7.284459519081731
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 5.453801305710929
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 4.290603882048478
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 3.533625250394801
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 2.677782248526447
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 2.1818663206056015
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 1.942506284505758
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 1.7651403555877678
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 1.6225827657216
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 1.5542462820986611
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+- name: exp_plus1sigma
+  independent_variables:
+  - header:
+      name: m_stau [GeV]
+      units: GeV
+    values:
+    - value: 90.0
+    - value: 100.0
+    - value: 125.0
+    - value: 150.0
+    - value: 175.0
+    - value: 200.0
+    - value: 225.0
+    - value: 250.0
+    - value: 275.0
+    - value: 300.0
+    - value: 350.0
+    - value: 400.0
+    - value: 450.0
+    - value: 500.0
+    - value: 550.0
+    - value: 600.0
+  dependent_variables:
+  - header:
+      name: 95% CL limit
+      units: fb
+    values:
+    - value: 220.1084346997663
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 152.03268328547594
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 85.25404348080255
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 45.158907511859084
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 25.614634855060633
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 15.410621587502419
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 10.42609951291656
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 7.749465168137857
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 6.0173142712249
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 4.933170352178459
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 3.639082806937943
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 2.93314293087639
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 2.53244616694966
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 2.2683676621163844
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 2.05268985665184
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 1.9520317177749633
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+- name: exp_minus1sigma
+  independent_variables:
+  - header:
+      name: m_stau [GeV]
+      units: GeV
+    values:
+    - value: 90.0
+    - value: 100.0
+    - value: 125.0
+    - value: 150.0
+    - value: 175.0
+    - value: 200.0
+    - value: 225.0
+    - value: 250.0
+    - value: 275.0
+    - value: 300.0
+    - value: 350.0
+    - value: 400.0
+    - value: 450.0
+    - value: 500.0
+    - value: 550.0
+    - value: 600.0
+  dependent_variables:
+  - header:
+      name: 95% CL limit
+      units: fb
+    values:
+    - value: 117.48322609404862
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 80.9110731445737
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 45.04458175168436
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 24.015580463744254
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 13.629855545882888
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 8.448892917292563
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 5.780988785572159
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 4.430290280553845
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 3.535970655786679
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 2.969915224904365
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 2.2929018771848155
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 1.9118313770777482
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 1.685366318486174
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 1.5505320695698237
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 1.450289619957891
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 1.3984616716830809
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+- name: exp_plus2sigma
+  independent_variables:
+  - header:
+      name: m_stau [GeV]
+      units: GeV
+    values:
+    - value: 90.0
+    - value: 100.0
+    - value: 125.0
+    - value: 150.0
+    - value: 175.0
+    - value: 200.0
+    - value: 225.0
+    - value: 250.0
+    - value: 275.0
+    - value: 300.0
+    - value: 350.0
+    - value: 400.0
+    - value: 450.0
+    - value: 500.0
+    - value: 550.0
+    - value: 600.0
+  dependent_variables:
+  - header:
+      name: 95% CL limit
+      units: fb
+    values:
+    - value: 328.81431998661424
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 225.69393298516715
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 124.15506037603474
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 67.10101533515983
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 38.46278802303999
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 23.288812138257416
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 15.808549903272176
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 11.670601324223838
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 9.010063994758152
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 7.439243399186442
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 5.45567180000373
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 4.419665786740502
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 3.8000906953676235
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 3.4228799405893695
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 3.1245775665199536
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 2.986649004874142
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+- name: exp_minus2sigma
+  independent_variables:
+  - header:
+      name: m_stau [GeV]
+      units: GeV
+    values:
+    - value: 90.0
+    - value: 100.0
+    - value: 125.0
+    - value: 150.0
+    - value: 175.0
+    - value: 200.0
+    - value: 225.0
+    - value: 250.0
+    - value: 275.0
+    - value: 300.0
+    - value: 350.0
+    - value: 400.0
+    - value: 450.0
+    - value: 500.0
+    - value: 550.0
+    - value: 600.0
+  dependent_variables:
+  - header:
+      name: 95% CL limit
+      units: fb
+    values:
+    - value: 101.34242593278742
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 69.15818643998263
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 38.408239111406694
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 20.63545478938793
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 12.014233754239614
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 7.463439466763382
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 5.251207515396835
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 3.9059013888288323
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 3.1960776301663096
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 2.717457486150657
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 2.1005981883310425
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 1.777094754598574
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 1.5924579883313117
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 1.4116204195659494
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 1.3148273801952575
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+    - value: 1.2879307398414352
+      errors:
+      - symerror: 0
+        label: low
+      - symerror: 0
+        label: high
+- name: theory
+  independent_variables:
+  - header:
+      name: m_stau [GeV]
+      units: GeV
+    values:
+    - value: 90.0
+    - value: 100.0
+    - value: 125.0
+    - value: 150.0
+    - value: 175.0
+    - value: 200.0
+    - value: 225.0
+    - value: 250.0
+    - value: 275.0
+    - value: 300.0
+    - value: 350.0
+    - value: 400.0
+    - value: 450.0
+    - value: 500.0
+    - value: 550.0
+    - value: 600.0
+  dependent_variables:
+  - header:
+      name: 95% CL limit
+      units: fb
+    values:
+    - value: 165.925
+      errors:
+      - symerror: 5.89814
+        label: low
+      - symerror: 6.66875
+        label: high
+    - value: 116.739
+      errors:
+      - symerror: 4.09976
+        label: low
+      - symerror: 4.52356
+        label: high
+    - value: 54.4897
+      errors:
+      - symerror: 1.91283
+        label: low
+      - symerror: 2.00782
+        label: high
+    - value: 28.8227
+      errors:
+      - symerror: 1.04063
+        label: low
+      - symerror: 1.05189
+        label: high
+    - value: 16.5604
+      errors:
+      - symerror: 0.620608
+        label: low
+      - symerror: 0.615484
+        label: high
+    - value: 10.127
+      errors:
+      - symerror: 0.396109
+        label: low
+      - symerror: 0.390567
+        label: high
+    - value: 6.5001
+      errors:
+      - symerror: 0.266585
+        label: low
+      - symerror: 0.262928
+        label: high
+    - value: 4.33539
+      errors:
+      - symerror: 0.186403
+        label: low
+      - symerror: 0.184302
+        label: high
+    - value: 2.98007
+      errors:
+      - symerror: 0.133887
+        label: low
+      - symerror: 0.132698
+        label: high
+    - value: 2.10096
+      errors:
+      - symerror: 0.0987336
+        label: low
+      - symerror: 0.0980411
+        label: high
+    - value: 1.11042
+      errors:
+      - symerror: 0.0577022
+        label: low
+      - symerror: 0.0574245
+        label: high
+    - value: 0.625364
+      errors:
+      - symerror: 0.0357922
+        label: low
+      - symerror: 0.0356662
+        label: high
+    - value: 0.369609
+      errors:
+      - symerror: 0.0232589
+        label: low
+      - symerror: 0.0232097
+        label: high
+    - value: 0.226902
+      errors:
+      - symerror: 0.0156866
+        label: low
+      - symerror: 0.0156579
+        label: high
+    - value: 0.143696
+      errors:
+      - symerror: 0.010953
+        label: low
+      - symerror: 0.0109394
+        label: high
+    - value: 0.0933425
+      errors:
+      - symerror: 0.0078553
+        label: low
+      - symerror: 0.00784803
+        label: high
