@@ -26,7 +26,6 @@ for c in ctau:
 
         n = graph.GetN()
         x_vals, y_vals = [], []
-        ey_low, ey_high = [], []
 
         for i in range(n):
             x = ctypes.c_double()
@@ -34,14 +33,6 @@ for c in ctau:
             graph.GetPoint(i, x, y)
             x_vals.append(x.value)
             y_vals.append(y.value)
-
-        if graph.InheritsFrom("TGraphAsymmErrors"):
-            ey_low = [graph.GetEYlow()[i] for i in range(n)]
-            ey_high = [graph.GetEYhigh()[i] for i in range(n)]
-        else:
-            # for plain TGraph, no errors
-            ey_low = [0]*n
-            ey_high = [0]*n
 
         table = {
             "name": label,
@@ -51,11 +42,7 @@ for c in ctau:
             ],
             "dependent_variables": [
                 {"header": {"name": "95% CL limit", "units": "fb"},
-                 "values": [{"value": yv,
-                             "errors": [
-                                 {"symerror": el, "label": "low"},
-                                 {"symerror": eh, "label": "high"}
-                             ]} for yv, el, eh in zip(y_vals, ey_low, ey_high)]}
+                 "values": [{"value": yv} for yv in y_vals]}
             ]
         }
         tables.append(table)
