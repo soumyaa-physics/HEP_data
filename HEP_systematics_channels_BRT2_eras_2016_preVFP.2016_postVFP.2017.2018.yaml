@@ -1,0 +1,269 @@
+tables:
+- name: fpred_alt
+  independent_variables:
+  - header:
+      name: Bin
+      units: ''
+    values:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 9
+    - value: 10
+  dependent_variables:
+  - header:
+      name: Yield_2016_preVFP.2016_postVFP.2017.2018
+      units: ''
+    values:
+    - value: 67.29947371176775
+      errors:
+      - symerror: 18.729571465330597
+        label: unc_abs
+      - symerror: 0.27830190092639034
+        label: unc_rel
+    - value: 8.142823063573346
+      errors:
+      - symerror: 0.6896363656034679
+        label: unc_abs
+      - symerror: 0.08469253970266574
+        label: unc_rel
+    - value: 2.142949379588348
+      errors:
+      - symerror: 0.4683011117473228
+        label: unc_abs
+      - symerror: 0.21853111240419573
+        label: unc_rel
+    - value: 2.463838077124819
+      errors:
+      - symerror: 1.0594951635552068
+        label: unc_abs
+      - symerror: 0.430018179113291
+        label: unc_rel
+    - value: 0.6900083209278498
+      errors:
+      - symerror: 0.1823083055691546
+        label: unc_abs
+      - symerror: 0.2642117493945664
+        label: unc_rel
+    - value: 0.4667423721388168
+      errors:
+      - symerror: 0.2485083404640203
+        label: unc_abs
+      - symerror: 0.5324314981844199
+        label: unc_rel
+    - value: 1.1962255844557268
+      errors:
+      - symerror: 0.15772347817768087
+        label: unc_abs
+      - symerror: 0.13185094870667208
+        label: unc_rel
+    - value: 0.15466958684836685
+      errors:
+      - symerror: 0.024261786949244708
+        label: unc_abs
+      - symerror: 0.15686204019559574
+        label: unc_rel
+- name: fpred_brt1_corr
+  independent_variables:
+  - header:
+      name: Bin
+      units: ''
+    values:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 9
+    - value: 10
+  dependent_variables:
+  - header:
+      name: Yield_2016_preVFP.2016_postVFP.2017.2018
+      units: ''
+    values:
+    - value: 67.29947371176775
+      errors:
+      - symerror: 1.9578714780921718
+        label: unc_abs
+      - symerror: 0.02909192851161666
+        label: unc_rel
+    - value: 8.142823063573346
+      errors:
+      - symerror: 0.2715039162050076
+        label: unc_abs
+      - symerror: 0.03334272574576396
+        label: unc_rel
+    - value: 2.142949379588348
+      errors:
+      - symerror: 0.1289389627689297
+        label: unc_abs
+      - symerror: 0.06016892605913927
+        label: unc_rel
+    - value: 2.463838077124819
+      errors:
+      - symerror: 0.0683178504962779
+        label: unc_abs
+      - symerror: 0.027728222536442637
+        label: unc_rel
+    - value: 0.6900083209278498
+      errors:
+      - symerror: 0.03563678397801732
+        label: unc_abs
+      - symerror: 0.051646890185464374
+        label: unc_rel
+    - value: 0.4667423721388168
+      errors:
+      - symerror: 0.0
+        label: unc_abs
+      - symerror: 0.0
+        label: unc_rel
+    - value: 1.1962255844557268
+      errors:
+      - symerror: 0.0932219935813334
+        label: unc_abs
+      - symerror: 0.0779301118390213
+        label: unc_rel
+    - value: 0.15466958684836685
+      errors:
+      - symerror: 0.012541666666666665
+        label: unc_abs
+      - symerror: 0.08108683111025645
+        label: unc_rel
+- name: fr_region
+  independent_variables:
+  - header:
+      name: Bin
+      units: ''
+    values:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 9
+    - value: 10
+  dependent_variables:
+  - header:
+      name: Yield_2016_preVFP.2016_postVFP.2017.2018
+      units: ''
+    values:
+    - value: 67.29947371176775
+      errors:
+      - symerror: 8.581202198370253
+        label: unc_abs
+      - symerror: 0.12750771625825916
+        label: unc_rel
+    - value: 8.142823063573346
+      errors:
+      - symerror: 0.9784065043867889
+        label: unc_abs
+      - symerror: 0.12015568762185913
+        label: unc_rel
+    - value: 2.142949379588348
+      errors:
+      - symerror: 0.26309530151967575
+        label: unc_abs
+      - symerror: 0.1227725227789633
+        label: unc_rel
+    - value: 2.463838077124819
+      errors:
+      - symerror: 0.26576506218726914
+        label: unc_abs
+      - symerror: 0.10786628579805221
+        label: unc_rel
+    - value: 0.6900083209278498
+      errors:
+      - symerror: 0.07552921031300475
+        label: unc_abs
+      - symerror: 0.10946130361361599
+        label: unc_rel
+    - value: 0.4667423721388168
+      errors:
+      - symerror: 0.05220687663174861
+        label: unc_abs
+      - symerror: 0.11185373291161453
+        label: unc_rel
+    - value: 1.1962255844557268
+      errors:
+      - symerror: 0.12938057839015205
+        label: unc_abs
+      - symerror: 0.10815734094921502
+        label: unc_rel
+    - value: 0.15466958684836685
+      errors:
+      - symerror: 0.016946927167321407
+        label: unc_abs
+      - symerror: 0.10956858108075013
+        label: unc_rel
+- name: fr_stat
+  independent_variables:
+  - header:
+      name: Bin
+      units: ''
+    values:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 9
+    - value: 10
+  dependent_variables:
+  - header:
+      name: Yield_2016_preVFP.2016_postVFP.2017.2018
+      units: ''
+    values:
+    - value: 67.29947371176775
+      errors:
+      - symerror: 9.92614800747198
+        label: unc_abs
+      - symerror: 0.14749220848269917
+        label: unc_rel
+    - value: 8.142823063573346
+      errors:
+      - symerror: 1.5751370716332946
+        label: unc_abs
+      - symerror: 0.19343869556488574
+        label: unc_rel
+    - value: 2.142949379588348
+      errors:
+      - symerror: 0.4401226172494804
+        label: unc_abs
+      - symerror: 0.2053817143053683
+        label: unc_rel
+    - value: 2.463838077124819
+      errors:
+      - symerror: 0.7431018914338424
+        label: unc_abs
+      - symerror: 0.30160337983777197
+        label: unc_rel
+    - value: 0.6900083209278498
+      errors:
+      - symerror: 0.20824052406055227
+        label: unc_abs
+      - symerror: 0.301794221525521
+        label: unc_rel
+    - value: 0.4667423721388168
+      errors:
+      - symerror: 0.15896319484856233
+        label: unc_abs
+      - symerror: 0.3405801665705296
+        label: unc_rel
+    - value: 1.1962255844557268
+      errors:
+      - symerror: 0.4881675712379626
+        label: unc_abs
+      - symerror: 0.4080898933958807
+        label: unc_rel
+    - value: 0.15466958684836685
+      errors:
+      - symerror: 0.08885158947221017
+        label: unc_abs
+      - symerror: 0.5744606375610057
+        label: unc_rel
