@@ -1,18 +1,5 @@
 tables:
 - name: fpred_alt
-  independent_variables:
-  - header:
-      name: Bin
-      units: ''
-    values:
-    - value: 3
-    - value: 4
-    - value: 5
-    - value: 6
-    - value: 7
-    - value: 8
-    - value: 9
-    - value: 10
   dependent_variables:
   - header:
       name: Yield_2016_preVFP.2016_postVFP.2017.2018
@@ -66,7 +53,6 @@ tables:
         label: unc_abs
       - symerror: 0.15686204019559574
         label: unc_rel
-- name: fpred_brt1_corr
   independent_variables:
   - header:
       name: Bin
@@ -80,6 +66,7 @@ tables:
     - value: 8
     - value: 9
     - value: 10
+- name: fpred_brt1_corr
   dependent_variables:
   - header:
       name: Yield_2016_preVFP.2016_postVFP.2017.2018
@@ -133,7 +120,6 @@ tables:
         label: unc_abs
       - symerror: 0.08108683111025645
         label: unc_rel
-- name: fr_region
   independent_variables:
   - header:
       name: Bin
@@ -147,6 +133,7 @@ tables:
     - value: 8
     - value: 9
     - value: 10
+- name: fr_region
   dependent_variables:
   - header:
       name: Yield_2016_preVFP.2016_postVFP.2017.2018
@@ -200,7 +187,6 @@ tables:
         label: unc_abs
       - symerror: 0.10956858108075013
         label: unc_rel
-- name: fr_stat
   independent_variables:
   - header:
       name: Bin
@@ -214,6 +200,7 @@ tables:
     - value: 8
     - value: 9
     - value: 10
+- name: fr_stat
   dependent_variables:
   - header:
       name: Yield_2016_preVFP.2016_postVFP.2017.2018
@@ -267,3 +254,16 @@ tables:
         label: unc_abs
       - symerror: 0.5744606375610057
         label: unc_rel
+  independent_variables:
+  - header:
+      name: Bin
+      units: ''
+    values:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 9
+    - value: 10

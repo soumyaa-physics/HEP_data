@@ -75,13 +75,13 @@ for category in categories:
     })
     tables.append({
         "name": category,
+        "dependent_variables": dependent_variables,
         "independent_variables": independent_variables,
-        "dependent_variables": dependent_variables
     })
 
 hepdata_output = {"tables": tables}
 
-output_filename = os.path.splitext("HEP_yield_" + os.path.basename(input_path))[0] + ".yaml"
+output_filename = os.path.splitext("HEP_" + os.path.basename(input_path))[0] + ".yaml"
 output_path = os.path.join(output_dir, output_filename)
 
 with open(output_path, "w") as f:

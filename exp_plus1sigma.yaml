@@ -1,0 +1,54 @@
+dependent_variables:
+- header:
+    name: 95% CL limit
+  qualifiers:
+  - name: RE
+    value: "pp \u2192 \tilde{\u03C4}\tilde{\u03C4}"
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: CTAU
+    value: 100 mm
+  - name: SQRT(S)
+    value: 13 TeV
+  - name: LUMI
+    value: 138 fb^{-1}
+  - name: CL
+    value: 95%
+  values:
+  - value: 194.5343585375624
+  - value: 132.62689652332483
+  - value: 60.718921971792184
+  - value: 31.836541771183324
+  - value: 17.006149990928385
+  - value: 10.143988460950665
+  - value: 6.403631017777839
+  - value: 4.539033421142101
+  - value: 3.3518491949628664
+  - value: 2.661920111793363
+  - value: 1.8045080706650307
+  - value: 1.3608887677677735
+  - value: 1.1139046035774514
+  - value: 0.9467417275501022
+  - value: 0.8386909283576374
+  - value: 0.763572578218055
+independent_variables:
+- header:
+    name: m_stau [GeV]
+    units: GeV
+  values:
+  - value: 90.0
+  - value: 100.0
+  - value: 125.0
+  - value: 150.0
+  - value: 175.0
+  - value: 200.0
+  - value: 225.0
+  - value: 250.0
+  - value: 275.0
+  - value: 300.0
+  - value: 350.0
+  - value: 400.0
+  - value: 450.0
+  - value: 500.0
+  - value: 550.0
+  - value: 600.0

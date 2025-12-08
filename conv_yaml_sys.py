@@ -32,11 +32,6 @@ for method in methods:
 
     bins = get_sorted_bins(raw[eras[0]][category][method])
 
-    independent_variables = [{
-        "header": {"name": "Bin", "units": ""},
-        "values": [{"value": int(b)} for b in bins]
-    }]
-
     dependent_variables = []
     for era in eras:
         dep_values = []
@@ -57,15 +52,21 @@ for method in methods:
             "values": dep_values
         })
 
+    independent_variables = [{
+        "header": {"name": "Bin", "units": ""},
+        "values": [{"value": int(b)} for b in bins]
+    }]
+
     tables.append({
         "name": method,
+        "dependent_variables": dependent_variables,
         "independent_variables": independent_variables,
-        "dependent_variables": dependent_variables
+
     })
 
 hepdata_output = {"tables": tables}
 
-output_filename = os.path.splitext(os.path.basename(input_path))[0] + "_allmethods_hepdata.yaml"
+output_filename = os.path.splitext("HEP_" + os.path.basename(input_path))[0] + ".yaml"
 output_path = os.path.join(output_dir, output_filename)
 
 with open(output_path, "w") as f:

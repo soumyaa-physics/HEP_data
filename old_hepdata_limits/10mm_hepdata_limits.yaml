@@ -1,0 +1,315 @@
+tables: # not needed
+- name: observed
+  
+  #qualifiers:
+  # - {name: RE, value: 'pp → \tilde{\tau}\tilde{\tau}'}
+  # - {name: MODEL, value: 'GMSB maximally mixed stau scenario'}
+  # - {name: CTAU, value: '100 mm'}
+  # - {name: SQRT(S), value: '13 TeV'}
+  # - {name: LUMI, value: '138 fb^{-1}'}
+  # - {name: CL, value: '95%'}
+  dependent_variables:
+  - header:
+      name: 95% CL limit
+      units: fb
+    values:
+    - value: 295.6472077534361
+    - value: 192.4416121650617
+    - value: 99.79776650666274
+    - value: 48.428777716423056
+    - value: 26.29182952849521
+    - value: 15.818336314857294
+    - value: 10.86920802229925
+    - value: 8.130897396050738
+    - value: 6.512764665074212
+    - value: 5.422297006913589
+    - value: 4.188116592085136
+    - value: 3.443870167675169
+    - value: 3.0335960525289534
+    - value: 2.757717933943744
+    - value: 2.5252201846272735
+    - value: 2.4039740356823187
+    #then the description
+
+  independent_variables: # depenedant variables come first
+  - header:
+      name: m_stau [GeV]
+      units: GeV
+    values:
+    - value: 90.0
+    - value: 100.0
+    - value: 125.0
+    - value: 150.0
+    - value: 175.0
+    - value: 200.0
+    - value: 225.0
+    - value: 250.0
+    - value: 275.0
+    - value: 300.0
+    - value: 350.0
+    - value: 400.0
+    - value: 450.0
+    - value: 500.0
+    - value: 550.0
+    - value: 600.0
+ #keywords and name of table
+
+
+- name: expected
+  independent_variables:
+  - header:
+      name: m_stau [GeV]
+      units: GeV
+    values:
+    - value: 90.0
+    - value: 100.0
+    - value: 125.0
+    - value: 150.0
+    - value: 175.0
+    - value: 200.0
+    - value: 225.0
+    - value: 250.0
+    - value: 275.0
+    - value: 300.0
+    - value: 350.0
+    - value: 400.0
+    - value: 450.0
+    - value: 500.0
+    - value: 550.0
+    - value: 600.0
+  dependent_variables:
+  - header:
+      name: 95% CL limit
+      units: fb
+    values:
+    - value: 149.49298080772024
+    - value: 103.53252306042585
+    - value: 58.433586635887686
+    - value: 31.31688500853339
+    - value: 17.818414921954986
+    - value: 10.69937801324981
+    - value: 7.284459519081731
+    - value: 5.453801305710929
+    - value: 4.290603882048478
+    - value: 3.533625250394801
+    - value: 2.677782248526447
+    - value: 2.1818663206056015
+    - value: 1.942506284505758
+    - value: 1.7651403555877678
+    - value: 1.6225827657216
+    - value: 1.5542462820986611
+- name: exp_plus1sigma
+  independent_variables:
+  - header:
+      name: m_stau [GeV]
+      units: GeV
+    values:
+    - value: 90.0
+    - value: 100.0
+    - value: 125.0
+    - value: 150.0
+    - value: 175.0
+    - value: 200.0
+    - value: 225.0
+    - value: 250.0
+    - value: 275.0
+    - value: 300.0
+    - value: 350.0
+    - value: 400.0
+    - value: 450.0
+    - value: 500.0
+    - value: 550.0
+    - value: 600.0
+  dependent_variables:
+  - header:
+      name: 95% CL limit
+      units: fb
+    values:
+    - value: 220.1084346997663
+    - value: 152.03268328547594
+    - value: 85.25404348080255
+    - value: 45.158907511859084
+    - value: 25.614634855060633
+    - value: 15.410621587502419
+    - value: 10.42609951291656
+    - value: 7.749465168137857
+    - value: 6.0173142712249
+    - value: 4.933170352178459
+    - value: 3.639082806937943
+    - value: 2.93314293087639
+    - value: 2.53244616694966
+    - value: 2.2683676621163844
+    - value: 2.05268985665184
+    - value: 1.9520317177749633
+- name: exp_minus1sigma
+  independent_variables:
+  - header:
+      name: m_stau [GeV]
+      units: GeV
+    values:
+    - value: 90.0
+    - value: 100.0
+    - value: 125.0
+    - value: 150.0
+    - value: 175.0
+    - value: 200.0
+    - value: 225.0
+    - value: 250.0
+    - value: 275.0
+    - value: 300.0
+    - value: 350.0
+    - value: 400.0
+    - value: 450.0
+    - value: 500.0
+    - value: 550.0
+    - value: 600.0
+  dependent_variables:
+  - header:
+      name: 95% CL limit
+      units: fb
+    values:
+    - value: 117.48322609404862
+    - value: 80.9110731445737
+    - value: 45.04458175168436
+    - value: 24.015580463744254
+    - value: 13.629855545882888
+    - value: 8.448892917292563
+    - value: 5.780988785572159
+    - value: 4.430290280553845
+    - value: 3.535970655786679
+    - value: 2.969915224904365
+    - value: 2.2929018771848155
+    - value: 1.9118313770777482
+    - value: 1.685366318486174
+    - value: 1.5505320695698237
+    - value: 1.450289619957891
+    - value: 1.3984616716830809
+- name: exp_plus2sigma
+  independent_variables:
+  - header:
+      name: m_stau [GeV]
+      units: GeV
+    values:
+    - value: 90.0
+    - value: 100.0
+    - value: 125.0
+    - value: 150.0
+    - value: 175.0
+    - value: 200.0
+    - value: 225.0
+    - value: 250.0
+    - value: 275.0
+    - value: 300.0
+    - value: 350.0
+    - value: 400.0
+    - value: 450.0
+    - value: 500.0
+    - value: 550.0
+    - value: 600.0
+  dependent_variables:
+  - header:
+      name: 95% CL limit
+      units: fb
+    values:
+    - value: 328.81431998661424
+    - value: 225.69393298516715
+    - value: 124.15506037603474
+    - value: 67.10101533515983
+    - value: 38.46278802303999
+    - value: 23.288812138257416
+    - value: 15.808549903272176
+    - value: 11.670601324223838
+    - value: 9.010063994758152
+    - value: 7.439243399186442
+    - value: 5.45567180000373
+    - value: 4.419665786740502
+    - value: 3.8000906953676235
+    - value: 3.4228799405893695
+    - value: 3.1245775665199536
+    - value: 2.986649004874142
+- name: exp_minus2sigma
+  independent_variables:
+  - header:
+      name: m_stau [GeV]
+      units: GeV
+    values:
+    - value: 90.0
+    - value: 100.0
+    - value: 125.0
+    - value: 150.0
+    - value: 175.0
+    - value: 200.0
+    - value: 225.0
+    - value: 250.0
+    - value: 275.0
+    - value: 300.0
+    - value: 350.0
+    - value: 400.0
+    - value: 450.0
+    - value: 500.0
+    - value: 550.0
+    - value: 600.0
+  dependent_variables:
+  - header:
+      name: 95% CL limit
+      units: fb
+    values:
+    - value: 101.34242593278742
+    - value: 69.15818643998263
+    - value: 38.408239111406694
+    - value: 20.63545478938793
+    - value: 12.014233754239614
+    - value: 7.463439466763382
+    - value: 5.251207515396835
+    - value: 3.9059013888288323
+    - value: 3.1960776301663096
+    - value: 2.717457486150657
+    - value: 2.1005981883310425
+    - value: 1.777094754598574
+    - value: 1.5924579883313117
+    - value: 1.4116204195659494
+    - value: 1.3148273801952575
+    - value: 1.2879307398414352
+- name: theory
+  independent_variables:
+  - header:
+      name: m_stau [GeV]
+      units: GeV
+    values:
+    - value: 90.0
+    - value: 100.0
+    - value: 125.0
+    - value: 150.0
+    - value: 175.0
+    - value: 200.0
+    - value: 225.0
+    - value: 250.0
+    - value: 275.0
+    - value: 300.0
+    - value: 350.0
+    - value: 400.0
+    - value: 450.0
+    - value: 500.0
+    - value: 550.0
+    - value: 600.0
+  dependent_variables:
+  - header:
+      name: 95% CL limit
+      units: fb
+    values:
+    - value: 165.925
+    - value: 116.739
+    - value: 54.4897
+    - value: 28.8227
+    - value: 16.5604
+    - value: 10.127
+    - value: 6.5001
+    - value: 4.33539
+    - value: 2.98007
+    - value: 2.10096
+    - value: 1.11042
+    - value: 0.625364
+    - value: 0.369609
+    - value: 0.226902
+    - value: 0.143696
+    - value: 0.0933425

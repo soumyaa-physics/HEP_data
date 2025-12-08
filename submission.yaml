@@ -1,0 +1,7 @@
+data_license:
+  name: CC0
+version: 1
+hepdata_schema: submission-v1
+tables:
+  - name: test
+    location: hepdata_conversion/old_hepdata_limits/10mm_hepdata_limits.yaml
