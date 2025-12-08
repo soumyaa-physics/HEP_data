@@ -270028,7 +270028,8 @@ name: observed
 
 dependent_variables:
 - header:
-    name: 95% CL limit
+    name: proper lifetime
+    units: mm
   qualifiers:
   - name: RE
     value: "pp \u2192 \\tilde{\u03C4}\\tilde{\u03C4}"
@@ -270486,7 +270487,8 @@ name: contour_obs
 
 dependent_variables:
 - header:
-    name: 95% CL limit
+    name: proper lifetime
+    units: mm
   qualifiers:
   - name: RE
     value: "pp \u2192 \\tilde{\u03C4}\\tilde{\u03C4}"
@@ -270868,7 +270870,8 @@ name: contour_obs_m1
 
 dependent_variables:
 - header:
-    name: 95% CL limit
+    name: proper lifetime
+    units: mm
   qualifiers:
   - name: RE
     value: "pp \u2192 \\tilde{\u03C4}\\tilde{\u03C4}"
@@ -271406,7 +271409,8 @@ name: contour_obs_p1
 
 dependent_variables:
 - header:
-    name: 95% CL limit
+    name: proper lifetime
+    units: mm
   qualifiers:
   - name: RE
     value: "pp \u2192 \\tilde{\u03C4}\\tilde{\u03C4}"
@@ -272140,7 +272144,8 @@ name: exp_contour
 
 dependent_variables:
 - header:
-    name: 95% CL limit
+    name: proper lifetime
+    units: mm
   qualifiers:
   - name: RE
     value: "pp \u2192 \\tilde{\u03C4}\\tilde{\u03C4}"
@@ -272978,7 +272983,8 @@ name: exp_contour_m1
 
 dependent_variables:
 - header:
-    name: 95% CL limit
+    name: proper lifetime
+    units: mm
   qualifiers:
   - name: RE
     value: "pp \u2192 \\tilde{\u03C4}\\tilde{\u03C4}"
@@ -273880,7 +273886,8 @@ name: exp_contour_m2
 
 dependent_variables:
 - header:
-    name: 95% CL limit
+    name: proper lifetime
+    units: mm
   qualifiers:
   - name: RE
     value: "pp \u2192 \\tilde{\u03C4}\\tilde{\u03C4}"

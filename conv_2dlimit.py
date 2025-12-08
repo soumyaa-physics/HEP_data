@@ -127,7 +127,7 @@ for label, info in graphs.items():
             "description": description,
             "dependent_variables": [
                 {
-                    "header": {"name": "95% CL limit"},
+                    "header": {"name": "proper lifetime", "units": "mm"},
                     "qualifiers": [
                         {"name": "RE", "value": "pp → \\tilde{τ}\\tilde{τ}"},
                         {"name": "MODEL", "value": "GMSB maximally mixed stau scenario"},
