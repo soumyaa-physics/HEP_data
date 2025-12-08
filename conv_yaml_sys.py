@@ -57,19 +57,34 @@ for method in methods:
         "values": [{"value": int(b)} for b in bins]
     }]
 
-    tables.append({
+        # Create table dictionary and append to tables
+    table = {
         "name": method,
         "dependent_variables": dependent_variables,
         "independent_variables": independent_variables,
-
-    })
-
-hepdata_output = {"tables": tables}
+        "description": f"Yields for method {method}"
+    }
+    tables.append(table)
 
 output_filename = os.path.splitext("HEP_" + os.path.basename(input_path))[0] + ".yaml"
 output_path = os.path.join(output_dir, output_filename)
 
-with open(output_path, "w") as f:
-    yaml.dump(hepdata_output, f, sort_keys=False)
+# with open(output_path, "w") as f:
+#     yaml.dump(hepdata_output, f, sort_keys=False)
+with open(output_path, "w") as f_out:
+    for table in tables:
+        # Prepare table for single-table HEPData YAML
+        table_to_dump = {
+            "dependent_variables": table["dependent_variables"],
+            "independent_variables": table["independent_variables"],
+            "description": table.get("description", ""),
+            "keywords": table.get("keywords", []),
+            "name": table.get("name", ""),
+        }
+        yaml.dump(table_to_dump, f_out, sort_keys=False)
+        f_out.write("\n")  # separate multiple tables if needed
+
+
+
 
 print(f"Converted {input_path} → {output_path} (all methods in one file)")

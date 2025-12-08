@@ -56,11 +56,6 @@ for c in ctau:
         tables.append(table)
 
     outname = f"{c}mm_hepdata_limits.yaml"
-    # with open(outname, "w") as f_out:
-    #     for table in tables:
-    #         yaml.dump(table, f_out, sort_keys=False)
-    #         f_out.write("\n---\n")  # separate multiple tables if needed
-
 
     with open(outname, "w") as f_out:
         for table in tables:
