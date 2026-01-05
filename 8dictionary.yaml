@@ -1,0 +1,41 @@
+10:
+  name: 'Figure 8a ($c\tau_{0}=10$ mm, maximally mixed scenario)'
+  description: >
+   Cross section upper limits at 95% CL for the pair production of long-lived staus in the maximally mixed scenario, 
+    as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=10$ mm.
+  data_file: hepdata_Figure8a.yaml
+
+30:
+  name: 'Figure 8b ($c\tau_{0}=30$ mm, maximally mixed scenario)'
+  description: >
+   Cross section upper limits at 95% CL for the pair production of long-lived staus in the maximally mixed scenario, 
+    as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=30$ mm.
+  data_file: hepdata_Figure8b.yaml
+
+50:
+  name: 'Figure 8c ($c\tau_{0}=50$ mm, maximally mixed scenario)'
+  description: >
+   Cross section upper limits at 95% CL for the pair production of long-lived staus in the maximally mixed scenario, 
+    as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=50$ mm.
+  data_file: hepdata_Figure8c.yaml
+
+100:
+  name: 'Figure 8d ($c\tau_{0}=100$ mm, maximally mixed scenario)'
+  description: >
+   Cross section upper limits at 95% CL for the pair production of long-lived staus in the maximally mixed scenario, 
+    as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=100$ mm.
+  data_file: hepdata_Figure8d.yaml
+
+200:
+  name: 'Figure 8e ($c\tau_{0}=200$ mm, maximally mixed scenario)'
+  description: >
+   Cross section upper limits at 95% CL for the pair production of long-lived staus in the maximally mixed scenario, 
+    as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=200$ mm.
+  data_file: hepdata_Figure8e.yaml
+
+300:
+  name: 'Figure 8f ($c\tau_{0}=300$ mm, maximally mixed scenario)'
+  description: >
+   Cross section upper limits at 95% CL for the pair production of long-lived staus in the maximally mixed scenario, 
+    as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=300$ mm.
+  data_file: hepdata_Figure8f.yaml

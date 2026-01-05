@@ -1,0 +1,41 @@
+10:
+  name: 'Figure 9a ($c\tau_{0}=10$ mm, mass-degenerate scenario)'
+  description: >
+   Cross section upper limits at 95% CL for the pair production of long-lived staus in the mass-degenerate scenario, 
+    as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=10$ mm.
+  data_file: hepdata_Figure9a.yaml
+
+30:
+  name: 'Figure 9b ($c\tau_{0}=30$ mm, mass-degenerate scenario)'
+  description: >
+   Cross section upper limits at 95% CL for the pair production of long-lived staus in the mass-degenerate scenario, 
+    as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=30$ mm.
+  data_file: hepdata_Figure9b.yaml
+
+50:
+  name: 'Figure 9c ($c\tau_{0}=50$ mm, mass-degenerate scenario)'
+  description: >
+   Cross section upper limits at 95% CL for the pair production of long-lived staus in the mass-degenerate scenario, 
+    as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=50$ mm.
+  data_file: hepdata_Figure9c.yaml
+
+100:
+  name: 'Figure 9d ($c\tau_{0}=100$ mm, mass-degenerate scenario)'
+  description: >
+   Cross section upper limits at 95% CL for the pair production of long-lived staus in the mass-degenerate scenario, 
+    as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=100$ mm.
+  data_file: hepdata_Figure9d.yaml
+
+200:
+  name: 'Figure 9e ($c\tau_{0}=200$ mm, mass-degenerate scenario)'
+  description: >
+   Cross section upper limits at 95% CL for the pair production of long-lived staus in the mass-degenerate scenario, 
+    as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=200$ mm.
+  data_file: hepdata_Figure9e.yaml
+
+300:
+  name: 'Figure 9f ($c\tau_{0}=300$ mm, mass-degenerate scenario)'
+  description: >
+   Cross section upper limits at 95% CL for the pair production of long-lived staus in the mass-degenerate scenario, 
+    as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=300$ mm.
+  data_file: hepdata_Figure9f.yaml

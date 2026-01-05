@@ -1,0 +1,55 @@
+observed:
+  name: "Fig 7a observed exclusion, maximally-mixed"
+  description: >
+    $(m_{\tilde{\tau}}\,[\mathrm{GeV}],\,c\tau_{0}\,[\mathrm{mm}])$
+    points lying on the observed exclusion contour, for the maximally mixed scenario.
+  data_file: "hepdata_Figure7a_obs.yaml"
+
+obs_plus1sigma:
+  name: "Fig 7a obs +1σ exclusion, maximally-mixed"
+  description: >
+    $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ 
+    points lying on the observed$+1\sigma$ exclusion contour, for the maximally mixed scenario.
+  data_file: "hepdata_Figure7a_obs-p1sigma.yaml"
+
+obs_minu1sigma:
+  name: "Fig 7a obs -1σ exclusion, maximally-mixed"
+  description: >
+    $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$
+    points lying on the observed$-1\sigma$ exclusion contour, for the maximally mixed scenario.
+  data_file: "hepdata_Figure7a_obs-1sigma.yaml"
+
+exp_plus1sigma:
+  name: "Fig 7a exp +1σ exclusion, maximally-mixed"
+  description: >
+    $(m_{\tilde{\tau}}\,[\mathrm{GeV}],\,c\tau_{0}\,[\mathrm{mm}])$
+    points lying on the expected $+1\sigma$ exclusion contour, for the maximally mixed scenario.
+  data_file: "hepdata_Figure7a_exp-p1sigma.yaml"
+
+exp_minus1sigma:
+  name: "Fig 7a exp -1σ exclusion, maximally-mixed"
+  description: >
+    $(m_{\tilde{\tau}}\,[\mathrm{GeV}],\,c\tau_{0}\,[\mathrm{mm}])$
+    points lying on the expected $-1\sigma$ exclusion contour, for the maximally mixed scenario.
+  data_file: "hepdata_Figure7a_exp-m1sigma.yaml"
+
+exp_plus2sigma:
+  name: "Fig 7a exp +2σ exclusion, maximally-mixed"
+  description: >
+    $(m_{\tilde{\tau}}\,[\mathrm{GeV}],\,c\tau_{0}\,[\mathrm{mm}])$
+    points lying on the expected $+2\sigma$ exclusion contour, for the maximally mixed scenario.
+  data_file: "hepdata_Figure7a_exp-p2sigma.yaml"
+
+exp_minus2sigma:
+  name: "Fig 7a exp -2σ exclusion, maximally-mixed"
+  description: >
+    $(m_{\tilde{\tau}}\,[\mathrm{GeV}],\,c\tau_{0}\,[\mathrm{mm}])$
+    points lying on the expected $-2\sigma$ exclusion contour, for the maximally mixed scenario.
+  data_file: "hepdata_Figure7a_exp-m2sigma.yaml"
+
+theory:
+  name: "Fig 7a theory xsec, maximally-mixed"
+  description: >
+    Theoretical stau pair-production cross section as a function of
+    $m_{\tilde{\tau}}$.
+  data_file: "hepdata_Figure7a_theory.yaml"

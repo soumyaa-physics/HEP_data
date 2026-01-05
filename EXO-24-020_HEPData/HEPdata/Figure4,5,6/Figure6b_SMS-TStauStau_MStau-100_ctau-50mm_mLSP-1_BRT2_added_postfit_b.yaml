@@ -1,0 +1,93 @@
+name: Figure 6b (postfit yields)
+description: 'Observed and predicted event yields in the eight SR bins as defined
+  in Table 2 The signal distributions yields in the maximally mixed scenario for a
+  few representative sets of $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$
+  values are overlaid: (100, 50), (100, 100), (200, 50), and (200, 100). The predicted
+  yields and uncertainties are after the maximum likelihood fit to data under the
+  background-only hypothesis, as described in Section 8. '
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+data_file: hepdata_Figure6b.yaml
+
+name: postfit_misid
+description: Postfit misidentified events
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+dependent_variables:
+- header:
+    name: Postfit misidentified events
+  values:
+  - value: 67.3531494140625
+    errors: []
+  - value: 7.640556812286377
+    errors: []
+  - value: 2.414203405380249
+    errors: []
+  - value: 2.573625326156616
+    errors: []
+  - value: 0.6612790822982788
+    errors: []
+  - value: 0.5573307871818542
+    errors: []
+  - value: 1.2212284803390503
+    errors: []
+  - value: 0.14464256167411804
+    errors: []
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: '6'
+  - value: '7'
+  - value: '8'
+
+name: postfit_data_obs
+description: Postfit observed data
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+dependent_variables:
+- header:
+    name: Postfit observed data
+  values:
+  - value: 66.0
+    errors: []
+  - value: 4.0
+    errors: []
+  - value: 5.0
+    errors: []
+  - value: 2.0
+    errors: []
+  - value: 0.0025100000202655792
+    errors: []
+  - value: 2.0
+    errors: []
+  - value: 2.0
+    errors: []
+  - value: 0.0025100000202655792
+    errors: []
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: '6'
+  - value: '7'
+  - value: '8'
+

@@ -1,0 +1,338 @@
+dependent_variables:
+- header:
+    name: Upper limit on cross section
+    units: fb
+  qualifiers:
+  - name: Quantile
+    value: Observed
+  - name: RE
+    value: pp -> stau stau
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: CTAU
+    value: 200 mm
+  - name: SQRT(S)
+    value: 13 TeV
+  - name: LUMINOSITY
+    value: 138 fb^{-1}
+  - name: CL
+    value: 95%
+  values:
+  - value: 491.2220614621562
+  - value: 375.0948328451248
+  - value: 152.63406918875262
+  - value: 58.47547608791147
+  - value: 28.83925362802875
+  - value: 16.99660381555334
+  - value: 11.454466078902012
+  - value: 7.809418779866939
+  - value: 5.652370949410359
+  - value: 4.629842752511809
+  - value: 3.141599451288508
+  - value: 2.3806702529623394
+  - value: 1.9029017813954625
+  - value: 1.636945768044344
+  - value: 1.4181132907768657
+  - value: 1.262191304887614
+independent_variables:
+- header:
+    name: m_stau
+    units: GeV
+  values:
+  - value: 90.0
+  - value: 100.0
+  - value: 125.0
+  - value: 150.0
+  - value: 175.0
+  - value: 200.0
+  - value: 225.0
+  - value: 250.0
+  - value: 275.0
+  - value: 300.0
+  - value: 350.0
+  - value: 400.0
+  - value: 450.0
+  - value: 500.0
+  - value: 550.0
+  - value: 600.0
+description: "Cross section upper limits at 95% CL for the pair production of long-lived\
+  \ staus in the maximally mixed scenario, \n as a function of $m_{\\tilde{\\tau}}$,\
+  \ for $c\\tau_{0}=200$ mm.\n"
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: Figure 8e ($c\tau_{0}=200$ mm, maximally mixed scenario)(observed)
+
+dependent_variables:
+- header:
+    name: Upper limit on cross section
+    units: fb
+  qualifiers:
+  - name: Quantile
+    value: Expected
+  - name: RE
+    value: pp -> stau stau
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: CTAU
+    value: 200 mm
+  - name: SQRT(S)
+    value: 13 TeV
+  - name: LUMINOSITY
+    value: 138 fb^{-1}
+  - name: CL
+    value: 95%
+  values:
+  - value: 263.42795364842897
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 72.52890990847774
+        plus: 143.94439064259848
+    - label: 2 s.d.
+      asymerror:
+        minus: 106.6657127982192
+        plus: 402.5794684584516
+  - value: 207.7344265972328
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 52.44793218490079
+        plus: 104.71450870198458
+    - label: 2 s.d.
+      asymerror:
+        minus: 76.22982902798864
+        plus: 290.1985551122182
+  - value: 87.0511851767877
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 20.564082629737428
+        plus: 39.776064030393485
+    - label: 2 s.d.
+      asymerror:
+        minus: 31.534760128301826
+        plus: 102.33917287502902
+  - value: 38.854351463388674
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 9.435976916787084
+        plus: 18.293658035239154
+    - label: 2 s.d.
+      asymerror:
+        minus: 12.693839932206426
+        plus: 46.7304616826439
+  - value: 20.076519399592634
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 4.880780198812591
+        plus: 9.354295813599325
+    - label: 2 s.d.
+      asymerror:
+        minus: 6.6529287173166445
+        plus: 23.927784982172263
+  - value: 11.769916735357132
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 2.6823501319445153
+        plus: 5.178186446330212
+    - label: 2 s.d.
+      asymerror:
+        minus: 3.932929016603002
+        plus: 13.867770947450882
+  - value: 7.647015889471575
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 1.7662047257322255
+        plus: 3.5374505985317537
+    - label: 2 s.d.
+      asymerror:
+        minus: 2.371075180305028
+        plus: 9.258865082798234
+  - value: 5.265350887259717
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 1.0511301066838943
+        plus: 2.271504055841141
+    - label: 2 s.d.
+      asymerror:
+        minus: 1.502570129945576
+        plus: 6.102692459444849
+  - value: 3.6716220359899236
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.7209336592978945
+        plus: 1.4878273269613262
+    - label: 2 s.d.
+      asymerror:
+        minus: 1.1125149600387902
+        plus: 4.1461739406706535
+  - value: 2.972969928409714
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.5657066379475788
+        plus: 1.227527287675819
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.8287271066269137
+        plus: 3.3330306967454475
+  - value: 1.9650150652191836
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.2969416300264591
+        plus: 0.7500437938178774
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.4766543370660534
+        plus: 2.099773120471846
+  - value: 1.478757814763047
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.21559769675160934
+        plus: 0.5046388293366193
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.3346059814200295
+        plus: 1.5092747466950935
+  - value: 1.192686743178042
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.14755308317200488
+        plus: 0.37848875593897846
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.21259550474921507
+        plus: 1.177918910823733
+  - value: 1.0216095683098856
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.10854885764923994
+        plus: 0.28850407683007306
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.1458053859743741
+        plus: 0.9665993664501364
+  - value: 0.897947803737354
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.0986823994231345
+        plus: 0.25213317621222353
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.17438726988016062
+        plus: 0.8478230030871129
+  - value: 0.8054198502154549
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.08437687105086744
+        plus: 0.212298018013105
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.142048981687926
+        plus: 0.7484948297647335
+independent_variables:
+- header:
+    name: m_stau
+    units: GeV
+  values:
+  - value: 90.0
+  - value: 100.0
+  - value: 125.0
+  - value: 150.0
+  - value: 175.0
+  - value: 200.0
+  - value: 225.0
+  - value: 250.0
+  - value: 275.0
+  - value: 300.0
+  - value: 350.0
+  - value: 400.0
+  - value: 450.0
+  - value: 500.0
+  - value: 550.0
+  - value: 600.0
+description: "Cross section upper limits at 95% CL for the pair production of long-lived\
+  \ staus in the maximally mixed scenario, \n as a function of $m_{\\tilde{\\tau}}$,\
+  \ for $c\\tau_{0}=200$ mm.\n"
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: Figure 8e ($c\tau_{0}=200$ mm, maximally mixed scenario)(expected)
+
+dependent_variables:
+- header:
+    name: Cross section
+    units: fb
+  qualifiers:
+  - name: TYPE
+    value: Theory
+  - name: RE
+    value: pp -> stau stau
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: CTAU
+    value: 200 mm
+  - name: SQRT(S)
+    value: 13 TeV
+  values:
+  - value: 165.925
+  - value: 116.739
+  - value: 54.4897
+  - value: 28.8227
+  - value: 16.5604
+  - value: 10.127
+  - value: 6.5001
+  - value: 4.33539
+  - value: 2.98007
+  - value: 2.10096
+  - value: 1.11042
+  - value: 0.625364
+  - value: 0.369609
+  - value: 0.226902
+  - value: 0.143696
+  - value: 0.0933425
+independent_variables:
+- header:
+    name: m_stau
+    units: GeV
+  values:
+  - value: 90.0
+  - value: 100.0
+  - value: 125.0
+  - value: 150.0
+  - value: 175.0
+  - value: 200.0
+  - value: 225.0
+  - value: 250.0
+  - value: 275.0
+  - value: 300.0
+  - value: 350.0
+  - value: 400.0
+  - value: 450.0
+  - value: 500.0
+  - value: 550.0
+  - value: 600.0
+description: "Cross section upper limits at 95% CL for the pair production of long-lived\
+  \ staus in the maximally mixed scenario, \n as a function of $m_{\\tilde{\\tau}}$,\
+  \ for $c\\tau_{0}=200$ mm.\n"
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: Figure 8e ($c\tau_{0}=200$ mm, maximally mixed scenario)(theory)
+

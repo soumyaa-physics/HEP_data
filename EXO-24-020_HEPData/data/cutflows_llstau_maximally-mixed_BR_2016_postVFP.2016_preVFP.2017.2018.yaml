@@ -1,0 +1,432 @@
+SMS-TStauStau_MStau-100_ctau-10mm_mLSP-1:
+  label: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(100)$}\\hbox{$c\\tau_{0}(10mm)$}}
+  cuts:
+  - cut_label: "Total"
+    yield: 16060.0
+    yield_unc_stat: 0.0
+    efficiency: 1.0
+    efficiency_unc_stat: 0.0
+  - cut_label: "Satisfies $p^\\text{miss}_\\text{T}$ triggers"
+    yield: 990.7
+    yield_unc_stat: 2.477
+    efficiency: 0.06167
+    efficiency_unc_stat: 0.0001542
+  - cut_label: "Passes filters"
+    yield: 967.8
+    yield_unc_stat: 2.457
+    efficiency: 0.06024
+    efficiency_unc_stat: 0.0001529
+  - cut_label: "No veto-electrons or veto-muons"
+    yield: 710.3
+    yield_unc_stat: 2.126
+    efficiency: 0.04422
+    efficiency_unc_stat: 0.0001323
+  - cut_label: "No b-tagged jets"
+    yield: 521.6
+    yield_unc_stat: 1.824
+    efficiency: 0.03247
+    efficiency_unc_stat: 0.0001136
+  - cut_label: "Offline $p^\\text{miss}_\\text{T} > 120$ GeV"
+    yield: 405.9
+    yield_unc_stat: 1.604
+    efficiency: 0.02527
+    efficiency_unc_stat: 9.984e-05
+  - cut_label: "Exactly 2 $\\tau^\\text{dis}_\\text{h}$ candidate jets"
+    yield: 19.91
+    yield_unc_stat: 0.3625
+    efficiency: 0.00124
+    efficiency_unc_stat: 2.257e-05
+  - cut_label: "$\\Delta\\phi(\\text{j1}, \\text{j2}) > 0.5$"
+    yield: 18.96
+    yield_unc_stat: 0.3536
+    efficiency: 0.00118
+    efficiency_unc_stat: 2.201e-05
+  - cut_label: "$\\H_\\text{T}^{\\text{soft, fwd}} < 50$ GeV"
+    yield: 18.22
+    yield_unc_stat: 0.3462
+    efficiency: 0.001134
+    efficiency_unc_stat: 2.155e-05
+SMS-TStauStau_MStau-100_ctau-50mm_mLSP-1:
+  label: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(100)$}\\hbox{$c\\tau_{0}(50mm)$}}
+  cuts:
+  - cut_label: "Total"
+    yield: 16060.0
+    yield_unc_stat: 0.0
+    efficiency: 1.0
+    efficiency_unc_stat: 0.0
+  - cut_label: "Satisfies $p^\\text{miss}_\\text{T}$ triggers"
+    yield: 939.6
+    yield_unc_stat: 2.339
+    efficiency: 0.05849
+    efficiency_unc_stat: 0.0001456
+  - cut_label: "Passes filters"
+    yield: 916.0
+    yield_unc_stat: 2.316
+    efficiency: 0.05702
+    efficiency_unc_stat: 0.0001442
+  - cut_label: "No veto-electrons or veto-muons"
+    yield: 722.6
+    yield_unc_stat: 2.071
+    efficiency: 0.04498
+    efficiency_unc_stat: 0.0001289
+  - cut_label: "No b-tagged jets"
+    yield: 619.8
+    yield_unc_stat: 1.923
+    efficiency: 0.03858
+    efficiency_unc_stat: 0.0001197
+  - cut_label: "Offline $p^\\text{miss}_\\text{T} > 120$ GeV"
+    yield: 485.6
+    yield_unc_stat: 1.698
+    efficiency: 0.03023
+    efficiency_unc_stat: 0.0001057
+  - cut_label: "Exactly 2 $\\tau^\\text{dis}_\\text{h}$ candidate jets"
+    yield: 31.2
+    yield_unc_stat: 0.4414
+    efficiency: 0.001942
+    efficiency_unc_stat: 2.748e-05
+  - cut_label: "$\\Delta\\phi(\\text{j1}, \\text{j2}) > 0.5$"
+    yield: 29.9
+    yield_unc_stat: 0.4321
+    efficiency: 0.001861
+    efficiency_unc_stat: 2.69e-05
+  - cut_label: "$\\H_\\text{T}^{\\text{soft, fwd}} < 50$ GeV"
+    yield: 28.93
+    yield_unc_stat: 0.4247
+    efficiency: 0.001801
+    efficiency_unc_stat: 2.644e-05
+SMS-TStauStau_MStau-100_ctau-100mm_mLSP-1:
+  label: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(100)$}\\hbox{$c\\tau_{0}(100mm)$}}
+  cuts:
+  - cut_label: "Total"
+    yield: 16060.0
+    yield_unc_stat: 0.0
+    efficiency: 1.0
+    efficiency_unc_stat: 0.0
+  - cut_label: "Satisfies $p^\\text{miss}_\\text{T}$ triggers"
+    yield: 913.2
+    yield_unc_stat: 2.31
+    efficiency: 0.05685
+    efficiency_unc_stat: 0.0001438
+  - cut_label: "Passes filters"
+    yield: 889.7
+    yield_unc_stat: 2.288
+    efficiency: 0.05538
+    efficiency_unc_stat: 0.0001424
+  - cut_label: "No veto-electrons or veto-muons"
+    yield: 720.6
+    yield_unc_stat: 2.07
+    efficiency: 0.04486
+    efficiency_unc_stat: 0.0001288
+  - cut_label: "No b-tagged jets"
+    yield: 638.2
+    yield_unc_stat: 1.951
+    efficiency: 0.03972
+    efficiency_unc_stat: 0.0001215
+  - cut_label: "Offline $p^\\text{miss}_\\text{T} > 120$ GeV"
+    yield: 500.4
+    yield_unc_stat: 1.725
+    efficiency: 0.03115
+    efficiency_unc_stat: 0.0001074
+  - cut_label: "Exactly 2 $\\tau^\\text{dis}_\\text{h}$ candidate jets"
+    yield: 23.32
+    yield_unc_stat: 0.381
+    efficiency: 0.001452
+    efficiency_unc_stat: 2.372e-05
+  - cut_label: "$\\Delta\\phi(\\text{j1}, \\text{j2}) > 0.5$"
+    yield: 22.15
+    yield_unc_stat: 0.3713
+    efficiency: 0.001379
+    efficiency_unc_stat: 2.311e-05
+  - cut_label: "$\\H_\\text{T}^{\\text{soft, fwd}} < 50$ GeV"
+    yield: 21.41
+    yield_unc_stat: 0.3649
+    efficiency: 0.001333
+    efficiency_unc_stat: 2.271e-05
+SMS-TStauStau_MStau-200_ctau-10mm_mLSP-1:
+  label: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(200)$}\\hbox{$c\\tau_{0}(10mm)$}}
+  cuts:
+  - cut_label: "Total"
+    yield: 1394.0
+    yield_unc_stat: 0.0
+    efficiency: 1.0
+    efficiency_unc_stat: 0.0
+  - cut_label: "Satisfies $p^\\text{miss}_\\text{T}$ triggers"
+    yield: 304.2
+    yield_unc_stat: 0.3616
+    efficiency: 0.2183
+    efficiency_unc_stat: 0.0002595
+  - cut_label: "Passes filters"
+    yield: 298.4
+    yield_unc_stat: 0.3597
+    efficiency: 0.2141
+    efficiency_unc_stat: 0.0002581
+  - cut_label: "No veto-electrons or veto-muons"
+    yield: 200.8
+    yield_unc_stat: 0.308
+    efficiency: 0.1441
+    efficiency_unc_stat: 0.000221
+  - cut_label: "No b-tagged jets"
+    yield: 138.4
+    yield_unc_stat: 0.2611
+    efficiency: 0.09933
+    efficiency_unc_stat: 0.0001873
+  - cut_label: "Offline $p^\\text{miss}_\\text{T} > 120$ GeV"
+    yield: 112.9
+    yield_unc_stat: 0.2367
+    efficiency: 0.08102
+    efficiency_unc_stat: 0.0001698
+  - cut_label: "Exactly 2 $\\tau^\\text{dis}_\\text{h}$ candidate jets"
+    yield: 10.97
+    yield_unc_stat: 0.07697
+    efficiency: 0.007873
+    efficiency_unc_stat: 5.523e-05
+  - cut_label: "$\\Delta\\phi(\\text{j1}, \\text{j2}) > 0.5$"
+    yield: 10.52
+    yield_unc_stat: 0.07539
+    efficiency: 0.007548
+    efficiency_unc_stat: 5.41e-05
+  - cut_label: "$\\H_\\text{T}^{\\text{soft, fwd}} < 50$ GeV"
+    yield: 10.14
+    yield_unc_stat: 0.07395
+    efficiency: 0.007274
+    efficiency_unc_stat: 5.306e-05
+SMS-TStauStau_MStau-200_ctau-50mm_mLSP-1:
+  label: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(200)$}\\hbox{$c\\tau_{0}(50mm)$}}
+  cuts:
+  - cut_label: "Total"
+    yield: 1394.0
+    yield_unc_stat: 0.0
+    efficiency: 1.0
+    efficiency_unc_stat: 0.0
+  - cut_label: "Satisfies $p^\\text{miss}_\\text{T}$ triggers"
+    yield: 283.0
+    yield_unc_stat: 0.3503
+    efficiency: 0.2031
+    efficiency_unc_stat: 0.0002514
+  - cut_label: "Passes filters"
+    yield: 276.7
+    yield_unc_stat: 0.3479
+    efficiency: 0.1986
+    efficiency_unc_stat: 0.0002497
+  - cut_label: "No veto-electrons or veto-muons"
+    yield: 207.8
+    yield_unc_stat: 0.3107
+    efficiency: 0.1491
+    efficiency_unc_stat: 0.000223
+  - cut_label: "No b-tagged jets"
+    yield: 174.4
+    yield_unc_stat: 0.2882
+    efficiency: 0.1252
+    efficiency_unc_stat: 0.0002068
+  - cut_label: "Offline $p^\\text{miss}_\\text{T} > 120$ GeV"
+    yield: 142.6
+    yield_unc_stat: 0.2625
+    efficiency: 0.1024
+    efficiency_unc_stat: 0.0001883
+  - cut_label: "Exactly 2 $\\tau^\\text{dis}_\\text{h}$ candidate jets"
+    yield: 20.41
+    yield_unc_stat: 0.1046
+    efficiency: 0.01465
+    efficiency_unc_stat: 7.509e-05
+  - cut_label: "$\\Delta\\phi(\\text{j1}, \\text{j2}) > 0.5$"
+    yield: 19.58
+    yield_unc_stat: 0.1025
+    efficiency: 0.01405
+    efficiency_unc_stat: 7.356e-05
+  - cut_label: "$\\H_\\text{T}^{\\text{soft, fwd}} < 50$ GeV"
+    yield: 18.86
+    yield_unc_stat: 0.1005
+    efficiency: 0.01353
+    efficiency_unc_stat: 7.213e-05
+SMS-TStauStau_MStau-200_ctau-100mm_mLSP-1:
+  label: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(200)$}\\hbox{$c\\tau_{0}(100mm)$}}
+  cuts:
+  - cut_label: "Total"
+    yield: 1394.0
+    yield_unc_stat: 0.0
+    efficiency: 1.0
+    efficiency_unc_stat: 0.0
+  - cut_label: "Satisfies $p^\\text{miss}_\\text{T}$ triggers"
+    yield: 269.3
+    yield_unc_stat: 0.3433
+    efficiency: 0.1932
+    efficiency_unc_stat: 0.0002464
+  - cut_label: "Passes filters"
+    yield: 262.6
+    yield_unc_stat: 0.3406
+    efficiency: 0.1885
+    efficiency_unc_stat: 0.0002444
+  - cut_label: "No veto-electrons or veto-muons"
+    yield: 208.0
+    yield_unc_stat: 0.3103
+    efficiency: 0.1492
+    efficiency_unc_stat: 0.0002227
+  - cut_label: "No b-tagged jets"
+    yield: 182.8
+    yield_unc_stat: 0.2938
+    efficiency: 0.1312
+    efficiency_unc_stat: 0.0002108
+  - cut_label: "Offline $p^\\text{miss}_\\text{T} > 120$ GeV"
+    yield: 149.4
+    yield_unc_stat: 0.2678
+    efficiency: 0.1072
+    efficiency_unc_stat: 0.0001922
+  - cut_label: "Exactly 2 $\\tau^\\text{dis}_\\text{h}$ candidate jets"
+    yield: 17.14
+    yield_unc_stat: 0.09601
+    efficiency: 0.0123
+    efficiency_unc_stat: 6.89e-05
+  - cut_label: "$\\Delta\\phi(\\text{j1}, \\text{j2}) > 0.5$"
+    yield: 16.4
+    yield_unc_stat: 0.09397
+    efficiency: 0.01177
+    efficiency_unc_stat: 6.743e-05
+  - cut_label: "$\\H_\\text{T}^{\\text{soft, fwd}} < 50$ GeV"
+    yield: 15.75
+    yield_unc_stat: 0.09193
+    efficiency: 0.0113
+    efficiency_unc_stat: 6.597e-05
+SMS-TStauStau_MStau-300_ctau-10mm_mLSP-1:
+  label: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(300)$}\\hbox{$c\\tau_{0}(10mm)$}}
+  cuts:
+  - cut_label: "Total"
+    yield: 289.1
+    yield_unc_stat: 0.0
+    efficiency: 1.0
+    efficiency_unc_stat: 0.0
+  - cut_label: "Satisfies $p^\\text{miss}_\\text{T}$ triggers"
+    yield: 107.2
+    yield_unc_stat: 0.08751
+    efficiency: 0.3707
+    efficiency_unc_stat: 0.0003027
+  - cut_label: "Passes filters"
+    yield: 105.4
+    yield_unc_stat: 0.08728
+    efficiency: 0.3646
+    efficiency_unc_stat: 0.0003019
+  - cut_label: "No veto-electrons or veto-muons"
+    yield: 65.58
+    yield_unc_stat: 0.07594
+    efficiency: 0.2268
+    efficiency_unc_stat: 0.0002627
+  - cut_label: "No b-tagged jets"
+    yield: 43.3
+    yield_unc_stat: 0.0644
+    efficiency: 0.1498
+    efficiency_unc_stat: 0.0002227
+  - cut_label: "Offline $p^\\text{miss}_\\text{T} > 120$ GeV"
+    yield: 36.97
+    yield_unc_stat: 0.05998
+    efficiency: 0.1279
+    efficiency_unc_stat: 0.0002075
+  - cut_label: "Exactly 2 $\\tau^\\text{dis}_\\text{h}$ candidate jets"
+    yield: 4.701
+    yield_unc_stat: 0.02279
+    efficiency: 0.01626
+    efficiency_unc_stat: 7.884e-05
+  - cut_label: "$\\Delta\\phi(\\text{j1}, \\text{j2}) > 0.5$"
+    yield: 4.411
+    yield_unc_stat: 0.02209
+    efficiency: 0.01526
+    efficiency_unc_stat: 7.641e-05
+  - cut_label: "$\\H_\\text{T}^{\\text{soft, fwd}} < 50$ GeV"
+    yield: 4.25
+    yield_unc_stat: 0.02166
+    efficiency: 0.0147
+    efficiency_unc_stat: 7.493e-05
+SMS-TStauStau_MStau-300_ctau-50mm_mLSP-1:
+  label: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(300)$}\\hbox{$c\\tau_{0}(50mm)$}}
+  cuts:
+  - cut_label: "Total"
+    yield: 289.1
+    yield_unc_stat: 0.0
+    efficiency: 1.0
+    efficiency_unc_stat: 0.0
+  - cut_label: "Satisfies $p^\\text{miss}_\\text{T}$ triggers"
+    yield: 100.9
+    yield_unc_stat: 0.1002
+    efficiency: 0.3491
+    efficiency_unc_stat: 0.0003467
+  - cut_label: "Passes filters"
+    yield: 98.83
+    yield_unc_stat: 0.0999
+    efficiency: 0.3418
+    efficiency_unc_stat: 0.0003455
+  - cut_label: "No veto-electrons or veto-muons"
+    yield: 70.47
+    yield_unc_stat: 0.09044
+    efficiency: 0.2437
+    efficiency_unc_stat: 0.0003128
+  - cut_label: "No b-tagged jets"
+    yield: 58.01
+    yield_unc_stat: 0.08417
+    efficiency: 0.2006
+    efficiency_unc_stat: 0.0002911
+  - cut_label: "Offline $p^\\text{miss}_\\text{T} > 120$ GeV"
+    yield: 49.6
+    yield_unc_stat: 0.07889
+    efficiency: 0.1716
+    efficiency_unc_stat: 0.0002729
+  - cut_label: "Exactly 2 $\\tau^\\text{dis}_\\text{h}$ candidate jets"
+    yield: 9.759
+    yield_unc_stat: 0.03812
+    efficiency: 0.03376
+    efficiency_unc_stat: 0.0001319
+  - cut_label: "$\\Delta\\phi(\\text{j1}, \\text{j2}) > 0.5$"
+    yield: 9.19
+    yield_unc_stat: 0.03703
+    efficiency: 0.03179
+    efficiency_unc_stat: 0.0001281
+  - cut_label: "$\\H_\\text{T}^{\\text{soft, fwd}} < 50$ GeV"
+    yield: 8.849
+    yield_unc_stat: 0.03629
+    efficiency: 0.03061
+    efficiency_unc_stat: 0.0001255
+SMS-TStauStau_MStau-300_ctau-100mm_mLSP-1:
+  label: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(300)$}\\hbox{$c\\tau_{0}(100mm)$}}
+  cuts:
+  - cut_label: "Total"
+    yield: 289.1
+    yield_unc_stat: 0.0
+    efficiency: 1.0
+    efficiency_unc_stat: 0.0
+  - cut_label: "Satisfies $p^\\text{miss}_\\text{T}$ triggers"
+    yield: 96.46
+    yield_unc_stat: 0.08682
+    efficiency: 0.3336
+    efficiency_unc_stat: 0.0003003
+  - cut_label: "Passes filters"
+    yield: 94.09
+    yield_unc_stat: 0.08637
+    efficiency: 0.3254
+    efficiency_unc_stat: 0.0002987
+  - cut_label: "No veto-electrons or veto-muons"
+    yield: 72.16
+    yield_unc_stat: 0.07978
+    efficiency: 0.2496
+    efficiency_unc_stat: 0.0002759
+  - cut_label: "No b-tagged jets"
+    yield: 62.63
+    yield_unc_stat: 0.07588
+    efficiency: 0.2166
+    efficiency_unc_stat: 0.0002625
+  - cut_label: "Offline $p^\\text{miss}_\\text{T} > 120$ GeV"
+    yield: 53.36
+    yield_unc_stat: 0.07118
+    efficiency: 0.1846
+    efficiency_unc_stat: 0.0002462
+  - cut_label: "Exactly 2 $\\tau^\\text{dis}_\\text{h}$ candidate jets"
+    yield: 8.694
+    yield_unc_stat: 0.03163
+    efficiency: 0.03007
+    efficiency_unc_stat: 0.0001094
+  - cut_label: "$\\Delta\\phi(\\text{j1}, \\text{j2}) > 0.5$"
+    yield: 8.18
+    yield_unc_stat: 0.03071
+    efficiency: 0.0283
+    efficiency_unc_stat: 0.0001062
+  - cut_label: "$\\H_\\text{T}^{\\text{soft, fwd}} < 50$ GeV"
+    yield: 7.874
+    yield_unc_stat: 0.0301
+    efficiency: 0.02723
+    efficiency_unc_stat: 0.0001041

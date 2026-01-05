@@ -1,0 +1,338 @@
+dependent_variables:
+- header:
+    name: Upper limit on cross section
+    units: fb
+  qualifiers:
+  - name: Quantile
+    value: Observed
+  - name: RE
+    value: pp -> stau stau
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: CTAU
+    value: 100 mm
+  - name: SQRT(S)
+    value: 13 TeV
+  - name: LUMINOSITY
+    value: 138 fb^{-1}
+  - name: CL
+    value: 95%
+  values:
+  - value: 261.81031914000005
+  - value: 168.5453866402555
+  - value: 70.83502607241212
+  - value: 34.2173268036
+  - value: 17.048286855
+  - value: 10.5485927112
+  - value: 6.6771881682
+  - value: 4.8088854124048535
+  - value: 3.6801219206102442
+  - value: 2.954075546145195
+  - value: 2.086840187052429
+  - value: 1.6237361986153542
+  - value: 1.3538412339223076
+  - value: 1.1828341487089222
+  - value: 1.0360176742330895
+  - value: 0.9458807117151798
+independent_variables:
+- header:
+    name: m_stau
+    units: GeV
+  values:
+  - value: 90.0
+  - value: 100.0
+  - value: 125.0
+  - value: 150.0
+  - value: 175.0
+  - value: 200.0
+  - value: 225.0
+  - value: 250.0
+  - value: 275.0
+  - value: 300.0
+  - value: 350.0
+  - value: 400.0
+  - value: 450.0
+  - value: 500.0
+  - value: 550.0
+  - value: 600.0
+description: "Cross section upper limits at 95% CL for the pair production of long-lived\
+  \ staus in the mass-degenerate scenario, \n as a function of $m_{\\tilde{\\tau}}$,\
+  \ for $c\\tau_{0}=100$ mm.\n"
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: Figure 9d ($c\tau_{0}=100$ mm, mass-degenerate scenario)(observed)
+
+dependent_variables:
+- header:
+    name: Upper limit on cross section
+    units: fb
+  qualifiers:
+  - name: Quantile
+    value: Expected
+  - name: RE
+    value: pp -> stau stau
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: CTAU
+    value: 100 mm
+  - name: SQRT(S)
+    value: 13 TeV
+  - name: LUMINOSITY
+    value: 138 fb^{-1}
+  - name: CL
+    value: 95%
+  values:
+  - value: 133.94953905
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 30.443268454999995
+        plus: 59.73223462504197
+    - label: 2 s.d.
+      asymerror:
+        minus: 48.70901898999999
+        plus: 159.01384673637847
+  - value: 91.04002569299999
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 20.690665574999983
+        plus: 45.52019570700003
+    - label: 2 s.d.
+      asymerror:
+        minus: 33.10543064099999
+        plus: 106.46442307169875
+  - value: 42.897422385
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 11.190646439999998
+        plus: 18.65096613
+    - label: 2 s.d.
+      asymerror:
+        minus: 18.651133034999997
+        plus: 46.72152706863844
+  - value: 21.5080315018
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 5.865882210800001
+        plus: 10.753972192800003
+    - label: 2 s.d.
+      asymerror:
+        minus: 6.8435002072
+        plus: 25.567226353167786
+  - value: 11.7206941034
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 2.6637963757999987
+        plus: 5.327592751600001
+    - label: 2 s.d.
+      asymerror:
+        minus: 3.729304976
+        plus: 13.428455313127703
+  - value: 6.9225357552
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 1.6482242424000004
+        plus: 3.1796103734072663
+    - label: 2 s.d.
+      asymerror:
+        minus: 2.307532128
+        plus: 8.5707296832
+  - value: 4.523252117999999
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.8615783021999994
+        plus: 1.938536622
+    - label: 2 s.d.
+      asymerror:
+        minus: 1.0769583197999992
+        plus: 5.1488356013969065
+  - value: 3.1152006127
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.6230427065999997
+        plus: 1.4018396296999995
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.7787969231000003
+        plus: 3.7724786688498986
+  - value: 2.3798841176
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.47597327359999997
+        plus: 0.9519554220000002
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.7139599104000001
+        plus: 2.675529287456404
+  - value: 1.92498974681
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.2887487747299997
+        plus: 0.736308386773209
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.3850004510299998
+        plus: 2.125697213978527
+  - value: 1.3175128137684833
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.22648567611848325
+        plus: 0.48422936640331393
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.2946754915884833
+        plus: 1.389435578715949
+  - value: 1.0225354354027676
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.15276249021022403
+        plus: 0.3359299270601477
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.2333626706027676
+        plus: 1.0281109589474897
+  - value: 0.8424928004300615
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.10276502739280235
+        plus: 0.27176940280085493
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.15731890665674553
+        plus: 0.8353498567458516
+  - value: 0.7353877315583193
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.07684646928066441
+        plus: 0.22095448127288597
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.12530040949090238
+        plus: 0.7043690577994384
+  - value: 0.6559068753717598
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.06513938595397795
+        plus: 0.17549033644682321
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.10629164943552127
+        plus: 0.6040438405298554
+  - value: 0.6072925326440918
+    errors:
+    - label: 1 s.d.
+      asymerror:
+        minus: 0.06321417801080786
+        plus: 0.1586553742378236
+    - label: 2 s.d.
+      asymerror:
+        minus: 0.09691142804856956
+        plus: 0.5579941808024499
+independent_variables:
+- header:
+    name: m_stau
+    units: GeV
+  values:
+  - value: 90.0
+  - value: 100.0
+  - value: 125.0
+  - value: 150.0
+  - value: 175.0
+  - value: 200.0
+  - value: 225.0
+  - value: 250.0
+  - value: 275.0
+  - value: 300.0
+  - value: 350.0
+  - value: 400.0
+  - value: 450.0
+  - value: 500.0
+  - value: 550.0
+  - value: 600.0
+description: "Cross section upper limits at 95% CL for the pair production of long-lived\
+  \ staus in the mass-degenerate scenario, \n as a function of $m_{\\tilde{\\tau}}$,\
+  \ for $c\\tau_{0}=100$ mm.\n"
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: Figure 9d ($c\tau_{0}=100$ mm, mass-degenerate scenario)(expected)
+
+dependent_variables:
+- header:
+    name: Cross section
+    units: fb
+  qualifiers:
+  - name: TYPE
+    value: Theory
+  - name: RE
+    value: pp -> stau stau
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: CTAU
+    value: 100 mm
+  - name: SQRT(S)
+    value: 13 TeV
+  values:
+  - value: 526.345
+  - value: 365.721
+  - value: 166.905
+  - value: 87.1162
+  - value: 49.7506
+  - value: 30.3144
+  - value: 19.4106
+  - value: 12.9203
+  - value: 8.8748
+  - value: 6.25417
+  - value: 3.30329
+  - value: 1.8592
+  - value: 1.09799
+  - value: 0.673633
+  - value: 0.425957
+  - value: 0.27635
+independent_variables:
+- header:
+    name: m_stau
+    units: GeV
+  values:
+  - value: 90.0
+  - value: 100.0
+  - value: 125.0
+  - value: 150.0
+  - value: 175.0
+  - value: 200.0
+  - value: 225.0
+  - value: 250.0
+  - value: 275.0
+  - value: 300.0
+  - value: 350.0
+  - value: 400.0
+  - value: 450.0
+  - value: 500.0
+  - value: 550.0
+  - value: 600.0
+description: "Cross section upper limits at 95% CL for the pair production of long-lived\
+  \ staus in the mass-degenerate scenario, \n as a function of $m_{\\tilde{\\tau}}$,\
+  \ for $c\\tau_{0}=100$ mm.\n"
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: Figure 9d ($c\tau_{0}=100$ mm, mass-degenerate scenario)(theory)
+

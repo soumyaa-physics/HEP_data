@@ -4,11 +4,11 @@ import os
 
 parser = argparse.ArgumentParser(description="Convert systematic uncertainties")
 parser.add_argument("input_file", help="Path to the raw YAML file")
-parser.add_argument("-o", "--output_dir", default=".", help="Directory to save the single YAML file")
+
 args = parser.parse_args()
 
 input_path = args.input_file
-output_dir = args.output_dir
+output_dir = "./Figure3"
 
 with open(input_path) as f:
     raw = yaml.safe_load(f)
@@ -25,6 +25,20 @@ def get_sorted_bins(method_dict):
         return sorted(bin_keys)
 
 tables = []
+
+figure_metadata = {
+    "name": "Figure 3",
+    "description": (
+        "DISTAU classifier distributions for τh probes in the μτh control region (2018). "
+        "DY(μτh) denotes Z/γ* → ττ events with one tau → μ and the other hadronic "
+        "DY(other) includes other Z/γ* decays. 'Top quark' includes tt, single top, ttV "
+        "other SM processes include diboson. Grey band: statistical uncertainty on simulation. "
+        "Simulation is illustrative; not fully calibrated or used for correction factors. "
+        "2016/2017 data show similar behavior."
+    ),
+    "keywords": [{"name": "cmenergies", "values": [13000.0]}],
+    "data_file": "hepdata_Figure3.yaml"
+}
 
 for method in methods:
     if not all(isinstance(raw[era][category][method], dict) for era in eras):
@@ -66,14 +80,21 @@ for method in methods:
     }
     tables.append(table)
 
-output_filename = os.path.splitext("HEP_" + os.path.basename(input_path))[0] + ".yaml"
+output_filename = os.path.splitext(os.path.basename(input_path))[0] + ".yaml"
 output_path = os.path.join(output_dir, output_filename)
 
-# with open(output_path, "w") as f:
-#     yaml.dump(hepdata_output, f, sort_keys=False)
 with open(output_path, "w") as f_out:
+    # Write figure-level metadata first
+    yaml.dump({
+        "name": figure_metadata["name"],
+        "description": figure_metadata["description"],
+        "keywords": figure_metadata["keywords"],
+        "data_file": figure_metadata["data_file"]
+    }, f_out, sort_keys=False)
+    f_out.write("\n")
+
+    # Then append tables
     for table in tables:
-        # Prepare table for single-table HEPData YAML
         table_to_dump = {
             "dependent_variables": table["dependent_variables"],
             "independent_variables": table["independent_variables"],
@@ -83,8 +104,5 @@ with open(output_path, "w") as f_out:
         }
         yaml.dump(table_to_dump, f_out, sort_keys=False)
         f_out.write("\n")  # separate multiple tables if needed
-
-
-
 
 print(f"Converted {input_path} → {output_path} (all methods in one file)")

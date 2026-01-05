@@ -1,0 +1,874 @@
+name: Figure 4a
+description: 'Distributions of $p_\text{T, j2}$ for events in the signal region. The
+  signal distributions expected in the maximally mixed scenario for a few representative
+  sets of $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ values are overlaid:
+  (100, 50), (100, 100), (200, 50), and (200, 100). In bins where the observed yield
+  is zero, the Poissonian upper limit at 68% CL is shown as a positive uncertainty.
+  The last bin includes the overflow.'
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+data_file: hepdata_Figure4a.yaml
+
+dependent_variables:
+- header:
+    name: Yield_2016_preVFP.2016_postVFP.2017.2018
+    units: ''
+  values:
+  - value: 0.0
+    errors: []
+  - value: 75.0
+    errors: []
+  - value: 4.0
+    errors: []
+  - value: 2.0
+    errors: []
+  - value: 0.0
+    errors: []
+  - value: 81.0
+    errors: []
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: total
+description: Yields for obs
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: obs
+
+dependent_variables:
+- header:
+    name: Yield_2016_preVFP.2016_postVFP.2017.2018
+    units: ''
+  values:
+  - value: 0.0
+    errors:
+    - symerror: 0.23094162231319584
+      label: stat
+    - symerror: 0.0
+      label: syst
+  - value: 77.58524615492942
+    errors:
+    - symerror: 3.1623814260236793
+      label: stat
+    - symerror: 24.84370648486596
+      label: syst
+  - value: 3.6205887701914845
+    errors:
+    - symerror: 0.39113520607552293
+      label: stat
+    - symerror: 1.5248240868698273
+      label: syst
+  - value: 1.1925360082989958
+    errors:
+    - symerror: 0.21125136089444768
+      label: stat
+    - symerror: 0.5189198551079387
+      label: syst
+  - value: 0.15835916300509784
+    errors:
+    - symerror: 0.05374833218990792
+      label: stat
+    - symerror: 0.15518766194825206
+      label: syst
+  - value: 82.556730096425
+    errors:
+    - symerror: 3.1939253362882885
+      label: stat
+    - symerror: 26.524405431550928
+      label: syst
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: total
+description: Yields for misid
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: misid
+
+dependent_variables:
+- header:
+    name: Yield_2016_preVFP.2016_postVFP.2017.2018
+    units: ''
+  values:
+  - value: 0.0
+    errors:
+    - symerror: 0.23094162231319584
+      label: stat
+    - symerror: 0.0
+      label: syst
+  - value: 77.58524615492942
+    errors:
+    - symerror: 3.1623814260236793
+      label: stat
+    - symerror: 24.84370648486596
+      label: syst
+  - value: 3.6205887701914845
+    errors:
+    - symerror: 0.39113520607552293
+      label: stat
+    - symerror: 1.5248240868698273
+      label: syst
+  - value: 1.1925360082989958
+    errors:
+    - symerror: 0.21125136089444768
+      label: stat
+    - symerror: 0.5189198551079387
+      label: syst
+  - value: 0.15835916300509784
+    errors:
+    - symerror: 0.05374833218990792
+      label: stat
+    - symerror: 0.15518766194825206
+      label: syst
+  - value: 82.556730096425
+    errors:
+    - symerror: 3.1939253362882885
+      label: stat
+    - symerror: 26.524405431550928
+      label: syst
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: total
+description: Yields for total_bkg
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: total_bkg
+
+dependent_variables:
+- header:
+    name: Yield_2016_preVFP.2016_postVFP.2017.2018
+    units: ''
+  values:
+  - value: 0.0
+    errors:
+    - symerror: 0.01934464082334633
+      label: stat
+    - symerror: 0.0
+      label: syst
+  - value: 7.185361487179864
+    errors:
+    - symerror: 0.19166870088427385
+      label: stat
+    - symerror: 1.676459352868424
+      label: syst
+  - value: 6.715745806216959
+    errors:
+    - symerror: 0.18311318612663016
+      label: stat
+    - symerror: 1.5424808831658923
+      label: syst
+  - value: 1.9182336370890323
+    errors:
+    - symerror: 0.09905284928698939
+      label: stat
+    - symerror: 0.4533491867752079
+      label: syst
+  - value: 0.013394716921987635
+    errors:
+    - symerror: 0.006071932575754439
+      label: stat
+    - symerror: 0.005210062729637541
+      label: syst
+  - value: 15.832735647407842
+    errors:
+    - symerror: 0.2830471076502755
+      label: stat
+    - symerror: 3.6687467674700094
+      label: syst
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: total
+description: Yields for SMS-TStauStau_MStau-100_ctau-100mm_mLSP-1
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: SMS-TStauStau_MStau-100_ctau-100mm_mLSP-1
+
+dependent_variables:
+- header:
+    name: Yield_2016_preVFP.2016_postVFP.2017.2018
+    units: ''
+  values:
+  - value: 0.0
+    errors:
+    - symerror: 0.020875433674657863
+      label: stat
+    - symerror: 0.0
+      label: syst
+  - value: 5.181938983125311
+    errors:
+    - symerror: 0.1650745224875548
+      label: stat
+    - symerror: 1.120729930820832
+      label: syst
+  - value: 5.441257221915017
+    errors:
+    - symerror: 0.1745012483713898
+      label: stat
+    - symerror: 1.2604250846243945
+      label: syst
+  - value: 2.177756683801597
+    errors:
+    - symerror: 0.11211916162002551
+      label: stat
+    - symerror: 0.527205331067659
+      label: syst
+  - value: 0.03963744878113736
+    errors:
+    - symerror: 0.014137181623175918
+      label: stat
+    - symerror: 0.011800013308863478
+      label: syst
+  - value: 12.84059033762306
+    errors:
+    - symerror: 0.26546346257873565
+      label: stat
+    - symerror: 2.9065956719733905
+      label: syst
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: total
+description: Yields for SMS-TStauStau_MStau-100_ctau-10mm_mLSP-1
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: SMS-TStauStau_MStau-100_ctau-10mm_mLSP-1
+
+dependent_variables:
+- header:
+    name: Yield_2016_preVFP.2016_postVFP.2017.2018
+    units: ''
+  values:
+  - value: 0.0
+    errors:
+    - symerror: 0.20593886324659413
+      label: stat
+    - symerror: 0.0
+      label: syst
+  - value: 2.4664534696221763
+    errors:
+    - symerror: 0.2844833166853044
+      label: stat
+    - symerror: 0.5427927051076801
+      label: syst
+  - value: 1.827047990805001
+    errors:
+    - symerror: 0.25675130421835396
+      label: stat
+    - symerror: 0.4051137923118959
+      label: syst
+  - value: 0.5226902076304161
+    errors:
+    - symerror: 0.15255112337201557
+      label: stat
+    - symerror: 0.13883361705637987
+      label: syst
+  - value: 0.0
+    errors:
+    - symerror: 0.20593886324659413
+      label: stat
+    - symerror: 0.0
+      label: syst
+  - value: 4.816191668057593
+    errors:
+    - symerror: 0.4124607071372507
+      label: stat
+    - symerror: 1.0592035667395345
+      label: syst
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: total
+description: Yields for SMS-TStauStau_MStau-100_ctau-300mm_mLSP-1_from_ctau-1000mm
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: SMS-TStauStau_MStau-100_ctau-300mm_mLSP-1_from_ctau-1000mm
+
+dependent_variables:
+- header:
+    name: Yield_2016_preVFP.2016_postVFP.2017.2018
+    units: ''
+  values:
+  - value: 0.0
+    errors:
+    - symerror: 0.019090475543204026
+      label: stat
+    - symerror: 0.0
+      label: syst
+  - value: 9.462616483103082
+    errors:
+    - symerror: 0.21590444225418118
+      label: stat
+    - symerror: 2.1887831925625845
+      label: syst
+  - value: 9.278277731718392
+    errors:
+    - symerror: 0.21746723744495755
+      label: stat
+    - symerror: 2.1865956211250435
+      label: syst
+  - value: 2.9715084847513125
+    errors:
+    - symerror: 0.12236973808778609
+      label: stat
+    - symerror: 0.6996644530508627
+      label: syst
+  - value: 0.05321642037200924
+    errors:
+    - symerror: 0.016719914477954047
+      label: stat
+    - symerror: 0.012547150269167858
+      label: syst
+  - value: 21.76561911994479
+    errors:
+    - symerror: 0.33039466685594987
+      label: stat
+    - symerror: 5.074268690052889
+      label: syst
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: total
+description: Yields for SMS-TStauStau_MStau-100_ctau-50mm_mLSP-1
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: SMS-TStauStau_MStau-100_ctau-50mm_mLSP-1
+
+dependent_variables:
+- header:
+    name: Yield_2016_preVFP.2016_postVFP.2017.2018
+    units: ''
+  values:
+  - value: 0.0
+    errors:
+    - symerror: 0.0016592656728282433
+      label: stat
+    - symerror: 0.0
+      label: syst
+  - value: 3.4331048162401094
+    errors:
+    - symerror: 0.03947312445508555
+      label: stat
+    - symerror: 0.7463515459243241
+      label: syst
+  - value: 5.554423242025347
+    errors:
+    - symerror: 0.049575103668988055
+      label: stat
+    - symerror: 1.2173136530976465
+      label: syst
+  - value: 3.5106566455039685
+    errors:
+    - symerror: 0.03928678805189642
+      label: stat
+    - symerror: 0.7821729146557873
+      label: syst
+  - value: 0.1038886701630904
+    errors:
+    - symerror: 0.006824050799323195
+      label: stat
+    - symerror: 0.023031961777748158
+      label: syst
+  - value: 12.602073373932516
+    errors:
+    - symerror: 0.07487214330299327
+      label: stat
+    - symerror: 2.7656860251990323
+      label: syst
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: total
+description: Yields for SMS-TStauStau_MStau-200_ctau-100mm_mLSP-1
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: SMS-TStauStau_MStau-200_ctau-100mm_mLSP-1
+
+dependent_variables:
+- header:
+    name: Yield_2016_preVFP.2016_postVFP.2017.2018
+    units: ''
+  values:
+  - value: 0.0
+    errors:
+    - symerror: 0.00169075896070484
+      label: stat
+    - symerror: 0.0
+      label: syst
+  - value: 2.169892684776622
+    errors:
+    - symerror: 0.03147836227700399
+      label: stat
+    - symerror: 0.4533717920917495
+      label: syst
+  - value: 3.4120830023103275
+    errors:
+    - symerror: 0.03909856007751357
+      label: stat
+    - symerror: 0.7303289845914372
+      label: syst
+  - value: 2.075521005468923
+    errors:
+    - symerror: 0.03062025377850641
+      label: stat
+    - symerror: 0.4526749392987331
+      label: syst
+  - value: 0.06410890345720936
+    errors:
+    - symerror: 0.005374572488165649
+      label: stat
+    - symerror: 0.014136278121040121
+      label: syst
+  - value: 7.721605596013082
+    errors:
+    - symerror: 0.05904295608002642
+      label: stat
+    - symerror: 1.6475689597101202
+      label: syst
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: total
+description: Yields for SMS-TStauStau_MStau-200_ctau-10mm_mLSP-1
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: SMS-TStauStau_MStau-200_ctau-10mm_mLSP-1
+
+dependent_variables:
+- header:
+    name: Yield_2016_preVFP.2016_postVFP.2017.2018
+    units: ''
+  values:
+  - value: 0.0
+    errors:
+    - symerror: 0.018507617815467996
+      label: stat
+    - symerror: 0.0
+      label: syst
+  - value: 1.410075978844973
+    errors:
+    - symerror: 0.06371481263292991
+      label: stat
+    - symerror: 0.31946708238667665
+      label: syst
+  - value: 2.345630443260813
+    errors:
+    - symerror: 0.08211778692864084
+      label: stat
+    - symerror: 0.5206327465386129
+      label: syst
+  - value: 1.3357262518544641
+    errors:
+    - symerror: 0.06305734146525448
+      label: stat
+    - symerror: 0.3069128689025528
+      label: syst
+  - value: 0.017729639116263553
+    errors:
+    - symerror: 0.008427338539431376
+      label: stat
+    - symerror: 0.007793075806905439
+      label: syst
+  - value: 5.109162313076514
+    errors:
+    - symerror: 0.12186121871387513
+      label: stat
+    - symerror: 1.150532333364697
+      label: syst
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: total
+description: Yields for SMS-TStauStau_MStau-200_ctau-300mm_mLSP-1_from_ctau-1000mm
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: SMS-TStauStau_MStau-200_ctau-300mm_mLSP-1_from_ctau-1000mm
+
+dependent_variables:
+- header:
+    name: Yield_2016_preVFP.2016_postVFP.2017.2018
+    units: ''
+  values:
+  - value: 0.0
+    errors:
+    - symerror: 0.0016564846253296843
+      label: stat
+    - symerror: 0.0
+      label: syst
+  - value: 4.108998516294242
+    errors:
+    - symerror: 0.04295282013923059
+      label: stat
+    - symerror: 0.8825016351784343
+      label: syst
+  - value: 6.611002368013834
+    errors:
+    - symerror: 0.05419990708855607
+      label: stat
+    - symerror: 1.4362285476930146
+      label: syst
+  - value: 4.2380323495951835
+    errors:
+    - symerror: 0.04330975500403152
+      label: stat
+    - symerror: 0.9424386368429857
+      label: syst
+  - value: 0.12438457481401541
+    errors:
+    - symerror: 0.007124514899915463
+      label: stat
+    - symerror: 0.02694868179488872
+      label: syst
+  - value: 15.082417808717276
+    errors:
+    - symerror: 0.08190890230853759
+      label: stat
+    - symerror: 3.2837178014454547
+      label: syst
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: total
+description: Yields for SMS-TStauStau_MStau-200_ctau-50mm_mLSP-1
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: SMS-TStauStau_MStau-200_ctau-50mm_mLSP-1
+
+dependent_variables:
+- header:
+    name: Yield_2016_preVFP.2016_postVFP.2017.2018
+    units: ''
+  values:
+  - value: 0.0
+    errors:
+    - symerror: 0.00035629283742619205
+      label: stat
+    - symerror: 0.0
+      label: syst
+  - value: 1.0240747873060538
+    errors:
+    - symerror: 0.01023158342857227
+      label: stat
+    - symerror: 0.21090381990806903
+      label: syst
+  - value: 2.4980012645299574
+    errors:
+    - symerror: 0.01589780698647695
+      label: stat
+    - symerror: 0.5176050346637663
+      label: syst
+  - value: 2.8389153543657417
+    errors:
+    - symerror: 0.0169122301564039
+      label: stat
+    - symerror: 0.595749860482838
+      label: syst
+  - value: 0.1488964732099498
+    errors:
+    - symerror: 0.003757457358036808
+      label: stat
+    - symerror: 0.03300290709594167
+      label: syst
+  - value: 6.5098878794117025
+    errors:
+    - symerror: 0.025643080569536736
+      label: stat
+    - symerror: 1.355644437006202
+      label: syst
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: total
+description: Yields for SMS-TStauStau_MStau-300_ctau-100mm_mLSP-1
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: SMS-TStauStau_MStau-300_ctau-100mm_mLSP-1
+
+dependent_variables:
+- header:
+    name: Yield_2016_preVFP.2016_postVFP.2017.2018
+    units: ''
+  values:
+  - value: 0.0
+    errors:
+    - symerror: 0.0003465347658522436
+      label: stat
+    - symerror: 0.0
+      label: syst
+  - value: 0.5748535971125575
+    errors:
+    - symerror: 0.007499604168792948
+      label: stat
+    - symerror: 0.11610894596966215
+      label: syst
+  - value: 1.3384732851775707
+    errors:
+    - symerror: 0.011355915222851483
+      label: stat
+    - symerror: 0.26920516881573187
+      label: syst
+  - value: 1.3536334880665217
+    errors:
+    - symerror: 0.011461176974961271
+      label: stat
+    - symerror: 0.2737543188863458
+      label: syst
+  - value: 0.0659040448204144
+    errors:
+    - symerror: 0.0024738594099446656
+      label: stat
+    - symerror: 0.014153489204052686
+      label: syst
+  - value: 3.3328644151770646
+    errors:
+    - symerror: 0.0179632800810075
+      label: stat
+    - symerror: 0.6724852482607045
+      label: syst
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: total
+description: Yields for SMS-TStauStau_MStau-300_ctau-10mm_mLSP-1
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: SMS-TStauStau_MStau-300_ctau-10mm_mLSP-1
+
+dependent_variables:
+- header:
+    name: Yield_2016_preVFP.2016_postVFP.2017.2018
+    units: ''
+  values:
+  - value: 0.0
+    errors:
+    - symerror: 0.0040299748667748546
+      label: stat
+    - symerror: 0.0
+      label: syst
+  - value: 0.4675853696109622
+    errors:
+    - symerror: 0.017480662746694763
+      label: stat
+    - symerror: 0.0959679785172492
+      label: syst
+  - value: 1.1834902451279483
+    errors:
+    - symerror: 0.02743651452139555
+      label: stat
+    - symerror: 0.24860171971283326
+      label: syst
+  - value: 1.2139608927062235
+    errors:
+    - symerror: 0.027361615067210143
+      label: stat
+    - symerror: 0.25402477214031766
+      label: syst
+  - value: 0.05456229425137082
+    errors:
+    - symerror: 0.006394570566331764
+      label: stat
+    - symerror: 0.013522854058170492
+      label: syst
+  - value: 2.919598801696505
+    errors:
+    - symerror: 0.04298702607718297
+      label: stat
+    - symerror: 0.6108613140919097
+      label: syst
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: total
+description: Yields for SMS-TStauStau_MStau-300_ctau-300mm_mLSP-1_from_ctau-1000mm
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: SMS-TStauStau_MStau-300_ctau-300mm_mLSP-1_from_ctau-1000mm
+
+dependent_variables:
+- header:
+    name: Yield_2016_preVFP.2016_postVFP.2017.2018
+    units: ''
+  values:
+  - value: 0.0
+    errors:
+    - symerror: 0.0004923876099013122
+      label: stat
+    - symerror: 0.0
+      label: syst
+  - value: 1.1720388655223697
+    errors:
+    - symerror: 0.012701885267038195
+      label: stat
+    - symerror: 0.23857426701883058
+      label: syst
+  - value: 2.816374228203507
+    errors:
+    - symerror: 0.019677129758657035
+      label: stat
+    - symerror: 0.5789290068269192
+      label: syst
+  - value: 3.1319500380478402
+    errors:
+    - symerror: 0.02064381215196038
+      label: stat
+    - symerror: 0.6470467888013135
+      label: syst
+  - value: 0.17069109224980616
+    errors:
+    - symerror: 0.004584144789165097
+      label: stat
+    - symerror: 0.03671817449733671
+      label: syst
+  - value: 7.291054224023523
+    errors:
+    - symerror: 0.03155485205938201
+      label: stat
+    - symerror: 1.4993283110768871
+      label: syst
+independent_variables:
+- header:
+    name: Bin
+    units: ''
+  values:
+  - value: '1'
+  - value: '2'
+  - value: '3'
+  - value: '4'
+  - value: '5'
+  - value: total
+description: Yields for SMS-TStauStau_MStau-300_ctau-50mm_mLSP-1
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: SMS-TStauStau_MStau-300_ctau-50mm_mLSP-1
+

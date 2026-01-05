@@ -1,13 +1,22 @@
 import ROOT
+import argparse
 import yaml
 import ctypes
 
-f = ROOT.TFile("limits.root")
+input_file = "EXO-24-020_HEPData/data/Figure7a_Figure8_limits.root"
+f = ROOT.TFile(input_file)
 ctau = [10,30,50,100,200,300]
+
+with open("dictionary.yaml") as fi:
+    table_metadata = yaml.safe_load(fi)
+
+# used for figure 8 and 9
 
 for c in ctau:
     graphs = {
         "observed": f"{c}mm/g1_xsecul_obs_{c}mm",
+        # "obs_plus1sigma": f"",
+        # "obs_minus1sigma": f"",
         "expected": f"{c}mm/g1_xsecul_exp_{c}mm",
         "exp_plus1sigma": f"{c}mm/g1_xsecul_exp_p1_{c}mm",
         "exp_minus1sigma": f"{c}mm/g1_xsecul_exp_m1_{c}mm",
@@ -34,24 +43,34 @@ for c in ctau:
             x_vals.append(x.value)
             y_vals.append(y.value)
 
+        meta = table_metadata.get(label, {})
+
         table = {
-            "name": label,
-            "dependent_variables": [
-                {"header": {"name": "95% CL limit"},
-                "qualifiers": [
-            {"name": "RE", "value": "pp → \tilde{τ}\tilde{τ}"},
-            {"name": "MODEL", "value": "GMSB maximally mixed stau scenario"},
-            {"name": "CTAU", "value": f"{c} mm"},  # use loop variable
-            {"name": "SQRT(S)", "value": "13 TeV"},
-            {"name": "LUMI", "value": "138 fb^{-1}"},
-            {"name": "CL", "value": "95%"},
+            "name": meta.get("name", label),
+            "description": meta.get("description", ""),
+            "keywords": [
+                {"name": "cmenergies", "values": [13000.0]},
             ],
-                 "values": [{"value": yv} for yv in y_vals]}
+            "data_file": meta.get("data_file", ""),
+            "dependent_variables": [
+                {
+                    "header": {"name": "95% CL upper limit on cross section [fb]"},
+                    "qualifiers": [
+                        {"name": "RE", "value": "pp → stau stau"},
+                        {"name": "MODEL", "value": "GMSB maximally mixed stau scenario"},
+                        {"name": "CTAU", "value": f"{c} mm"},
+                        {"name": "LUMI", "value": "138 fb^{-1}"},
+                        {"name": "CL", "value": "95%"},
+                    ],
+                    "values": [{"value": yv} for yv in y_vals],
+                }
             ],
             "independent_variables": [
-                {"header": {"name": "m_stau [GeV]", "units": "GeV"},
-                 "values": [{"value": xv} for xv in x_vals]}
-            ],            
+                {
+                    "header": {"name": "m_stau", "units": "GeV"},
+                    "values": [{"value": xv} for xv in x_vals],
+                }
+            ],
         }
         tables.append(table)
 
