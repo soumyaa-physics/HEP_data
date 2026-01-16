@@ -3,18 +3,18 @@ import yaml
 import ctypes
 import os
 
-input_file = "EXO-24-020_HEPData/data/Figure7a_Figure8_limits.root"
+input_file = "EXO-24-020_HEPData/data/Figure7b_Figure9_limits.root"
 f = ROOT.TFile(input_file)
 
-with open("7adictionary.yaml") as fi:
+with open("7bdictionary.yaml") as fi:
     table_metadata = yaml.safe_load(fi)
 
 graphs = {
-    # "observed": {
-    #     "path": "obs/h2_xsecul_obs_interp",
-    #     "description": "2D histogram (color axis)",
-    #     "type": "TH2D"
-    # },
+    "observed": {
+        "path": "obs/h2_xsecul_obs_interp",
+        "description": "2D histogram (color axis)",
+        "type": "TH2D"
+    },
     "observed": {
         "path": "obs/contour_obs",
         "description": "observed exclusion contours",
@@ -54,13 +54,7 @@ graphs = {
         "path": "exp_p2/contour_exp_p2",
         "description": "expected exclusion contours (plus 2 sigma)",
         "type": "TGraph"
-    },
-    #     "theory": {
-    #     "path": "???",
-    #     "description": "theortical cross section",
-    #     "type": "??"
-    # },
-    
+    },    
 }
 
 tables = []
@@ -120,7 +114,7 @@ for label, info in graphs.items():
                 "header": {"name": dep_var_header},
                 "qualifiers": [
                     {"name": "RE", "value": "pp → \\tilde{τ}\\tilde{τ}"},
-                    {"name": "MODEL", "value": "GMSB maximally mixed stau scenario"},
+                    {"name": "MODEL", "value": "GMSB mass-degenerate stau scenario"},
                     {"name": "SQRT(S)", "value": "13 TeV"},
                     {"name": "LUMI", "value": "138 fb^{-1}"},
                     {"name": "CL", "value": "95%"},
@@ -132,8 +126,8 @@ for label, info in graphs.items():
     }
 
     tables.append(table)
-output_dir = "./Figure7"
-outname = os.path.join(output_dir, f"Figure7a.yaml")
+output_dir = "./examples"
+outname = os.path.join(output_dir, f"CHanged_Figure7b.yaml")
 
 with open(outname, "w") as f_out:
     for table in tables:

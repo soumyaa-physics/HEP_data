@@ -1,0 +1,22 @@
+*.swp
+.#*
+*__pycache__*
+*.bak
+*.bak*
+*.h5
+*.hdf5
+*.pdf
+*.png
+*.pyc
+*.root
+*~
+
+# Other miscellaneous stuff
+debug/
+log/
+logs/
+temp/
+tmp/
+plots/
+.vscode/*
+!.vscode/settings.json

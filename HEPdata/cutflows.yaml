@@ -1,0 +1,777 @@
+dependent_variables:
+- header:
+    name: Event yield
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(100)$}\\hbox{$c\\tau_{0}(10mm)$}}
+  - name: LUMI
+    value: 138 fb^{-1}
+  values:
+  - value: 16060.0
+  - value: 990.7
+    errors:
+    - label: stat
+      symerror: 2.477
+  - value: 967.8
+    errors:
+    - label: stat
+      symerror: 2.457
+  - value: 710.3
+    errors:
+    - label: stat
+      symerror: 2.126
+  - value: 521.6
+    errors:
+    - label: stat
+      symerror: 1.824
+  - value: 405.9
+    errors:
+    - label: stat
+      symerror: 1.604
+  - value: 19.91
+    errors:
+    - label: stat
+      symerror: 0.3625
+  - value: 18.96
+    errors:
+    - label: stat
+      symerror: 0.3536
+  - value: 18.22
+    errors:
+    - label: stat
+      symerror: 0.3462
+- header:
+    name: Selection efficiency
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(100)$}\\hbox{$c\\tau_{0}(10mm)$}}
+  values:
+  - value: 1.0
+  - value: 0.06167
+    errors:
+    - label: stat
+      symerror: 0.0001542
+  - value: 0.06024
+    errors:
+    - label: stat
+      symerror: 0.0001529
+  - value: 0.04422
+    errors:
+    - label: stat
+      symerror: 0.0001323
+  - value: 0.03247
+    errors:
+    - label: stat
+      symerror: 0.0001136
+  - value: 0.02527
+    errors:
+    - label: stat
+      symerror: 9.984e-05
+  - value: 0.00124
+    errors:
+    - label: stat
+      symerror: 2.257e-05
+  - value: 0.00118
+    errors:
+    - label: stat
+      symerror: 2.201e-05
+  - value: 0.001134
+    errors:
+    - label: stat
+      symerror: 2.155e-05
+- header:
+    name: Event yield
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(100)$}\\hbox{$c\\tau_{0}(50mm)$}}
+  - name: LUMI
+    value: 138 fb^{-1}
+  values:
+  - value: 16060.0
+  - value: 939.6
+    errors:
+    - label: stat
+      symerror: 2.339
+  - value: 916.0
+    errors:
+    - label: stat
+      symerror: 2.316
+  - value: 722.6
+    errors:
+    - label: stat
+      symerror: 2.071
+  - value: 619.8
+    errors:
+    - label: stat
+      symerror: 1.923
+  - value: 485.6
+    errors:
+    - label: stat
+      symerror: 1.698
+  - value: 31.2
+    errors:
+    - label: stat
+      symerror: 0.4414
+  - value: 29.9
+    errors:
+    - label: stat
+      symerror: 0.4321
+  - value: 28.93
+    errors:
+    - label: stat
+      symerror: 0.4247
+- header:
+    name: Selection efficiency
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(100)$}\\hbox{$c\\tau_{0}(50mm)$}}
+  values:
+  - value: 1.0
+  - value: 0.05849
+    errors:
+    - label: stat
+      symerror: 0.0001456
+  - value: 0.05702
+    errors:
+    - label: stat
+      symerror: 0.0001442
+  - value: 0.04498
+    errors:
+    - label: stat
+      symerror: 0.0001289
+  - value: 0.03858
+    errors:
+    - label: stat
+      symerror: 0.0001197
+  - value: 0.03023
+    errors:
+    - label: stat
+      symerror: 0.0001057
+  - value: 0.001942
+    errors:
+    - label: stat
+      symerror: 2.748e-05
+  - value: 0.001861
+    errors:
+    - label: stat
+      symerror: 2.69e-05
+  - value: 0.001801
+    errors:
+    - label: stat
+      symerror: 2.644e-05
+- header:
+    name: Event yield
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(100)$}\\hbox{$c\\tau_{0}(100mm)$}}
+  - name: LUMI
+    value: 138 fb^{-1}
+  values:
+  - value: 16060.0
+  - value: 913.2
+    errors:
+    - label: stat
+      symerror: 2.31
+  - value: 889.7
+    errors:
+    - label: stat
+      symerror: 2.288
+  - value: 720.6
+    errors:
+    - label: stat
+      symerror: 2.07
+  - value: 638.2
+    errors:
+    - label: stat
+      symerror: 1.951
+  - value: 500.4
+    errors:
+    - label: stat
+      symerror: 1.725
+  - value: 23.32
+    errors:
+    - label: stat
+      symerror: 0.381
+  - value: 22.15
+    errors:
+    - label: stat
+      symerror: 0.3713
+  - value: 21.41
+    errors:
+    - label: stat
+      symerror: 0.3649
+- header:
+    name: Selection efficiency
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(100)$}\\hbox{$c\\tau_{0}(100mm)$}}
+  values:
+  - value: 1.0
+  - value: 0.05685
+    errors:
+    - label: stat
+      symerror: 0.0001438
+  - value: 0.05538
+    errors:
+    - label: stat
+      symerror: 0.0001424
+  - value: 0.04486
+    errors:
+    - label: stat
+      symerror: 0.0001288
+  - value: 0.03972
+    errors:
+    - label: stat
+      symerror: 0.0001215
+  - value: 0.03115
+    errors:
+    - label: stat
+      symerror: 0.0001074
+  - value: 0.001452
+    errors:
+    - label: stat
+      symerror: 2.372e-05
+  - value: 0.001379
+    errors:
+    - label: stat
+      symerror: 2.311e-05
+  - value: 0.001333
+    errors:
+    - label: stat
+      symerror: 2.271e-05
+- header:
+    name: Event yield
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(200)$}\\hbox{$c\\tau_{0}(10mm)$}}
+  - name: LUMI
+    value: 138 fb^{-1}
+  values:
+  - value: 1394.0
+  - value: 304.2
+    errors:
+    - label: stat
+      symerror: 0.3616
+  - value: 298.4
+    errors:
+    - label: stat
+      symerror: 0.3597
+  - value: 200.8
+    errors:
+    - label: stat
+      symerror: 0.308
+  - value: 138.4
+    errors:
+    - label: stat
+      symerror: 0.2611
+  - value: 112.9
+    errors:
+    - label: stat
+      symerror: 0.2367
+  - value: 10.97
+    errors:
+    - label: stat
+      symerror: 0.07697
+  - value: 10.52
+    errors:
+    - label: stat
+      symerror: 0.07539
+  - value: 10.14
+    errors:
+    - label: stat
+      symerror: 0.07395
+- header:
+    name: Selection efficiency
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(200)$}\\hbox{$c\\tau_{0}(10mm)$}}
+  values:
+  - value: 1.0
+  - value: 0.2183
+    errors:
+    - label: stat
+      symerror: 0.0002595
+  - value: 0.2141
+    errors:
+    - label: stat
+      symerror: 0.0002581
+  - value: 0.1441
+    errors:
+    - label: stat
+      symerror: 0.000221
+  - value: 0.09933
+    errors:
+    - label: stat
+      symerror: 0.0001873
+  - value: 0.08102
+    errors:
+    - label: stat
+      symerror: 0.0001698
+  - value: 0.007873
+    errors:
+    - label: stat
+      symerror: 5.523e-05
+  - value: 0.007548
+    errors:
+    - label: stat
+      symerror: 5.41e-05
+  - value: 0.007274
+    errors:
+    - label: stat
+      symerror: 5.306e-05
+- header:
+    name: Event yield
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(200)$}\\hbox{$c\\tau_{0}(50mm)$}}
+  - name: LUMI
+    value: 138 fb^{-1}
+  values:
+  - value: 1394.0
+  - value: 283.0
+    errors:
+    - label: stat
+      symerror: 0.3503
+  - value: 276.7
+    errors:
+    - label: stat
+      symerror: 0.3479
+  - value: 207.8
+    errors:
+    - label: stat
+      symerror: 0.3107
+  - value: 174.4
+    errors:
+    - label: stat
+      symerror: 0.2882
+  - value: 142.6
+    errors:
+    - label: stat
+      symerror: 0.2625
+  - value: 20.41
+    errors:
+    - label: stat
+      symerror: 0.1046
+  - value: 19.58
+    errors:
+    - label: stat
+      symerror: 0.1025
+  - value: 18.86
+    errors:
+    - label: stat
+      symerror: 0.1005
+- header:
+    name: Selection efficiency
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(200)$}\\hbox{$c\\tau_{0}(50mm)$}}
+  values:
+  - value: 1.0
+  - value: 0.2031
+    errors:
+    - label: stat
+      symerror: 0.0002514
+  - value: 0.1986
+    errors:
+    - label: stat
+      symerror: 0.0002497
+  - value: 0.1491
+    errors:
+    - label: stat
+      symerror: 0.000223
+  - value: 0.1252
+    errors:
+    - label: stat
+      symerror: 0.0002068
+  - value: 0.1024
+    errors:
+    - label: stat
+      symerror: 0.0001883
+  - value: 0.01465
+    errors:
+    - label: stat
+      symerror: 7.509e-05
+  - value: 0.01405
+    errors:
+    - label: stat
+      symerror: 7.356e-05
+  - value: 0.01353
+    errors:
+    - label: stat
+      symerror: 7.213e-05
+- header:
+    name: Event yield
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(200)$}\\hbox{$c\\tau_{0}(100mm)$}}
+  - name: LUMI
+    value: 138 fb^{-1}
+  values:
+  - value: 1394.0
+  - value: 269.3
+    errors:
+    - label: stat
+      symerror: 0.3433
+  - value: 262.6
+    errors:
+    - label: stat
+      symerror: 0.3406
+  - value: 208.0
+    errors:
+    - label: stat
+      symerror: 0.3103
+  - value: 182.8
+    errors:
+    - label: stat
+      symerror: 0.2938
+  - value: 149.4
+    errors:
+    - label: stat
+      symerror: 0.2678
+  - value: 17.14
+    errors:
+    - label: stat
+      symerror: 0.09601
+  - value: 16.4
+    errors:
+    - label: stat
+      symerror: 0.09397
+  - value: 15.75
+    errors:
+    - label: stat
+      symerror: 0.09193
+- header:
+    name: Selection efficiency
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(200)$}\\hbox{$c\\tau_{0}(100mm)$}}
+  values:
+  - value: 1.0
+  - value: 0.1932
+    errors:
+    - label: stat
+      symerror: 0.0002464
+  - value: 0.1885
+    errors:
+    - label: stat
+      symerror: 0.0002444
+  - value: 0.1492
+    errors:
+    - label: stat
+      symerror: 0.0002227
+  - value: 0.1312
+    errors:
+    - label: stat
+      symerror: 0.0002108
+  - value: 0.1072
+    errors:
+    - label: stat
+      symerror: 0.0001922
+  - value: 0.0123
+    errors:
+    - label: stat
+      symerror: 6.89e-05
+  - value: 0.01177
+    errors:
+    - label: stat
+      symerror: 6.743e-05
+  - value: 0.0113
+    errors:
+    - label: stat
+      symerror: 6.597e-05
+- header:
+    name: Event yield
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(300)$}\\hbox{$c\\tau_{0}(10mm)$}}
+  - name: LUMI
+    value: 138 fb^{-1}
+  values:
+  - value: 289.1
+  - value: 107.2
+    errors:
+    - label: stat
+      symerror: 0.08751
+  - value: 105.4
+    errors:
+    - label: stat
+      symerror: 0.08728
+  - value: 65.58
+    errors:
+    - label: stat
+      symerror: 0.07594
+  - value: 43.3
+    errors:
+    - label: stat
+      symerror: 0.0644
+  - value: 36.97
+    errors:
+    - label: stat
+      symerror: 0.05998
+  - value: 4.701
+    errors:
+    - label: stat
+      symerror: 0.02279
+  - value: 4.411
+    errors:
+    - label: stat
+      symerror: 0.02209
+  - value: 4.25
+    errors:
+    - label: stat
+      symerror: 0.02166
+- header:
+    name: Selection efficiency
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(300)$}\\hbox{$c\\tau_{0}(10mm)$}}
+  values:
+  - value: 1.0
+  - value: 0.3707
+    errors:
+    - label: stat
+      symerror: 0.0003027
+  - value: 0.3646
+    errors:
+    - label: stat
+      symerror: 0.0003019
+  - value: 0.2268
+    errors:
+    - label: stat
+      symerror: 0.0002627
+  - value: 0.1498
+    errors:
+    - label: stat
+      symerror: 0.0002227
+  - value: 0.1279
+    errors:
+    - label: stat
+      symerror: 0.0002075
+  - value: 0.01626
+    errors:
+    - label: stat
+      symerror: 7.884e-05
+  - value: 0.01526
+    errors:
+    - label: stat
+      symerror: 7.641e-05
+  - value: 0.0147
+    errors:
+    - label: stat
+      symerror: 7.493e-05
+- header:
+    name: Event yield
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(300)$}\\hbox{$c\\tau_{0}(50mm)$}}
+  - name: LUMI
+    value: 138 fb^{-1}
+  values:
+  - value: 289.1
+  - value: 100.9
+    errors:
+    - label: stat
+      symerror: 0.1002
+  - value: 98.83
+    errors:
+    - label: stat
+      symerror: 0.0999
+  - value: 70.47
+    errors:
+    - label: stat
+      symerror: 0.09044
+  - value: 58.01
+    errors:
+    - label: stat
+      symerror: 0.08417
+  - value: 49.6
+    errors:
+    - label: stat
+      symerror: 0.07889
+  - value: 9.759
+    errors:
+    - label: stat
+      symerror: 0.03812
+  - value: 9.19
+    errors:
+    - label: stat
+      symerror: 0.03703
+  - value: 8.849
+    errors:
+    - label: stat
+      symerror: 0.03629
+- header:
+    name: Selection efficiency
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(300)$}\\hbox{$c\\tau_{0}(50mm)$}}
+  values:
+  - value: 1.0
+  - value: 0.3491
+    errors:
+    - label: stat
+      symerror: 0.0003467
+  - value: 0.3418
+    errors:
+    - label: stat
+      symerror: 0.0003455
+  - value: 0.2437
+    errors:
+    - label: stat
+      symerror: 0.0003128
+  - value: 0.2006
+    errors:
+    - label: stat
+      symerror: 0.0002911
+  - value: 0.1716
+    errors:
+    - label: stat
+      symerror: 0.0002729
+  - value: 0.03376
+    errors:
+    - label: stat
+      symerror: 0.0001319
+  - value: 0.03179
+    errors:
+    - label: stat
+      symerror: 0.0001281
+  - value: 0.03061
+    errors:
+    - label: stat
+      symerror: 0.0001255
+- header:
+    name: Event yield
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(300)$}\\hbox{$c\\tau_{0}(100mm)$}}
+  - name: LUMI
+    value: 138 fb^{-1}
+  values:
+  - value: 289.1
+  - value: 96.46
+    errors:
+    - label: stat
+      symerror: 0.08682
+  - value: 94.09
+    errors:
+    - label: stat
+      symerror: 0.08637
+  - value: 72.16
+    errors:
+    - label: stat
+      symerror: 0.07978
+  - value: 62.63
+    errors:
+    - label: stat
+      symerror: 0.07588
+  - value: 53.36
+    errors:
+    - label: stat
+      symerror: 0.07118
+  - value: 8.694
+    errors:
+    - label: stat
+      symerror: 0.03163
+  - value: 8.18
+    errors:
+    - label: stat
+      symerror: 0.03071
+  - value: 7.874
+    errors:
+    - label: stat
+      symerror: 0.0301
+- header:
+    name: Selection efficiency
+  qualifiers:
+  - name: MODEL
+    value: GMSB maximally mixed stau scenario
+  - name: SAMPLE
+    value: \\vtop{\\hbox{$m_{\\tilde{\\tau}}(300)$}\\hbox{$c\\tau_{0}(100mm)$}}
+  values:
+  - value: 1.0
+  - value: 0.3336
+    errors:
+    - label: stat
+      symerror: 0.0003003
+  - value: 0.3254
+    errors:
+    - label: stat
+      symerror: 0.0002987
+  - value: 0.2496
+    errors:
+    - label: stat
+      symerror: 0.0002759
+  - value: 0.2166
+    errors:
+    - label: stat
+      symerror: 0.0002625
+  - value: 0.1846
+    errors:
+    - label: stat
+      symerror: 0.0002462
+  - value: 0.03007
+    errors:
+    - label: stat
+      symerror: 0.0001094
+  - value: 0.0283
+    errors:
+    - label: stat
+      symerror: 0.0001062
+  - value: 0.02723
+    errors:
+    - label: stat
+      symerror: 0.0001041
+independent_variables:
+- header:
+    name: Selection step
+  values:
+  - value: Total
+  - value: Satisfies $p^\text{miss}_\text{T}$ triggers
+  - value: Passes filters
+  - value: No veto-electrons or veto-muons
+  - value: No b-tagged jets
+  - value: Offline $p^\text{miss}_\text{T} > 120$ GeV
+  - value: Exactly 2 $\tau^\text{dis}_\text{h}$ candidate jets
+  - value: $\Delta\phi(\text{j1}, \text{j2}) > 0.5$
+  - value: $\H_\text{T}^{\text{soft, fwd}} < 50$ GeV
+description: Signal yields and efficiencies in the maximally mixed scenario for the
+  BR selections, for representative $(m_{\tilde{\tau}}, c\tau_{0})$ values.
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: Signal cutflows

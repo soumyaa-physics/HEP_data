@@ -1,0 +1,74 @@
+dependent_variables:
+- header:
+    name: $\Delta m(\tilde\chi^0_2 / \tilde\chi^\pm_1,\tilde\chi^0_1) = 0.2\;\mathrm{GeV}$
+  values:
+  - value: '97466.6'
+  - value: '29759.0'
+  - value: '6584.5'
+  - value: '6361.4'
+  - value: '5364.4'
+  - value: '3843.0'
+  - value: '3108.9'
+  - value: '2988.3'
+  - value: '2590.3'
+  - value: '2143.8'
+  - value: '2094.1'
+  - value: '1877.1'
+  - value: '1048.7'
+  - value: '425.8'
+  - value: '622.9'
+- header:
+    name: $\Delta m(\tilde\chi^0_2 / \tilde\chi^\pm_1,\tilde\chi^0_1) = 1.0\;\mathrm{GeV}$
+  values:
+  - value: '97466.6'
+  - value: '29391.6'
+  - value: '6527.0'
+  - value: '6315.0'
+  - value: '5326.3'
+  - value: '3833.2'
+  - value: '3100.5'
+  - value: '2983.9'
+  - value: '2575.8'
+  - value: '2132.8'
+  - value: '2044.7'
+  - value: '1833.0'
+  - value: '1005.8'
+  - value: '417.7'
+  - value: '588.1'
+- header:
+    name: $\Delta m(\tilde\chi^0_2 / \tilde\chi^\pm_1,\tilde\chi^0_1) = 5.0\;\mathrm{GeV}$
+  values:
+  - value: '97466.6'
+  - value: '27560.7'
+  - value: '6135.4'
+  - value: '5907.7'
+  - value: '5015.3'
+  - value: '3623.5'
+  - value: '2924.2'
+  - value: '2813.3'
+  - value: '2435.9'
+  - value: '1864.1'
+  - value: '1467.2'
+  - value: '1293.4'
+  - value: '648.8'
+  - value: '264.0'
+  - value: '384.8'
+independent_variables:
+- header:
+    name: Variable
+  values:
+  - value: Initial number of events ($\mathcal{L}\times\sigma$)
+  - value: $E_{\mathrm{T}}^{\mathrm{miss}} > 125$ GeV (generator level)
+  - value: Trigger selection and $E_{\mathrm{T}}^{\mathrm{miss}} > 250$ GeV
+  - value: Event cleaning
+  - value: VBF-jet pair
+  - value: $m_{jj} > 600$ GeV
+  - value: $|\Delta\eta_{jj}| > 3.0$
+  - value: $p_{\mathrm{T}}(j_{1}^{\mathrm{VBF}}) > 80$ GeV
+  - value: $p_{\mathrm{T}}(j_{2}^{\mathrm{VBF}}) > 40$ GeV
+  - value: $\mathrm{min}\left(\Delta\phi\left(\mathbf{j},\mathbf{p}_\mathrm{T}^\mathrm{miss}\right)\right)>0.4$
+  - value: Lepton veto
+  - value: $b-$jet veto
+  - value: BDT Score $> 0.6$
+  - value: $\textbf{SR}_{\textbf{2j}}$
+  - value: $\textbf{SR}_{\mathbf{\geq}\textbf{3j}}$

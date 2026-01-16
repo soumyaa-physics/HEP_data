@@ -1,0 +1,314 @@
+---
+# Figure 4
+name: "Figure 4a"
+description: "Distributions of $p_\text{T, j2}$ for events in the signal region.
+  The signal distributions expected in the maximally mixed scenario for a few representative sets of $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ values are overlaid: 
+  (100, 50), (100, 100), (200, 50), and (200, 100). 
+  In bins where the observed yield is zero, the Poissonian upper limit at 68% CL is shown as a positive uncertainty. 
+  The last bin includes the overflow."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure4a.yaml
+
+---
+name: "Figure 4b"
+description: "Distributions of $p^\text{miss}_\text{T}$ for events in the signal region.
+  The signal distributions expected in the maximally mixed scenario for a few representative sets of $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ values are overlaid: 
+  (100, 50), (100, 100), (200, 50), and (200, 100). 
+  In bins where the observed yield is zero, the Poissonian upper limit at 68% CL is shown as a positive uncertainty. 
+  The last bin includes the overflow."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure4b.yaml
+
+---
+name: "Figure 4c"
+description: "Distributions of $m_\text{T2}$ for events in the signal region.
+  The signal distributions expected in the maximally mixed scenario for a few representative sets of $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ values are overlaid: 
+  (100, 50), (100, 100), (200, 50), and (200, 100). 
+  In bins where the observed yield is zero, the Poissonian upper limit at 68% CL is shown as a positive uncertainty. 
+  The last bin includes the overflow."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure4c.yaml
+
+---
+# Figure 5
+name: "Figure 5"
+description: "Observed and predicted event yields in the eight BRT1 bins, as defined in Table 2.
+    The signal yields expected in the maximally mixed scenario for a few representative sets of $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ values are overlaid: 
+    (100, 50), (100, 100), (200, 50), and (200, 100)."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure5.yaml
+
+---
+# Figure 6
+name: "Figure 6a (prefit yields)"
+description: "Observed and predicted event yields in the eight SR bins as defined in Table 2. 
+    The signal yields expected in the maximally mixed scenario for a few representative sets of $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ values are overlaid: 
+    (100, 50), (100, 100), (200, 50), and (200, 100). 
+    The predicted yields and uncertainties are before the maximum likelihood fit to data under the background-only hypothesis, as described in Section 8."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure6a.yaml
+
+---
+name: "Figure 6b (postfit yields)"
+description: "Observed and predicted event yields in the eight SR bins as defined in Table 2. 
+    The signal yields expected in the maximally mixed scenario for a few representative sets of $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ values are overlaid: 
+    (100, 50), (100, 100), (200, 50), and (200, 100). 
+    The predicted yields and uncertainties are after the maximum likelihood fit to data under the background-only hypothesis, as described in Section 8."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure6b.yaml
+
+---
+# Figure 7a (observed limits)
+name: "Figure 7a (observed limits, maximally mixed scenario)"
+description: "Observed upper limits in the $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ plane, for the maximally mixed scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7a_limits_obs.yaml
+
+---
+# Figure 7a (observed exclusion)
+name: "Figure 7a (observed exclusion, maximally mixed scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the observed exclusion contour, for the maximally mixed scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7a_exclusion_obs.yaml
+
+---
+# Figure 7a (observed exclusion)
+
+name: "Figure 7a (observed exclusion, maximally mixed scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the observed exclusion contour, for the maximally mixed scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7a_exclusion_obs.yaml
+
+---
+name: "Figure 7a (observed$+1\\sigma$ exclusion, maximally mixed scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the observed$+1\\sigma$ exclusion contour, for the maximally mixed scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7a_exclusion_obs-p1sigma.yaml
+
+---
+name: "Figure 7a (observed$-1\\sigma$ exclusion, maximally mixed scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the observed$-1\\sigma$ exclusion contour, for the maximally mixed scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7a_exclusion_obs-m1sigma.yaml
+
+---
+# Figure 7a (expected exclusion)
+name: "Figure 7a (expected exclusion, maximally mixed scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected exclusion contour, for the maximally mixed scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7a_exclusion_exp.yaml
+
+---
+name: "Figure 7a (expected$+1\\sigma$ exclusion, maximally mixed scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected$+1\\sigma$ exclusion contour, for the maximally mixed scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7a_exclusion_exp-p1sigma.yaml
+
+---
+name: "Figure 7a (expected$-1\\sigma$ exclusion, maximally mixed scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected$-1\\sigma$ exclusion contour, for the maximally mixed scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7a_exclusion_exp-m1sigma.yaml
+
+---
+name: "Figure 7a (expected$-2\\sigma$ exclusion, maximally mixed scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected$-2\\sigma$ exclusion contour, for the maximally mixed scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7a_exclusion_exp-m2sigma.yaml
+
+---
+# Figure 7b (observed limits)
+name: "Figure 7b (observed limits, mass-degenerate scenario)"
+description: "Observed upper limits in the $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ plane, for the mass-degenerate scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7b_limits_obs.yaml
+
+---
+# Figure 7b (observed exclusion)
+name: "Figure 7b (observed exclusion, mass-degenerate scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the observed exclusion contour, for the mass-degenerate scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7b_exclusion_obs.yaml
+
+---
+name: "Figure 7b (observed$+1\\sigma$ exclusion, mass-degenerate scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the observed$+1\\sigma$ exclusion contour, for the mass-degenerate scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7b_exclusion_obs-p1sigma.yaml
+
+---
+name: "Figure 7b (observed$-1\\sigma$ exclusion, mass-degenerate scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the observed$-1\\sigma$ exclusion contour, for the mass-degenerate scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7b_exclusion_obs-m1sigma.yaml
+
+---
+# Figure 7b (expected exclusion)
+name: "Figure 7b (expected exclusion, mass-degenerate scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected exclusion contour, for the mass-degenerate scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7b_exclusion_exp.yaml
+
+---
+name: "Figure 7b (expected$+1\\sigma$ exclusion, mass-degenerate scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected$+1\\sigma$ exclusion contour, for the mass-degenerate scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7b_exclusion_exp-p1sigma.yaml
+
+---
+name: "Figure 7b (expected$-1\\sigma$ exclusion, mass-degenerate scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected$-1\\sigma$ exclusion contour, for the mass-degenerate scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7b_exclusion_exp-m1sigma.yaml
+
+---
+name: "Figure 7b (expected$+2\\sigma$ exclusion, mass-degenerate scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected$+2\\sigma$ exclusion contour, for the mass-degenerate scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7b_exclusion_exp-p2sigma.yaml
+
+---
+name: "Figure 7b (expected$-2\\sigma$ exclusion, mass-degenerate scenario)"
+description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected$-2\\sigma$ exclusion contour, for the mass-degenerate scenario."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure7b_exclusion_exp-m2sigma.yaml
+
+---
+# Figure 8
+
+name: "Figure 8a ($c\tau_{0}=10$ mm, maximally mixed scenario)"
+description: "Cross section upper limits at 95% CL for the pair production of long-lived staus in the maximally mixed scenario, 
+  as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=10$ mm."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure8a.yaml
+
+---
+name: "Figure 8b ($c\tau_{0}=30$ mm, maximally mixed scenario)"
+description: "Cross section upper limits at 95% CL for the pair production of long-lived staus in the maximally mixed scenario, 
+  as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=30$ mm."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure8b.yaml
+
+---
+name: "Figure 8c ($c\tau_{0}=50$ mm, maximally mixed scenario)"
+description: "Cross section upper limits at 95% CL for the pair production of long-lived staus in the maximally mixed scenario, 
+  as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=50$ mm."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure8c.yaml
+
+---
+name: "Figure 8d ($c\tau_{0}=100$ mm, maximally mixed scenario)"
+description: "Cross section upper limits at 95% CL for the pair production of long-lived staus in the maximally mixed scenario, 
+  as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=100$ mm."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure8d.yaml
+
+---
+name: "Figure 8e ($c\tau_{0}=200$ mm, maximally mixed scenario)"
+description: "Cross section upper limits at 95% CL for the pair production of long-lived staus in the maximally mixed scenario, 
+  as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=200$ mm."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure8e.yaml
+
+---
+name: "Figure 8f ($c\tau_{0}=300$ mm, maximally mixed scenario)"
+description: "Cross section upper limits at 95% CL for the pair production of long-lived staus in the maximally mixed scenario, 
+  as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=300$ mm."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure8f.yaml
+
+---
+# Figure 9
+name: "Figure 9a ($c\tau_{0}=10$ mm, mass-degenerate scenario)"
+description: "Cross section upper limits at 95% CL for the pair production of long-lived staus in the mass-degenerate scenario, 
+  as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=10$ mm."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure9a.yaml
+
+---
+name: "Figure 9b ($c\tau_{0}=30$ mm, mass-degenerate scenario)"
+description: "Cross section upper limits at 95% CL for the pair production of long-lived staus in the mass-degenerate scenario, 
+  as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=30$ mm."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure9b.yaml
+
+---
+name: "Figure 9c ($c\tau_{0}=50$ mm, mass-degenerate scenario)"
+description: "Cross section upper limits at 95% CL for the pair production of long-lived staus in the mass-degenerate scenario, 
+  as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=50$ mm."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure9c.yaml
+
+---
+name: "Figure 9d ($c\tau_{0}=100$ mm, mass-degenerate scenario)"
+description: "Cross section upper limits at 95% CL for the pair production of long-lived staus in the mass-degenerate scenario, 
+  as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=100$ mm."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure9d.yaml
+
+---
+name: "Figure 9e ($c\tau_{0}=200$ mm, mass-degenerate scenario)"
+description: "Cross section upper limits at 95% CL for the pair production of long-lived staus in the mass-degenerate scenario, 
+  as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=200$ mm."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure9e.yaml
+
+---
+name: "Figure 9f ($c\tau_{0}=300$ mm, mass-degenerate scenario)"
+description: "Cross section upper limits at 95% CL for the pair production of long-lived staus in the mass-degenerate scenario, 
+  as a function of $m_{\tilde{\tau}}$, for $c\tau_{0}=300$ mm."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Figure9f.yaml
+
+---
+# Theory cross sections
+name: "Theoretical cross sections for stau pair production"
+description: "Theoretical cross sections at NLO+NLL accuracy for stau pair production."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_cross-sections_stau-pair.yaml
+
+---
+# Cutflows
+name: "Signal cutflows"
+description: "Signal yields in the maximally mixed scenario for the BR selections, 
+  for a few representative sets of $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ values"
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: cutflows.yaml

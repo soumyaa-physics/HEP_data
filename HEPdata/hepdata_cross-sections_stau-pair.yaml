@@ -1,0 +1,430 @@
+dependent_variables:
+- header:
+    name: Theoretical cross sections for stau pair production (Mass Degenerate)
+    units: fb
+  qualifiers:
+  - name: PROCESS
+    value: "pp \u2192 stau stau"
+  - name: MODEL
+    value: Mass degenerate stau scenario
+  - name: SQRT(S)
+    value: 13 TeV
+  values:
+  - value: 5368.16
+    errors:
+    - label: total
+      asymerror:
+        minus: 118.777
+        plus: 209.172
+  - value: 526.345
+    errors:
+    - label: total
+      asymerror:
+        minus: 8.78739
+        plus: 10.1863
+  - value: 365.721
+    errors:
+    - label: total
+      asymerror:
+        minus: 6.18555
+        plus: 6.7256
+  - value: 166.905
+    errors:
+    - label: total
+      asymerror:
+        minus: 2.85367
+        plus: 2.91498
+  - value: 87.1162
+    errors:
+    - label: total
+      asymerror:
+        minus: 1.46131
+        plus: 1.49402
+  - value: 49.7506
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.93294
+        plus: 0.940319
+  - value: 30.3144
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.609044
+        plus: 0.598141
+  - value: 19.4106
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.405353
+        plus: 0.389445
+  - value: 12.9203
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.270671
+        plus: 0.2547
+  - value: 8.8748
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.191072
+        plus: 0.179631
+  - value: 6.25417
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.142035
+        plus: 0.133574
+  - value: 3.30329
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.0841168
+        plus: 0.079625
+  - value: 1.8592
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.0542136
+        plus: 0.0520999
+  - value: 1.09799
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.0349667
+        plus: 0.0337938
+  - value: 0.673633
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.0221699
+        plus: 0.0217075
+  - value: 0.425957
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.0149628
+        plus: 0.0147639
+  - value: 0.27635
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.00998329
+        plus: 0.009906
+independent_variables:
+- header:
+    name: m_stau
+    units: GeV
+  values:
+  - value: 50.0
+  - value: 90.0
+  - value: 100.0
+  - value: 125.0
+  - value: 150.0
+  - value: 175.0
+  - value: 200.0
+  - value: 225.0
+  - value: 250.0
+  - value: 275.0
+  - value: 300.0
+  - value: 350.0
+  - value: 400.0
+  - value: 450.0
+  - value: 500.0
+  - value: 550.0
+  - value: 600.0
+description: Theoretical cross sections at NLO+NLL accuracy for stau pair production
+  in the Mass degenerate stau scenario.
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+- name: observables
+  values:
+  - cross section
+name: Theoretical cross sections for stau pair production
+
+dependent_variables:
+- header:
+    name: Theoretical cross sections for stau pair production (Maximally Mixed)
+    units: fb
+  qualifiers:
+  - name: PROCESS
+    value: "pp \u2192 stau stau"
+  - name: MODEL
+    value: Maximally mixed stau scenario
+  - name: SQRT(S)
+    value: 13 TeV
+  values:
+  - value: 1127.06
+    errors:
+    - label: total
+      asymerror:
+        minus: 48.7844
+        plus: 67.7373
+    - label: pdf
+      asymerror:
+        minus: 37.7532
+        plus: 60.2804
+    - label: scale
+      asymerror:
+        minus: 30.8968
+        plus: 30.8968
+  - value: 165.925
+    errors:
+    - label: total
+      asymerror:
+        minus: 5.89814
+        plus: 6.66875
+    - label: pdf
+      asymerror:
+        minus: 3.00874
+        plus: 4.33698
+    - label: scale
+      asymerror:
+        minus: 5.06973
+        plus: 5.06973
+  - value: 116.739
+    errors:
+    - label: total
+      asymerror:
+        minus: 4.09976
+        plus: 4.52356
+    - label: pdf
+      asymerror:
+        minus: 1.88625
+        plus: 2.68562
+    - label: scale
+      asymerror:
+        minus: 3.64007
+        plus: 3.64007
+  - value: 54.4897
+    errors:
+    - label: total
+      asymerror:
+        minus: 1.91283
+        plus: 2.00782
+    - label: pdf
+      asymerror:
+        minus: 0.720283
+        plus: 0.937598
+    - label: scale
+      asymerror:
+        minus: 1.77616
+        plus: 1.77616
+  - value: 28.8227
+    errors:
+    - label: total
+      asymerror:
+        minus: 1.04063
+        plus: 1.05189
+    - label: pdf
+      asymerror:
+        minus: 0.348196
+        plus: 0.38053
+    - label: scale
+      asymerror:
+        minus: 0.980645
+        plus: 0.980645
+  - value: 16.5604
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.620608
+        plus: 0.615484
+    - label: pdf
+      asymerror:
+        minus: 0.187508
+        plus: 0.170965
+    - label: scale
+      asymerror:
+        minus: 0.591207
+        plus: 0.591207
+  - value: 10.127
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.396109
+        plus: 0.390567
+    - label: pdf
+      asymerror:
+        minus: 0.10726
+        plus: 0.084528
+    - label: scale
+      asymerror:
+        minus: 0.38131
+        plus: 0.38131
+  - value: 6.5001
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.266585
+        plus: 0.262928
+    - label: pdf
+      asymerror:
+        minus: 0.0638001
+        plus: 0.0462179
+    - label: scale
+      asymerror:
+        minus: 0.258877
+        plus: 0.258877
+  - value: 4.33539
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.186403
+        plus: 0.184302
+    - label: pdf
+      asymerror:
+        minus: 0.0389468
+        plus: 0.027165
+    - label: scale
+      asymerror:
+        minus: 0.182289
+        plus: 0.182289
+  - value: 2.98007
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.133887
+        plus: 0.132698
+    - label: pdf
+      asymerror:
+        minus: 0.0242322
+        plus: 0.0164215
+    - label: scale
+      asymerror:
+        minus: 0.131667
+        plus: 0.131667
+  - value: 2.10096
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.0987336
+        plus: 0.0980411
+    - label: pdf
+      asymerror:
+        minus: 0.0155789
+        plus: 0.010317
+    - label: scale
+      asymerror:
+        minus: 0.0974967
+        plus: 0.0974967
+  - value: 1.11042
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.0577022
+        plus: 0.0574245
+    - label: pdf
+      asymerror:
+        minus: 0.0074027
+        plus: 0.0047785
+    - label: scale
+      asymerror:
+        minus: 0.0572254
+        plus: 0.0572254
+  - value: 0.625364
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.0357922
+        plus: 0.0356662
+    - label: pdf
+      asymerror:
+        minus: 0.00381188
+        plus: 0.00235183
+    - label: scale
+      asymerror:
+        minus: 0.0355886
+        plus: 0.0355886
+  - value: 0.369609
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.0232589
+        plus: 0.0232097
+    - label: pdf
+      asymerror:
+        minus: 0.00203333
+        plus: 0.00135876
+    - label: scale
+      asymerror:
+        minus: 0.0231699
+        plus: 0.0231699
+  - value: 0.226902
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.0156866
+        plus: 0.0156579
+    - label: pdf
+      asymerror:
+        minus: 0.00116033
+        plus: 0.00066853
+    - label: scale
+      asymerror:
+        minus: 0.0156436
+        plus: 0.0156436
+  - value: 0.143696
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.010953
+        plus: 0.0109394
+    - label: pdf
+      asymerror:
+        minus: 0.00068032
+        plus: 0.00040616
+    - label: scale
+      asymerror:
+        minus: 0.0109319
+        plus: 0.0109319
+  - value: 0.0933425
+    errors:
+    - label: total
+      asymerror:
+        minus: 0.0078553
+        plus: 0.00784803
+    - label: pdf
+      asymerror:
+        minus: 0.000410379
+        plus: 0.000233109
+    - label: scale
+      asymerror:
+        minus: 0.00784457
+        plus: 0.00784457
+independent_variables:
+- header:
+    name: m_stau
+    units: GeV
+  values:
+  - value: 50.0
+  - value: 90.0
+  - value: 100.0
+  - value: 125.0
+  - value: 150.0
+  - value: 175.0
+  - value: 200.0
+  - value: 225.0
+  - value: 250.0
+  - value: 275.0
+  - value: 300.0
+  - value: 350.0
+  - value: 400.0
+  - value: 450.0
+  - value: 500.0
+  - value: 550.0
+  - value: 600.0
+description: Theoretical cross sections at NLO+NLL accuracy for stau pair production
+  in the Maximally mixed stau scenario.
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+- name: observables
+  values:
+  - cross section
+name: Theoretical cross sections for stau pair production
+
