@@ -457,7 +457,7 @@ description: '$(m_{\tilde{\tau}}\,[\mathrm{GeV}],\,c\tau_{0}\,[\mathrm{mm}])$ po
 
   '
 keywords: []
-name: Fig 7a observed exclusion, maximally-mixed
+name: Fig 7a observed exclusion
 data_file: hepdata_Figure7a_obs.yaml
 
 dependent_variables:
@@ -843,7 +843,7 @@ description: '$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points ly
 
   '
 keywords: []
-name: "Fig 7a obs -1\u03C3 exclusion, maximally-mixed"
+name: "Fig 7a obs -1\u03C3 exclusion"
 data_file: hepdata_Figure7a_obs-1sigma.yaml
 
 dependent_variables:
@@ -1385,7 +1385,7 @@ description: '$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$  points l
 
   '
 keywords: []
-name: "Fig 7a obs +1\u03C3 exclusion, maximally-mixed"
+name: "Fig 7a obs +1\u03C3 exclusion"
 data_file: hepdata_Figure7a_obs-p1sigma.yaml
 
 dependent_variables:
@@ -2962,7 +2962,7 @@ description: '$(m_{\tilde{\tau}}\,[\mathrm{GeV}],\,c\tau_{0}\,[\mathrm{mm}])$ po
 
   '
 keywords: []
-name: "Fig 7a exp -1\u03C3 exclusion, maximally-mixed"
+name: "Fig 7a exp -1\u03C3 exclusion"
 data_file: hepdata_Figure7a_exp-m1sigma.yaml
 
 dependent_variables:
@@ -3868,7 +3868,7 @@ description: '$(m_{\tilde{\tau}}\,[\mathrm{GeV}],\,c\tau_{0}\,[\mathrm{mm}])$ po
 
   '
 keywords: []
-name: "Fig 7a exp -2\u03C3 exclusion, maximally-mixed"
+name: "Fig 7a exp -2\u03C3 exclusion"
 data_file: hepdata_Figure7a_exp-m2sigma.yaml
 
 dependent_variables:
@@ -4404,6 +4404,6 @@ description: '$(m_{\tilde{\tau}}\,[\mathrm{GeV}],\,c\tau_{0}\,[\mathrm{mm}])$ po
 
   '
 keywords: []
-name: "Fig 7a exp +1\u03C3 exclusion, maximally-mixed"
+name: "Fig 7a exp +1\u03C3 exclusion"
 data_file: hepdata_Figure7a_exp-p1sigma.yaml
 

@@ -8,7 +8,7 @@ dependent_variables:
   - name: RE
     value: pp -> stau stau
   - name: MODEL
-    value: GMSB mass-degenerate stau scenario
+    value: GMSB maximally mixed stau scenario
   - name: CTAU
     value: 200 mm
   - name: SQRT(S)
@@ -55,6 +55,14 @@ independent_variables:
   - value: 500.0
   - value: 550.0
   - value: 600.0
+description: "Cross section upper limits at 95% CL for the pair production of long-lived\
+  \ staus in the mass-degenerate scenario, \n as a function of $m_{\\tilde{\\tau}}$,\
+  \ for $c\\tau_{0}=200$ mm.\n"
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: Figure 9e ($c\tau_{0}=200$ mm, mass-degenerate scenario)(observed)
 
 dependent_variables:
 - header:
@@ -66,7 +74,7 @@ dependent_variables:
   - name: RE
     value: pp -> stau stau
   - name: MODEL
-    value: GMSB  mass-degenerate stau scenario
+    value: GMSB maximally mixed stau scenario
   - name: CTAU
     value: 200 mm
   - name: SQRT(S)
@@ -257,6 +265,14 @@ independent_variables:
   - value: 500.0
   - value: 550.0
   - value: 600.0
+description: "Cross section upper limits at 95% CL for the pair production of long-lived\
+  \ staus in the mass-degenerate scenario, \n as a function of $m_{\\tilde{\\tau}}$,\
+  \ for $c\\tau_{0}=200$ mm.\n"
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: Figure 9e ($c\tau_{0}=200$ mm, mass-degenerate scenario)(expected)
 
 dependent_variables:
 - header:
@@ -268,7 +284,7 @@ dependent_variables:
   - name: RE
     value: pp -> stau stau
   - name: MODEL
-    value: GMSB mass-degenerate scenario
+    value: GMSB maximally mixed stau scenario
   - name: CTAU
     value: 200 mm
   - name: SQRT(S)
@@ -311,4 +327,12 @@ independent_variables:
   - value: 500.0
   - value: 550.0
   - value: 600.0
+description: "Cross section upper limits at 95% CL for the pair production of long-lived\
+  \ staus in the mass-degenerate scenario, \n as a function of $m_{\\tilde{\\tau}}$,\
+  \ for $c\\tau_{0}=200$ mm.\n"
+keywords:
+- name: cmenergies
+  values:
+  - 13000.0
+name: Figure 9e ($c\tau_{0}=200$ mm, mass-degenerate scenario)(theory)
 

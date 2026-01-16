@@ -2,9 +2,10 @@ import ROOT
 import argparse
 import yaml
 import ctypes
+import string
 import os
 
-input_file = "EXO-24-020_HEPData/data/Figure7a_Figure8_limits.root"
+input_file = "EXO-24-020_HEPData/data/Figure7b_Figure9_limits.root"
 f = ROOT.TFile(input_file)
 ctau = [10,30,50,100,200,300]
 
@@ -13,7 +14,16 @@ with open("8dictionary.yaml") as fi:
 
 # used for figure 8 and 9
 
-for c in ctau:
+letters = string.ascii_lowercase[:len(ctau)]  
+
+output_dir = "./HEPdata"
+os.makedirs(output_dir, exist_ok=True)
+
+for i, c in enumerate(ctau):
+    letter = letters[i]
+    outname = os.path.join(output_dir, f"hepdata_Figure9{letter}.yaml")
+    data_file_name = os.path.basename(outname)
+
     graphs = {
         "observed": f"{c}mm/g1_xsecul_obs_{c}mm",
         # "obs_plus1sigma": f"",
@@ -48,16 +58,16 @@ for c in ctau:
         obs_values.append({"value": y.value})
 
     tables.append({
-        "name": meta["name"] + "(observed)",
-        "description": meta["description"],     
-        "data_file": meta["data_file"],
-        "keywords": [{"name": "cmenergies", "values": [13000.0]}],
+        # "name": meta["name"] + "(observed)",
+        # "description": meta["description"],     
+        # "data_file": meta["data_file"],
+        # "keywords": [{"name": "cmenergies", "values": [13000.0]}],
         "dependent_variables": [{
             "header": {"name": "Upper limit on cross section", "units": "fb"},
             "qualifiers": [
                 {"name": "Quantile", "value": "Observed"},
                 {"name": "RE", "value": "pp -> stau stau"},
-                {"name": "MODEL", "value": "GMSB maximally mixed stau scenario"},
+                {"name": "MODEL", "value": "GMSB mass-degenerate stau scenario"},
                 {"name": "CTAU", "value": f"{c} mm"},
                 {"name": "SQRT(S)", "value": "13 TeV"},
                 {"name": "LUMINOSITY", "value": "138 fb^{-1}"},
@@ -107,16 +117,16 @@ for c in ctau:
         })
 
     tables.append({
-        "name": meta["name"] + "(expected)",
-        "description": meta["description"],     
-        "data_file": meta["data_file"],
-        "keywords": [{"name": "cmenergies", "values": [13000.0]}],
+        # "name": meta["name"] + "(expected)",
+        # "description": meta["description"],     
+        # "data_file": meta["data_file"],
+        # "keywords": [{"name": "cmenergies", "values": [13000.0]}],
         "dependent_variables": [{
             "header": {"name": "Upper limit on cross section", "units": "fb"},
             "qualifiers": [
                 {"name": "Quantile", "value": "Expected"},
                 {"name": "RE", "value": "pp -> stau stau"},
-                {"name": "MODEL", "value": "GMSB maximally mixed stau scenario"},
+                {"name": "MODEL", "value": "GMSB  mass-degenerate stau scenario"},
                 {"name": "CTAU", "value": f"{c} mm"},
                 {"name": "SQRT(S)", "value": "13 TeV"},
                 {"name": "LUMINOSITY", "value": "138 fb^{-1}"},
@@ -138,16 +148,16 @@ for c in ctau:
         theory_values.append({"value": y.value})
 
     tables.append({
-        "name": meta["name"] + "(theory)",
-        "description": meta["description"],     
-        "data_file": meta["data_file"],
-        "keywords": [{"name": "cmenergies", "values": [13000.0]}],
+        # "name": meta["name"] + "(theory)",
+        # "description": meta["description"],     
+        # "data_file": meta["data_file"],
+        # "keywords": [{"name": "cmenergies", "values": [13000.0]}],
         "dependent_variables": [{
             "header": {"name": "Cross section", "units": "fb"},
             "qualifiers": [
                 {"name": "TYPE", "value": "Theory"},
                 {"name": "RE", "value": "pp -> stau stau"},
-                {"name": "MODEL", "value": "GMSB maximally mixed stau scenario"},
+                {"name": "MODEL", "value": "GMSB mass-degenerate scenario"},
                 {"name": "CTAU", "value": f"{c} mm"},
                 {"name": "SQRT(S)", "value": "13 TeV"},
             ],
@@ -160,22 +170,14 @@ for c in ctau:
     })
 
     
-    output_dir = "./Figure8"
-    outname = os.path.join(output_dir, f"{c}mm_hepdata_limits.yaml")
-
     with open(outname, "w") as f_out:
         for table in tables:
-            # Remove 'name', 'description', 'keywords' from top level for single-table YAML
             table_to_dump = {
                 "dependent_variables": table["dependent_variables"],
                 "independent_variables": table["independent_variables"],
-                "description": table.get("description", ""),
-                "keywords": table.get("keywords", []),
-                "name": table.get("name", ""),
             }
             yaml.dump(table_to_dump, f_out, sort_keys=False)
-            f_out.write("\n")  # separate multiple tables if needed
-
+            f_out.write("\n")
 
     print(f"Output written to {outname}")
 

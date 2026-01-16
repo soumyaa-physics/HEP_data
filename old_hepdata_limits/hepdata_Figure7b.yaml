@@ -5,7 +5,7 @@ dependent_variables:
   - name: RE
     value: "pp \u2192 \\tilde{\u03C4}\\tilde{\u03C4}"
   - name: MODEL
-    value: GMSB maximally mixed stau scenario
+    value: GMSB mass-degenerate stau scenario
   - name: SQRT(S)
     value: 13 TeV
   - name: LUMI
@@ -1110,7 +1110,7 @@ keywords:
 - name: cmenergies
   values:
   - 13000.0
-name: Figure 7b obs, mass-degenerate
+name: Figure 7b obs
 data_file: hepdata_Figure7b_obs.yaml
 
 dependent_variables:
@@ -1120,7 +1120,7 @@ dependent_variables:
   - name: RE
     value: "pp \u2192 \\tilde{\u03C4}\\tilde{\u03C4}"
   - name: MODEL
-    value: GMSB maximally mixed stau scenario
+    value: GMSB mass-degenerate stau scenario
   - name: SQRT(S)
     value: 13 TeV
   - name: LUMI
@@ -2213,7 +2213,7 @@ keywords:
 - name: cmenergies
   values:
   - 13000.0
-name: "Figure 7b obs -1\u03C3, mass-degenerate"
+name: "Figure 7b obs -1\u03C3"
 data_file: hepdata_Figure7b_obs-1sigma.yaml
 
 dependent_variables:
@@ -2223,7 +2223,7 @@ dependent_variables:
   - name: RE
     value: "pp \u2192 \\tilde{\u03C4}\\tilde{\u03C4}"
   - name: MODEL
-    value: GMSB maximally mixed stau scenario
+    value: GMSB mass-degenerate stau scenario
   - name: SQRT(S)
     value: 13 TeV
   - name: LUMI
@@ -3346,7 +3346,7 @@ keywords:
 - name: cmenergies
   values:
   - 13000.0
-name: "Figure 7b obs +1\u03C3, mass-degenerate"
+name: "Figure 7b obs +1\u03C3"
 data_file: hepdata_Figure7b_obs-p1sigma.yaml
 
 dependent_variables:
@@ -3356,7 +3356,7 @@ dependent_variables:
   - name: RE
     value: "pp \u2192 \\tilde{\u03C4}\\tilde{\u03C4}"
   - name: MODEL
-    value: GMSB maximally mixed stau scenario
+    value: GMSB mass-degenerate stau scenario
   - name: SQRT(S)
     value: 13 TeV
   - name: LUMI
@@ -4687,7 +4687,7 @@ keywords:
 - name: cmenergies
   values:
   - 13000.0
-name: Figure 7b exp, mass-degenerate
+name: Figure 7b exp
 data_file: hepdata_Figure7b_exp.yaml
 
 dependent_variables:
@@ -4697,7 +4697,7 @@ dependent_variables:
   - name: RE
     value: "pp \u2192 \\tilde{\u03C4}\\tilde{\u03C4}"
   - name: MODEL
-    value: GMSB maximally mixed stau scenario
+    value: GMSB mass-degenerate stau scenario
   - name: SQRT(S)
     value: 13 TeV
   - name: LUMI
@@ -6134,7 +6134,7 @@ keywords:
 - name: cmenergies
   values:
   - 13000.0
-name: "Figure 7b exp -1\u03C3, mass-degenerate"
+name: "Figure 7b exp -1\u03C3"
 data_file: hepdata_Figure7b_exp-m1sigma.yaml
 
 dependent_variables:
@@ -6144,7 +6144,7 @@ dependent_variables:
   - name: RE
     value: "pp \u2192 \\tilde{\u03C4}\\tilde{\u03C4}"
   - name: MODEL
-    value: GMSB maximally mixed stau scenario
+    value: GMSB mass-degenerate stau scenario
   - name: SQRT(S)
     value: 13 TeV
   - name: LUMI
@@ -7665,7 +7665,7 @@ keywords:
 - name: cmenergies
   values:
   - 13000.0
-name: "Figure 7b exp -2\u03C3, mass-degenerate"
+name: "Figure 7b exp -2\u03C3"
 data_file: hepdata_Figure7b_exp-m2sigma.yaml
 
 dependent_variables:
@@ -7675,7 +7675,7 @@ dependent_variables:
   - name: RE
     value: "pp \u2192 \\tilde{\u03C4}\\tilde{\u03C4}"
   - name: MODEL
-    value: GMSB maximally mixed stau scenario
+    value: GMSB mass-degenerate stau scenario
   - name: SQRT(S)
     value: 13 TeV
   - name: LUMI
@@ -8836,7 +8836,7 @@ keywords:
 - name: cmenergies
   values:
   - 13000.0
-name: "Figure 7b exp +1\u03C3, mass-degenerate"
+name: "Figure 7b exp +1\u03C3"
 data_file: hepdata_Figure7b_exp-p1sigma.yaml
 
 dependent_variables:
@@ -8846,7 +8846,7 @@ dependent_variables:
   - name: RE
     value: "pp \u2192 \\tilde{\u03C4}\\tilde{\u03C4}"
   - name: MODEL
-    value: GMSB maximally mixed stau scenario
+    value: GMSB mass-degenerate stau scenario
   - name: SQRT(S)
     value: 13 TeV
   - name: LUMI
@@ -9785,6 +9785,6 @@ keywords:
 - name: cmenergies
   values:
   - 13000.0
-name: "Figure 7b exp +2\u03C3, mass-degenerate"
+name: "Figure 7b exp +2\u03C3"
 data_file: hepdata_Figure7b_exp-p2sigma.yaml
 

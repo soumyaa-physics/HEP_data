@@ -3,10 +3,12 @@ import yaml
 import ctypes
 import os
 
-input_file = "EXO-24-020_HEPData/data/Figure7b_Figure9_limits.root"
+# for FIGURE 7
+
+input_file = "EXO-24-020_HEPData/data/Figure7a_Figure8_limits.root"
 f = ROOT.TFile(input_file)
 
-with open("7bdictionary.yaml") as fi:
+with open("7adictionary.yaml") as fi:
     table_metadata = yaml.safe_load(fi)
 
 graphs = {
@@ -15,7 +17,7 @@ graphs = {
         "description": "2D histogram (color axis)",
         "type": "TH2D"
     },
-    "observed": {
+    "observed_exclusion": {
         "path": "obs/contour_obs",
         "description": "observed exclusion contours",
         "type": "TGraph"
@@ -57,7 +59,8 @@ graphs = {
     },    
 }
 
-tables = []
+output_dir = "./HEPdata"
+
 
 for label, info in graphs.items():
     path = info["path"]
@@ -68,15 +71,36 @@ for label, info in graphs.items():
         print(f"NOT FOUND: {path}")
         continue
 
+    # Get metadata for this table
     meta = table_metadata.get(label, {})
-    name = meta.get("name", label)
-    description = meta.get("description", "")
-    data_file = meta.get("data_file", "")
-    keywords = meta.get("keywords", [])
+    data_file = meta.get("data_file")
+    if not data_file:
+        raise RuntimeError(f"Missing 'data_file' entry in metadata for {label}")
 
     x_vals, y_vals, z_vals = [], [], []
 
-    if graph_type == "TH2D":
+    # Extract values depending on graph type
+    if graph_type == "TGraph":
+        n = graph.GetN()
+        x = ctypes.c_double()
+        y = ctypes.c_double()
+        for i in range(n):
+            graph.GetPoint(i, x, y)
+            x_vals.append(x.value)
+            z_vals.append(y.value)  # TGraph: y-values go into dependent variable
+        indep_vars = [{"header": {"name": "m_stau", "units": "GeV"},
+                       "values": [{"value": xv} for xv in x_vals]}]
+        dep_vars = [{"header": {"name": "95% CL limit"},
+                     "qualifiers": [
+                         {"name": "RE", "value": "pp → \\tilde{τ}\\tilde{τ}"},
+                         {"name": "MODEL", "value": "GMSB maximally mixed  stau scenario"},
+                         {"name": "SQRT(S)", "value": "13 TeV"},
+                         {"name": "LUMI", "value": "138 fb^{-1}"},
+                         {"name": "CL", "value": "95%"},
+                     ],
+                     "values": [{"value": zv} for zv in z_vals]}]
+
+    elif graph_type == "TH2D":
         n_x = graph.GetNbinsX()
         n_y = graph.GetNbinsY()
         for i in range(1, n_x + 1):
@@ -84,64 +108,23 @@ for label, info in graphs.items():
                 x_vals.append(graph.GetXaxis().GetBinCenter(i))
                 y_vals.append(graph.GetYaxis().GetBinCenter(j))
                 z_vals.append(graph.GetBinContent(i, j))
-
-        dep_var_header = "95% CL limit"
-
         indep_vars = [
             {"header": {"name": "Mass of stau", "units": "GeV"}, "values": [{"value": xv} for xv in x_vals]},
             {"header": {"name": "Proper lifetime", "units": "mm"}, "values": [{"value": yv} for yv in y_vals]},
         ]
+        dep_vars = [{"header": {"name": "95% CL limit"},
+                     "qualifiers": [
+                         {"name": "RE", "value": "pp → \\tilde{τ}\\tilde{τ}"},
+                         {"name": "MODEL", "value": "GMSB maximally mixed stau scenario"},
+                         {"name": "SQRT(S)", "value": "13 TeV"},
+                         {"name": "LUMI", "value": "138 fb^{-1}"},
+                         {"name": "CL", "value": "95%"},
+                     ],
+                     "values": [{"value": zv} for zv in z_vals]}]
 
-    elif graph_type == "TGraph":
-        n = graph.GetN()
-        x = ctypes.c_double()
-        z = ctypes.c_double()
-        for i in range(n):
-            graph.GetPoint(i, x, z)
-            x_vals.append(x.value)
-            z_vals.append(z.value)
-
-        dep_var_header = "95% CL limit"
-        indep_vars = [{"header": {"name": "Mass of stau", "units": "GeV"}, "values": [{"value": xv} for xv in x_vals]}]
-
-    table = {
-        "name": name,
-        "description": description,
-        "data_file": data_file,
-        "keywords": keywords,
-        "dependent_variables": [
-            {
-                "header": {"name": dep_var_header},
-                "qualifiers": [
-                    {"name": "RE", "value": "pp → \\tilde{τ}\\tilde{τ}"},
-                    {"name": "MODEL", "value": "GMSB mass-degenerate stau scenario"},
-                    {"name": "SQRT(S)", "value": "13 TeV"},
-                    {"name": "LUMI", "value": "138 fb^{-1}"},
-                    {"name": "CL", "value": "95%"},
-                ],
-                "values": [{"value": zv} for zv in z_vals],
-            }
-        ],
-        "independent_variables": indep_vars,
-    }
-
-    tables.append(table)
-output_dir = "./examples"
-outname = os.path.join(output_dir, f"CHanged_Figure7b.yaml")
-
-with open(outname, "w") as f_out:
-    for table in tables:
-        table_to_dump = {
-        "dependent_variables": table["dependent_variables"],
-        "independent_variables": table["independent_variables"],
-        "description": table.get("description", ""),
-        "keywords": table.get("keywords", []),
-        "name": table.get("name", ""),
-        "data_file": table.get("data_file", ""),
-
-        }
-        yaml.dump(table_to_dump, f_out, sort_keys=False)
-        f_out.write("\n")  
-
-print(f"Output written to {outname}")
-
+    # Write table to its own YAML file (filename = metadata 'data_file')
+    outpath = os.path.join(output_dir, data_file)
+    with open(outpath, "w") as f_out:
+        yaml.dump({"independent_variables": indep_vars,
+                   "dependent_variables": dep_vars}, f_out, sort_keys=False)
+    print(f"Written table {label} -> {outpath}")

@@ -1,3 +1,10 @@
+# Figure 3
+name: "Figure 3"
+description: "DISTAU classifier score distributions for $\tau_h$ probes in the $\\mu\tau_h$ control region (2018)."
+keywords:
+- {name: cmenergies, values: [13000.0]}
+data_file: hepdata_Table3.yaml
+
 ---
 # Figure 4
 name: "Figure 4a"
@@ -65,7 +72,7 @@ data_file: hepdata_Figure6b.yaml
 
 ---
 # Figure 7a (observed limits)
-name: "Figure 7a (observed limits, maximally mixed scenario)"
+name: "Fig7a obs limits, maximally mixed"
 description: "Observed upper limits in the $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ plane, for the maximally mixed scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
@@ -73,22 +80,21 @@ data_file: hepdata_Figure7a_limits_obs.yaml
 
 ---
 # Figure 7a (observed exclusion)
-
-name: "Figure 7a (observed exclusion, maximally mixed scenario)"
+name: "Fig7a obs excl, maximally mixed"
 description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the observed exclusion contour, for the maximally mixed scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
 data_file: hepdata_Figure7a_exclusion_obs.yaml
 
 ---
-name: "Figure 7a (observed$+1\\sigma$ exclusion, maximally mixed scenario)"
+name: "Fig7a obs +1σ excl, maximally mixed"
 description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the observed$+1\\sigma$ exclusion contour, for the maximally mixed scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
 data_file: hepdata_Figure7a_exclusion_obs-p1sigma.yaml
 
 ---
-name: "Figure 7a (observed$-1\\sigma$ exclusion, maximally mixed scenario)"
+name: "Fig7a obs -1σ excl, maximally mixed"
 description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the observed$-1\\sigma$ exclusion contour, for the maximally mixed scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
@@ -96,28 +102,28 @@ data_file: hepdata_Figure7a_exclusion_obs-m1sigma.yaml
 
 ---
 # Figure 7a (expected exclusion)
-name: "Figure 7a (expected exclusion, maximally mixed scenario)"
+name: "Fig7a exp excl, maximally mixed"
 description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected exclusion contour, for the maximally mixed scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
 data_file: hepdata_Figure7a_exclusion_exp.yaml
 
 ---
-name: "Figure 7a (expected$+1\\sigma$ exclusion, maximally mixed scenario)"
+name: "Fig7a exp +1σ excl, maximally mixed"
 description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected$+1\\sigma$ exclusion contour, for the maximally mixed scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
 data_file: hepdata_Figure7a_exclusion_exp-p1sigma.yaml
 
 ---
-name: "Figure 7a (expected$-1\\sigma$ exclusion, maximally mixed scenario)"
+name: "Fig7a exp -1σ excl, maximally mixed"
 description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected$-1\\sigma$ exclusion contour, for the maximally mixed scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
 data_file: hepdata_Figure7a_exclusion_exp-m1sigma.yaml
 
 ---
-name: "Figure 7a (expected$-2\\sigma$ exclusion, maximally mixed scenario)"
+name: "Fig7a exp -2σ excl, maximally mixed"
 description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected$-2\\sigma$ exclusion contour, for the maximally mixed scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
@@ -125,7 +131,7 @@ data_file: hepdata_Figure7a_exclusion_exp-m2sigma.yaml
 
 ---
 # Figure 7b (observed limits)
-name: "Figure 7b (observed limits, mass-degenerate scenario)"
+name: "Fig7b obs limits, mass-degenerate"
 description: "Observed upper limits in the $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ plane, for the mass-degenerate scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
@@ -133,21 +139,21 @@ data_file: hepdata_Figure7b_limits_obs.yaml
 
 ---
 # Figure 7b (observed exclusion)
-name: "Figure 7b (observed exclusion, mass-degenerate scenario)"
+name: "Fig7b obs excl, mass-degenerate"
 description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the observed exclusion contour, for the mass-degenerate scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
 data_file: hepdata_Figure7b_exclusion_obs.yaml
 
 ---
-name: "Figure 7b (observed$+1\\sigma$ exclusion, mass-degenerate scenario)"
+name: "Fig7b obs +1σ excl, mass-degenerate"
 description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the observed$+1\\sigma$ exclusion contour, for the mass-degenerate scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
 data_file: hepdata_Figure7b_exclusion_obs-p1sigma.yaml
 
 ---
-name: "Figure 7b (observed$-1\\sigma$ exclusion, mass-degenerate scenario)"
+name: "Fig7b obs -1σ excl, mass-degenerate"
 description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the observed$-1\\sigma$ exclusion contour, for the mass-degenerate scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
@@ -155,40 +161,39 @@ data_file: hepdata_Figure7b_exclusion_obs-m1sigma.yaml
 
 ---
 # Figure 7b (expected exclusion)
-name: "Figure 7b (expected exclusion, mass-degenerate scenario)"
+name: "Fig7b exp excl, mass-degenerate"
 description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected exclusion contour, for the mass-degenerate scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
 data_file: hepdata_Figure7b_exclusion_exp.yaml
 
 ---
-name: "Figure 7b (expected$+1\\sigma$ exclusion, mass-degenerate scenario)"
+name: "Fig7b exp +1σ excl, mass-degenerate"
 description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected$+1\\sigma$ exclusion contour, for the mass-degenerate scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
 data_file: hepdata_Figure7b_exclusion_exp-p1sigma.yaml
 
 ---
-name: "Figure 7b (expected$-1\\sigma$ exclusion, mass-degenerate scenario)"
+name: "Fig7b exp -1σ excl, mass-degenerate"
 description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected$-1\\sigma$ exclusion contour, for the mass-degenerate scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
 data_file: hepdata_Figure7b_exclusion_exp-m1sigma.yaml
 
 ---
-name: "Figure 7b (expected$+2\\sigma$ exclusion, mass-degenerate scenario)"
+name: "Fig7b exp +2σ excl, mass-degenerate"
 description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected$+2\\sigma$ exclusion contour, for the mass-degenerate scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
 data_file: hepdata_Figure7b_exclusion_exp-p2sigma.yaml
 
 ---
-name: "Figure 7b (expected$-2\\sigma$ exclusion, mass-degenerate scenario)"
+name: "Fig7b exp -2σ excl, mass-degenerate"
 description: "$(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ points lying on the expected$-2\\sigma$ exclusion contour, for the mass-degenerate scenario."
 keywords:
 - {name: cmenergies, values: [13000.0]}
 data_file: hepdata_Figure7b_exclusion_exp-m2sigma.yaml
-
 ---
 # Figure 8
 

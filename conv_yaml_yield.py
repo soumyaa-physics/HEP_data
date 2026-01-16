@@ -16,7 +16,7 @@ parser.add_argument("input_file", help="Path to the raw YAML file")
 args = parser.parse_args()
 
 input_path = args.input_file
-output_dir = "./Figure4,5,6"
+output_dir = "./examples"
 
 with open(input_path) as f:
     raw = yaml.safe_load(f)
@@ -37,21 +37,21 @@ def get_sorted_bins(cat_dict):
 
 tables = []
 
-figure_metadata = {
-    "name": "Figure 6a (prefit yields)",
-    "description": (
-        "Observed and predicted event yields in the eight SR bins as defined in Table 2 "
-        "The signal distributions yields in the maximally mixed scenario for a few "
-        "representative sets of $(m_{\\tilde{\\tau}} [\\text{GeV}], c\\tau_{0} [\\text{mm}])$ "
-        "values are overlaid: (100, 50), (100, 100), (200, 50), and (200, 100). "
-        "The predicted yields and uncertainties are before the maximum likelihood fit to data "
-        "under the background-only hypothesis, as described in Section 8. "
-        # "In bins where the observed yield is zero, the Poissonian upper limit at 68% CL "
-        # "is shown as a positive uncertainty. The last bin includes the overflow."
-    ),
-    "keywords": [{"name": "cmenergies", "values": [13000.0]}],
-    "data_file": "hepdata_Figure6a.yaml"
-}
+# figure_metadata = {
+#     "name": "Figure 6a (prefit yields)",
+#     "description": (
+#         "Observed and predicted event yields in the eight SR bins as defined in Table 2 "
+#         "The signal distributions yields in the maximally mixed scenario for a few "
+#         "representative sets of $(m_{\\tilde{\\tau}} [\\text{GeV}], c\\tau_{0} [\\text{mm}])$ "
+#         "values are overlaid: (100, 50), (100, 100), (200, 50), and (200, 100). "
+#         "The predicted yields and uncertainties are before the maximum likelihood fit to data "
+#         "under the background-only hypothesis, as described in Section 8. "
+#         # "In bins where the observed yield is zero, the Poissonian upper limit at 68% CL "
+#         # "is shown as a positive uncertainty. The last bin includes the overflow."
+#     ),
+#     "keywords": [{"name": "cmenergies", "values": [13000.0]}],
+#     "data_file": "hepdata_Figure6a.yaml"
+# }
 
 for category in categories:
     if not all(isinstance(raw[era][category], dict) for era in eras):
@@ -91,39 +91,27 @@ for category in categories:
     })
 
     table = {
-        "name": category,
+        # "name": category,
         "dependent_variables": dependent_variables,
         "independent_variables": independent_variables,
-        "description": f"Yields for {category}",
-        "keywords": figure_metadata["keywords"],
+        # "description": f"Yields for {category}",
+        # "keywords": figure_metadata["keywords"],
     }
     tables.append(table)
 
-output_filename = os.path.splitext(os.path.basename(input_path))[0] + ".yaml"
-output_path = os.path.join(output_dir, output_filename)
+outname = "hepdata_Figure5.yaml"
 
-# with open(output_path, "w") as f:
-#     yaml.dump(hepdata_output, f, sort_keys=False)
-with open(output_path, "w") as f_out:
-    # Write figure-level metadata first
-    yaml.dump({
-        "name": figure_metadata["name"],
-        "description": figure_metadata["description"],
-        "keywords": figure_metadata["keywords"],
-        "data_file": figure_metadata["data_file"]
-    }, f_out, sort_keys=False)
-    f_out.write("\n")
-
+with open(outname, "w") as f_out:
     # Then append tables
     for table in tables:
         table_to_dump = {
             "dependent_variables": table["dependent_variables"],
             "independent_variables": table["independent_variables"],
-            "description": table.get("description", ""),
-            "keywords": table.get("keywords", []),
-            "name": table.get("name", ""),
+            # "description": table.get("description", ""),
+            # "keywords": table.get("keywords", []),
+            # "name": table.get("name", ""),
         }
         yaml.dump(table_to_dump, f_out, sort_keys=False)
         f_out.write("\n")  # separate multiple tables if needed
 
-print(f"Converted {input_path} → {output_path} (all methods in one file)")
+print(f"Converted {input_path} → {outname} (all methods in one file)")

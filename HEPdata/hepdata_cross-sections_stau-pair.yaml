@@ -134,16 +134,6 @@ independent_variables:
   - value: 500.0
   - value: 550.0
   - value: 600.0
-description: Theoretical cross sections at NLO+NLL accuracy for stau pair production
-  in the Mass degenerate stau scenario.
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-- name: observables
-  values:
-  - cross section
-name: Theoretical cross sections for stau pair production
 
 dependent_variables:
 - header:
@@ -417,14 +407,4 @@ independent_variables:
   - value: 500.0
   - value: 550.0
   - value: 600.0
-description: Theoretical cross sections at NLO+NLL accuracy for stau pair production
-  in the Maximally mixed stau scenario.
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-- name: observables
-  values:
-  - cross section
-name: Theoretical cross sections for stau pair production
 

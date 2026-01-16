@@ -119,14 +119,14 @@ for entry in inputs:
         dependent_var["values"].append(row)
 
     table = {
-        "name": "Theoretical cross sections for stau pair production",
-        "description": (
-            f"Theoretical cross sections at NLO+NLL accuracy for stau pair production in the {model_name}."
-        ),
-        "keywords": [
-            {"name": "cmenergies", "values": [13000.0]},
-            {"name": "observables", "values": ["cross section"]}
-        ],
+        # "name": "Theoretical cross sections for stau pair production",
+        # "description": (
+        #     f"Theoretical cross sections at NLO+NLL accuracy for stau pair production in the {model_name}."
+        # ),
+        # "keywords": [
+        #     {"name": "cmenergies", "values": [13000.0]},
+        #     {"name": "observables", "values": ["cross section"]}
+        # ],
         "dependent_variables": [dependent_var],
         "independent_variables": [independent_var]
     }
@@ -141,9 +141,9 @@ with open(outname, "w") as f_out:
         table_to_dump = {
             "dependent_variables": table["dependent_variables"],
             "independent_variables": table["independent_variables"],
-            "description": table["description"],
-            "keywords": table["keywords"],
-            "name": table["name"]
+            # "description": table["description"],
+            # "keywords": table["keywords"],
+            # "name": table["name"]
         }
 
         yaml.dump(table_to_dump, f_out, sort_keys=False)

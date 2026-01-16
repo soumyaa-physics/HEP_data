@@ -89,9 +89,9 @@ with open(outname, "w") as f_out:
     yaml.dump({
         "dependent_variables": table["dependent_variables"],
         "independent_variables": table["independent_variables"],
-        "description": table["description"],
-        "keywords": table["keywords"],
-        "name": table["name"]
+        # "description": table["description"],
+        # "keywords": table["keywords"],
+        # "name": table["name"]
     }, f_out, sort_keys=False)
 
 print("Output written to", outname)

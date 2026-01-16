@@ -1,17 +1,3 @@
-name: Figure 3
-description: "DISTAU classifier distributions for \u03C4h probes in the \u03BC\u03C4\
-  h control region (2018). DY(\u03BC\u03C4h) denotes Z/\u03B3* \u2192 \u03C4\u03C4\
-  \ events with one tau \u2192 \u03BC and the other hadronic DY(other) includes other\
-  \ Z/\u03B3* decays. 'Top quark' includes tt, single top, ttV other SM processes\
-  \ include diboson. Grey band: statistical uncertainty on simulation. Simulation\
-  \ is illustrative; not fully calibrated or used for correction factors. 2016/2017\
-  \ data show similar behavior."
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-data_file: hepdata_Figure3.yaml
-
 dependent_variables:
 - header:
     name: Yield_2016_preVFP.2016_postVFP.2017.2018
@@ -78,9 +64,6 @@ independent_variables:
   - value: 8
   - value: 9
   - value: 10
-description: Yields for method fpred_alt
-keywords: []
-name: fpred_alt
 
 dependent_variables:
 - header:
@@ -148,9 +131,6 @@ independent_variables:
   - value: 8
   - value: 9
   - value: 10
-description: Yields for method fpred_brt1_corr
-keywords: []
-name: fpred_brt1_corr
 
 dependent_variables:
 - header:
@@ -218,9 +198,6 @@ independent_variables:
   - value: 8
   - value: 9
   - value: 10
-description: Yields for method fr_region
-keywords: []
-name: fr_region
 
 dependent_variables:
 - header:
@@ -288,7 +265,4 @@ independent_variables:
   - value: 8
   - value: 9
   - value: 10
-description: Yields for method fr_stat
-keywords: []
-name: fr_stat
 

@@ -6,7 +6,17 @@ observed:
   keywords:
     - name: cmenergies
       values: [13000.0]
-  data_file: "hepdata_Figure7b_obs.yaml"
+  data_file: "hepdata_Figure7b_limits_obs.yaml"
+
+observed_exclusion:
+  name: "Figure 7b obs exclusion"
+  description: >
+    $(m_{\tilde{\tau}}\,[\mathrm{GeV}],\,c\tau_{0}\,[\mathrm{mm}])$
+    points lying on the observed exclusion contour, for the mass-degenerate scenario.
+  keywords:
+    - name: cmenergies
+      values: [13000.0]
+  data_file: "hepdata_Figure7b_exclusion_obs.yaml"
 
 obs_plus1sigma:
   name: "Figure 7b obs +1σ"
@@ -16,7 +26,7 @@ obs_plus1sigma:
   keywords:
     - name: cmenergies
       values: [13000.0]
-  data_file: "hepdata_Figure7b_obs-p1sigma.yaml"
+  data_file: "hepdata_Figure7b_exclusion_obs-p1sigma.yaml"
 
 obs_minu1sigma:
   name: "Figure 7b obs -1σ"
@@ -26,7 +36,7 @@ obs_minu1sigma:
   keywords:
     - name: cmenergies
       values: [13000.0]
-  data_file: "hepdata_Figure7b_obs-1sigma.yaml"
+  data_file: "hepdata_Figure7b_exclusion_obs-m1sigma.yaml"
 
 exp_contour:
   name: "Figure 7b exp"
@@ -36,7 +46,7 @@ exp_contour:
   keywords:
     - name: cmenergies
       values: [13000.0]
-  data_file: "hepdata_Figure7b_exp.yaml"
+  data_file: "hepdata_Figure7b_exclusion_exp.yaml"
 
 exp_plus1sigma:
   name: "Figure 7b exp +1σ"
@@ -46,7 +56,7 @@ exp_plus1sigma:
   keywords:
     - name: cmenergies
       values: [13000.0]
-  data_file: "hepdata_Figure7b_exp-p1sigma.yaml"
+  data_file: "hepdata_Figure7b_exclusion_exp-p1sigma.yaml"
 
 exp_minus1sigma:
   name: "Figure 7b exp -1σ"
@@ -56,7 +66,7 @@ exp_minus1sigma:
   keywords:
     - name: cmenergies
       values: [13000.0]
-  data_file: "hepdata_Figure7b_exp-m1sigma.yaml"
+  data_file: "hepdata_Figure7b_exclusion_exp-m1sigma.yaml"
 
 exp_plus2sigma:
   name: "Figure 7b exp +2σ"
@@ -66,7 +76,7 @@ exp_plus2sigma:
   keywords:
     - name: cmenergies
       values: [13000.0]
-  data_file: "hepdata_Figure7b_exp-p2sigma.yaml"
+  data_file: "hepdata_Figure7b_exclusion_exp-p2sigma.yaml"
 
 exp_minus2sigma:
   name: "Figure 7b exp -2σ"
@@ -76,14 +86,14 @@ exp_minus2sigma:
   keywords:
     - name: cmenergies
       values: [13000.0]
-  data_file: "hepdata_Figure7b_exp-m2sigma.yaml"
+  data_file: "hepdata_Figure7b_exclusion_exp-m2sigma.yaml"
 
-theory:
-  name: "Figure 7b theory"
-  description: >
-    Theoretical stau pair-production cross section as a function of
-    $m_{\tilde{\tau}}$.
-  keywords:
-    - name: cmenergies
-      values: [13000.0]
-  data_file: "hepdata_Figure7b_theory.yaml"
+# theory:
+#   name: "Figure 7b theory"
+#   description: >
+#     Theoretical stau pair-production cross section as a function of
+#     $m_{\tilde{\tau}}$.
+#   keywords:
+#     - name: cmenergies
+#       values: [13000.0]
+#   data_file: "hepdata_Figure7b_theory.yaml"

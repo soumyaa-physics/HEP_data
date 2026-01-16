@@ -1,16 +1,3 @@
-name: Figure 4a
-description: 'Distributions of $p_\text{T, j2}$ for events in the signal region. The
-  signal distributions expected in the maximally mixed scenario for a few representative
-  sets of $(m_{\tilde{\tau}} [\text{GeV}], c\tau_{0} [\text{mm}])$ values are overlaid:
-  (100, 50), (100, 100), (200, 50), and (200, 100). In bins where the observed yield
-  is zero, the Poissonian upper limit at 68% CL is shown as a positive uncertainty.
-  The last bin includes the overflow.'
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-data_file: hepdata_Figure4a.yaml
-
 dependent_variables:
 - header:
     name: Yield_2016_preVFP.2016_postVFP.2017.2018
@@ -39,12 +26,6 @@ independent_variables:
   - value: '4'
   - value: '5'
   - value: total
-description: Yields for obs
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-name: obs
 
 dependent_variables:
 - header:
@@ -98,12 +79,6 @@ independent_variables:
   - value: '4'
   - value: '5'
   - value: total
-description: Yields for misid
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-name: misid
 
 dependent_variables:
 - header:
@@ -157,12 +132,6 @@ independent_variables:
   - value: '4'
   - value: '5'
   - value: total
-description: Yields for total_bkg
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-name: total_bkg
 
 dependent_variables:
 - header:
@@ -216,12 +185,6 @@ independent_variables:
   - value: '4'
   - value: '5'
   - value: total
-description: Yields for SMS-TStauStau_MStau-100_ctau-100mm_mLSP-1
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-name: SMS-TStauStau_MStau-100_ctau-100mm_mLSP-1
 
 dependent_variables:
 - header:
@@ -275,12 +238,6 @@ independent_variables:
   - value: '4'
   - value: '5'
   - value: total
-description: Yields for SMS-TStauStau_MStau-100_ctau-10mm_mLSP-1
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-name: SMS-TStauStau_MStau-100_ctau-10mm_mLSP-1
 
 dependent_variables:
 - header:
@@ -334,12 +291,6 @@ independent_variables:
   - value: '4'
   - value: '5'
   - value: total
-description: Yields for SMS-TStauStau_MStau-100_ctau-300mm_mLSP-1_from_ctau-1000mm
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-name: SMS-TStauStau_MStau-100_ctau-300mm_mLSP-1_from_ctau-1000mm
 
 dependent_variables:
 - header:
@@ -393,12 +344,6 @@ independent_variables:
   - value: '4'
   - value: '5'
   - value: total
-description: Yields for SMS-TStauStau_MStau-100_ctau-50mm_mLSP-1
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-name: SMS-TStauStau_MStau-100_ctau-50mm_mLSP-1
 
 dependent_variables:
 - header:
@@ -452,12 +397,6 @@ independent_variables:
   - value: '4'
   - value: '5'
   - value: total
-description: Yields for SMS-TStauStau_MStau-200_ctau-100mm_mLSP-1
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-name: SMS-TStauStau_MStau-200_ctau-100mm_mLSP-1
 
 dependent_variables:
 - header:
@@ -511,12 +450,6 @@ independent_variables:
   - value: '4'
   - value: '5'
   - value: total
-description: Yields for SMS-TStauStau_MStau-200_ctau-10mm_mLSP-1
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-name: SMS-TStauStau_MStau-200_ctau-10mm_mLSP-1
 
 dependent_variables:
 - header:
@@ -570,12 +503,6 @@ independent_variables:
   - value: '4'
   - value: '5'
   - value: total
-description: Yields for SMS-TStauStau_MStau-200_ctau-300mm_mLSP-1_from_ctau-1000mm
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-name: SMS-TStauStau_MStau-200_ctau-300mm_mLSP-1_from_ctau-1000mm
 
 dependent_variables:
 - header:
@@ -629,12 +556,6 @@ independent_variables:
   - value: '4'
   - value: '5'
   - value: total
-description: Yields for SMS-TStauStau_MStau-200_ctau-50mm_mLSP-1
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-name: SMS-TStauStau_MStau-200_ctau-50mm_mLSP-1
 
 dependent_variables:
 - header:
@@ -688,12 +609,6 @@ independent_variables:
   - value: '4'
   - value: '5'
   - value: total
-description: Yields for SMS-TStauStau_MStau-300_ctau-100mm_mLSP-1
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-name: SMS-TStauStau_MStau-300_ctau-100mm_mLSP-1
 
 dependent_variables:
 - header:
@@ -747,12 +662,6 @@ independent_variables:
   - value: '4'
   - value: '5'
   - value: total
-description: Yields for SMS-TStauStau_MStau-300_ctau-10mm_mLSP-1
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-name: SMS-TStauStau_MStau-300_ctau-10mm_mLSP-1
 
 dependent_variables:
 - header:
@@ -806,12 +715,6 @@ independent_variables:
   - value: '4'
   - value: '5'
   - value: total
-description: Yields for SMS-TStauStau_MStau-300_ctau-300mm_mLSP-1_from_ctau-1000mm
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-name: SMS-TStauStau_MStau-300_ctau-300mm_mLSP-1_from_ctau-1000mm
 
 dependent_variables:
 - header:
@@ -865,10 +768,4 @@ independent_variables:
   - value: '4'
   - value: '5'
   - value: total
-description: Yields for SMS-TStauStau_MStau-300_ctau-50mm_mLSP-1
-keywords:
-- name: cmenergies
-  values:
-  - 13000.0
-name: SMS-TStauStau_MStau-300_ctau-50mm_mLSP-1
 
