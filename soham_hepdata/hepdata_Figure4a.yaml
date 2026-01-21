@@ -1,0 +1,430 @@
+dependent_variables:
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: Data
+  values:
+  - value: 75.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 4.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 2.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 0.0
+    errors:
+    - label: Statistical
+      asymerror:
+        minus: 0.0
+        plus: 1.83258
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: Total background
+  values:
+  - value: 77.58524615492942
+    errors:
+    - label: Statistical
+      symerror: 3.1623814260236793
+    - label: Systematic
+      symerror: 24.84370648486596
+  - value: 3.6205887701914845
+    errors:
+    - label: Statistical
+      symerror: 0.39113520607552293
+    - label: Systematic
+      symerror: 1.5248240868698273
+  - value: 1.1925360082989958
+    errors:
+    - label: Statistical
+      symerror: 0.21125136089444768
+    - label: Systematic
+      symerror: 0.5189198551079387
+  - value: 0.15835916300509784
+    errors:
+    - label: Statistical
+      symerror: 0.05374833218990792
+    - label: Systematic
+      symerror: 0.15518766194825206
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=100$ GeV, $c\tau_0=100$ mm
+  values:
+  - value: 7.185361487179864
+    errors:
+    - label: Statistical
+      symerror: 0.19166870088427385
+    - label: Systematic
+      symerror: 1.676459352868424
+  - value: 6.715745806216959
+    errors:
+    - label: Statistical
+      symerror: 0.18311318612663016
+    - label: Systematic
+      symerror: 1.5424808831658923
+  - value: 1.9182336370890323
+    errors:
+    - label: Statistical
+      symerror: 0.09905284928698939
+    - label: Systematic
+      symerror: 0.4533491867752079
+  - value: 0.013394716921987635
+    errors:
+    - label: Statistical
+      symerror: 0.006071932575754439
+    - label: Systematic
+      symerror: 0.005210062729637541
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=100$ GeV, $c\tau_0=10$ mm
+  values:
+  - value: 5.181938983125311
+    errors:
+    - label: Statistical
+      symerror: 0.1650745224875548
+    - label: Systematic
+      symerror: 1.120729930820832
+  - value: 5.441257221915017
+    errors:
+    - label: Statistical
+      symerror: 0.1745012483713898
+    - label: Systematic
+      symerror: 1.2604250846243945
+  - value: 2.177756683801597
+    errors:
+    - label: Statistical
+      symerror: 0.11211916162002551
+    - label: Systematic
+      symerror: 0.527205331067659
+  - value: 0.03963744878113736
+    errors:
+    - label: Statistical
+      symerror: 0.014137181623175918
+    - label: Systematic
+      symerror: 0.011800013308863478
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=100$ GeV, $c\tau_0=1000$ mm
+  values:
+  - value: 2.4664534696221763
+    errors:
+    - label: Statistical
+      symerror: 0.2844833166853044
+    - label: Systematic
+      symerror: 0.5427927051076801
+  - value: 1.827047990805001
+    errors:
+    - label: Statistical
+      symerror: 0.25675130421835396
+    - label: Systematic
+      symerror: 0.4051137923118959
+  - value: 0.5226902076304161
+    errors:
+    - label: Statistical
+      symerror: 0.15255112337201557
+    - label: Systematic
+      symerror: 0.13883361705637987
+  - value: 0.0
+    errors:
+    - label: Statistical
+      asymerror:
+        minus: 0.0
+        plus: 0.20593886324659413
+    - label: Systematic
+      symerror: 0.0
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=100$ GeV, $c\tau_0=50$ mm
+  values:
+  - value: 9.462616483103082
+    errors:
+    - label: Statistical
+      symerror: 0.21590444225418118
+    - label: Systematic
+      symerror: 2.1887831925625845
+  - value: 9.278277731718392
+    errors:
+    - label: Statistical
+      symerror: 0.21746723744495755
+    - label: Systematic
+      symerror: 2.1865956211250435
+  - value: 2.9715084847513125
+    errors:
+    - label: Statistical
+      symerror: 0.12236973808778609
+    - label: Systematic
+      symerror: 0.6996644530508627
+  - value: 0.05321642037200924
+    errors:
+    - label: Statistical
+      symerror: 0.016719914477954047
+    - label: Systematic
+      symerror: 0.012547150269167858
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=200$ GeV, $c\tau_0=100$ mm
+  values:
+  - value: 3.4331048162401094
+    errors:
+    - label: Statistical
+      symerror: 0.03947312445508555
+    - label: Systematic
+      symerror: 0.7463515459243241
+  - value: 5.554423242025347
+    errors:
+    - label: Statistical
+      symerror: 0.049575103668988055
+    - label: Systematic
+      symerror: 1.2173136530976465
+  - value: 3.5106566455039685
+    errors:
+    - label: Statistical
+      symerror: 0.03928678805189642
+    - label: Systematic
+      symerror: 0.7821729146557873
+  - value: 0.1038886701630904
+    errors:
+    - label: Statistical
+      symerror: 0.006824050799323195
+    - label: Systematic
+      symerror: 0.023031961777748158
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=200$ GeV, $c\tau_0=10$ mm
+  values:
+  - value: 2.169892684776622
+    errors:
+    - label: Statistical
+      symerror: 0.03147836227700399
+    - label: Systematic
+      symerror: 0.4533717920917495
+  - value: 3.4120830023103275
+    errors:
+    - label: Statistical
+      symerror: 0.03909856007751357
+    - label: Systematic
+      symerror: 0.7303289845914372
+  - value: 2.075521005468923
+    errors:
+    - label: Statistical
+      symerror: 0.03062025377850641
+    - label: Systematic
+      symerror: 0.4526749392987331
+  - value: 0.06410890345720936
+    errors:
+    - label: Statistical
+      symerror: 0.005374572488165649
+    - label: Systematic
+      symerror: 0.014136278121040121
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=200$ GeV, $c\tau_0=1000$ mm
+  values:
+  - value: 1.410075978844973
+    errors:
+    - label: Statistical
+      symerror: 0.06371481263292991
+    - label: Systematic
+      symerror: 0.31946708238667665
+  - value: 2.345630443260813
+    errors:
+    - label: Statistical
+      symerror: 0.08211778692864084
+    - label: Systematic
+      symerror: 0.5206327465386129
+  - value: 1.3357262518544641
+    errors:
+    - label: Statistical
+      symerror: 0.06305734146525448
+    - label: Systematic
+      symerror: 0.3069128689025528
+  - value: 0.017729639116263553
+    errors:
+    - label: Statistical
+      symerror: 0.008427338539431376
+    - label: Systematic
+      symerror: 0.007793075806905439
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=200$ GeV, $c\tau_0=50$ mm
+  values:
+  - value: 4.108998516294242
+    errors:
+    - label: Statistical
+      symerror: 0.04295282013923059
+    - label: Systematic
+      symerror: 0.8825016351784343
+  - value: 6.611002368013834
+    errors:
+    - label: Statistical
+      symerror: 0.05419990708855607
+    - label: Systematic
+      symerror: 1.4362285476930146
+  - value: 4.2380323495951835
+    errors:
+    - label: Statistical
+      symerror: 0.04330975500403152
+    - label: Systematic
+      symerror: 0.9424386368429857
+  - value: 0.12438457481401541
+    errors:
+    - label: Statistical
+      symerror: 0.007124514899915463
+    - label: Systematic
+      symerror: 0.02694868179488872
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=300$ GeV, $c\tau_0=100$ mm
+  values:
+  - value: 1.0240747873060538
+    errors:
+    - label: Statistical
+      symerror: 0.01023158342857227
+    - label: Systematic
+      symerror: 0.21090381990806903
+  - value: 2.4980012645299574
+    errors:
+    - label: Statistical
+      symerror: 0.01589780698647695
+    - label: Systematic
+      symerror: 0.5176050346637663
+  - value: 2.8389153543657417
+    errors:
+    - label: Statistical
+      symerror: 0.0169122301564039
+    - label: Systematic
+      symerror: 0.595749860482838
+  - value: 0.1488964732099498
+    errors:
+    - label: Statistical
+      symerror: 0.003757457358036808
+    - label: Systematic
+      symerror: 0.03300290709594167
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=300$ GeV, $c\tau_0=10$ mm
+  values:
+  - value: 0.5748535971125575
+    errors:
+    - label: Statistical
+      symerror: 0.007499604168792948
+    - label: Systematic
+      symerror: 0.11610894596966215
+  - value: 1.3384732851775707
+    errors:
+    - label: Statistical
+      symerror: 0.011355915222851483
+    - label: Systematic
+      symerror: 0.26920516881573187
+  - value: 1.3536334880665217
+    errors:
+    - label: Statistical
+      symerror: 0.011461176974961271
+    - label: Systematic
+      symerror: 0.2737543188863458
+  - value: 0.0659040448204144
+    errors:
+    - label: Statistical
+      symerror: 0.0024738594099446656
+    - label: Systematic
+      symerror: 0.014153489204052686
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=300$ GeV, $c\tau_0=1000$ mm
+  values:
+  - value: 0.4675853696109622
+    errors:
+    - label: Statistical
+      symerror: 0.017480662746694763
+    - label: Systematic
+      symerror: 0.0959679785172492
+  - value: 1.1834902451279483
+    errors:
+    - label: Statistical
+      symerror: 0.02743651452139555
+    - label: Systematic
+      symerror: 0.24860171971283326
+  - value: 1.2139608927062235
+    errors:
+    - label: Statistical
+      symerror: 0.027361615067210143
+    - label: Systematic
+      symerror: 0.25402477214031766
+  - value: 0.05456229425137082
+    errors:
+    - label: Statistical
+      symerror: 0.006394570566331764
+    - label: Systematic
+      symerror: 0.013522854058170492
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=300$ GeV, $c\tau_0=50$ mm
+  values:
+  - value: 1.1720388655223697
+    errors:
+    - label: Statistical
+      symerror: 0.012701885267038195
+    - label: Systematic
+      symerror: 0.23857426701883058
+  - value: 2.816374228203507
+    errors:
+    - label: Statistical
+      symerror: 0.019677129758657035
+    - label: Systematic
+      symerror: 0.5789290068269192
+  - value: 3.1319500380478402
+    errors:
+    - label: Statistical
+      symerror: 0.02064381215196038
+    - label: Systematic
+      symerror: 0.6470467888013135
+  - value: 0.17069109224980616
+    errors:
+    - label: Statistical
+      symerror: 0.004584144789165097
+    - label: Systematic
+      symerror: 0.03671817449733671
+independent_variables:
+- header:
+    name: '$p_\text{T, j2}$'
+    units: GeV
+  values:
+  - low: 30.0
+    high: 50.0
+  - low: 50.0
+    high: 100.0
+  - low: 100.0
+    high: 300.0
+  - low: 300.0
+    high: 500.0

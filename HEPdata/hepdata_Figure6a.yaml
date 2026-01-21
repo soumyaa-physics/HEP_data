@@ -1,1074 +1,766 @@
 dependent_variables:
 - header:
-    name: Yield_2016_preVFP.2016_postVFP.2017.2018
-    units: ''
+    name: Events
+  qualifiers:
+  - name: Process
+    value: Data
   values:
   - value: 66.0
-    errors: []
+    errors:
+    - label: Statistical
+      symerror: 8.12404
   - value: 4.0
-    errors: []
+    errors:
+    - label: Statistical
+      symerror: 2.0
   - value: 5.0
-    errors: []
+    errors:
+    - label: Statistical
+      symerror: 2.23607
   - value: 2.0
-    errors: []
+    errors:
+    - label: Statistical
+      symerror: 1.41421
   - value: 0.0
-    errors: []
+    errors:
+    - label: Statistical
+      asymerror:
+        minus: 0.0
+        plus: 1.83258
   - value: 2.0
-    errors: []
+    errors:
+    - label: Statistical
+      symerror: 1.41421
   - value: 2.0
-    errors: []
-  - value: 0.0
-    errors: []
-  - value: 81.0
-    errors: []
-independent_variables:
-- header:
-    name: Bin
-    units: ''
-  values:
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-  - value: '9'
-  - value: '10'
-  - value: total
-
-dependent_variables:
-- header:
-    name: Yield_2016_preVFP.2016_postVFP.2017.2018
-    units: ''
-  values:
-  - value: 67.29947371176775
     errors:
-    - symerror: 2.9947799328595646
-      label: stat
-    - symerror: 22.952027218422504
-      label: syst
-  - value: 8.142823063573346
-    errors:
-    - symerror: 0.8958640271164725
-      label: stat
-    - symerror: 1.996909806560452
-      label: syst
-  - value: 2.142949379588348
-    errors:
-    - symerror: 0.47893327543603315
-      label: stat
-    - symerror: 0.7062989758451924
-      label: syst
-  - value: 2.463838077124819
-    errors:
-    - symerror: 0.3063261828095426
-      label: stat
-    - symerror: 1.3228865482819243
-      label: syst
-  - value: 0.6900083209278498
-    errors:
-    - symerror: 0.17756909471313317
-      label: stat
-    - symerror: 0.2890935421681219
-      label: syst
-  - value: 0.4667423721388168
-    errors:
-    - symerror: 0.16619261075688688
-      label: stat
-    - symerror: 0.299585130746314
-      label: syst
-  - value: 1.1962255844557268
-    errors:
-    - symerror: 0.21198009271097545
-      label: stat
-    - symerror: 0.5372280217269806
-      label: syst
-  - value: 0.15466958684836685
-    errors:
-    - symerror: 0.08381303148053713
-      label: stat
-    - symerror: 0.09448667102243037
-      label: syst
-  - value: 82.55673009642506
-    errors:
-    - symerror: 3.1946209423268632
-      label: stat
-    - symerror: 26.77241841673596
-      label: syst
-independent_variables:
-- header:
-    name: Bin
-    units: ''
-  values:
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-  - value: '9'
-  - value: '10'
-  - value: total
-
-dependent_variables:
-- header:
-    name: Yield_2016_preVFP.2016_postVFP.2017.2018
-    units: ''
-  values:
-  - value: 67.29947371176775
-    errors:
-    - symerror: 2.9947799328595646
-      label: stat
-    - symerror: 22.952027218422504
-      label: syst
-  - value: 8.142823063573346
-    errors:
-    - symerror: 0.8958640271164725
-      label: stat
-    - symerror: 1.996909806560452
-      label: syst
-  - value: 2.142949379588348
-    errors:
-    - symerror: 0.47893327543603315
-      label: stat
-    - symerror: 0.7062989758451924
-      label: syst
-  - value: 2.463838077124819
-    errors:
-    - symerror: 0.3063261828095426
-      label: stat
-    - symerror: 1.3228865482819243
-      label: syst
-  - value: 0.6900083209278498
-    errors:
-    - symerror: 0.17756909471313317
-      label: stat
-    - symerror: 0.2890935421681219
-      label: syst
-  - value: 0.4667423721388168
-    errors:
-    - symerror: 0.16619261075688688
-      label: stat
-    - symerror: 0.299585130746314
-      label: syst
-  - value: 1.1962255844557268
-    errors:
-    - symerror: 0.21198009271097545
-      label: stat
-    - symerror: 0.5372280217269806
-      label: syst
-  - value: 0.15466958684836685
-    errors:
-    - symerror: 0.08381303148053713
-      label: stat
-    - symerror: 0.09448667102243037
-      label: syst
-  - value: 82.55673009642506
-    errors:
-    - symerror: 3.1946209423268632
-      label: stat
-    - symerror: 26.77241841673596
-      label: syst
-independent_variables:
-- header:
-    name: Bin
-    units: ''
-  values:
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-  - value: '9'
-  - value: '10'
-  - value: total
-
-dependent_variables:
-- header:
-    name: Yield_2016_preVFP.2016_postVFP.2017.2018
-    units: ''
-  values:
-  - value: 5.67681282140978
-    errors:
-    - symerror: 0.1654027544156006
-      label: stat
-    - symerror: 1.4223068663814415
-      label: syst
-  - value: 0.1147966861308696
-    errors:
-    - symerror: 0.02448836831147827
-      label: stat
-    - symerror: 0.032004305234876344
-      label: syst
-  - value: 1.3937519796392146
-    errors:
-    - symerror: 0.09369706264253515
-      label: stat
-    - symerror: 0.28195391196852065
-      label: syst
-  - value: 5.184391147739165
-    errors:
-    - symerror: 0.155935473675981
-      label: stat
-    - symerror: 1.271122342128826
-      label: syst
-  - value: 0.17062370416823847
-    errors:
-    - symerror: 0.02905381368184258
-      label: stat
-    - symerror: 0.05081508554172698
-      label: syst
-  - value: 1.3607309543095556
-    errors:
-    - symerror: 0.09149012456781373
-      label: stat
-    - symerror: 0.28324330628144656
-      label: syst
-  - value: 1.8909071956121752
-    errors:
-    - symerror: 0.09825175801294923
-      label: stat
-    - symerror: 0.447552566298125
-      label: syst
-  - value: 0.040721158398844576
-    errors:
-    - symerror: 0.01396147052297046
-      label: stat
-    - symerror: 0.009935722448757523
-      label: syst
-  - value: 15.832735647407839
-    errors:
-    - symerror: 0.28304709933844935
-      label: stat
-    - symerror: 3.668931768628287
-      label: syst
-independent_variables:
-- header:
-    name: Bin
-    units: ''
-  values:
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-  - value: '9'
-  - value: '10'
-  - value: total
-
-dependent_variables:
-- header:
-    name: Yield_2016_preVFP.2016_postVFP.2017.2018
-    units: ''
-  values:
-  - value: 3.864339349109347
-    errors:
-    - symerror: 0.13850544288651825
-      label: stat
-    - symerror: 0.8996163648445905
-      label: syst
-  - value: 0.1474920372185443
-    errors:
-    - symerror: 0.026947662762701816
-      label: stat
-    - symerror: 0.03848785921760654
-      label: syst
-  - value: 1.170107596797419
-    errors:
-    - symerror: 0.08567183747843472
-      label: stat
-    - symerror: 0.22727466912996272
-      label: syst
-  - value: 3.9738509181844637
-    errors:
-    - symerror: 0.14382219022802914
-      label: stat
-    - symerror: 0.9948826868489353
-      label: syst
-  - value: 0.164234913243482
-    errors:
-    - symerror: 0.03039242472719355
-      label: stat
-    - symerror: 0.04733339114367143
-      label: syst
-  - value: 1.3031713904870714
-    errors:
-    - symerror: 0.09403278045654051
-      label: stat
-    - symerror: 0.2707975925018891
-      label: syst
-  - value: 2.142046885611392
-    errors:
-    - symerror: 0.11125632548945942
-      label: stat
-    - symerror: 0.5140371196813256
-      label: syst
-  - value: 0.07534724697134305
-    errors:
-    - symerror: 0.019912777774211812
-      label: stat
-    - symerror: 0.027522392122102383
-      label: syst
-  - value: 12.840590337623066
-    errors:
-    - symerror: 0.26547085026000383
-      label: stat
-    - symerror: 2.9065956719733896
-      label: syst
-independent_variables:
-- header:
-    name: Bin
-    units: ''
-  values:
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-  - value: '9'
-  - value: '10'
-  - value: total
-
-dependent_variables:
-- header:
-    name: Yield_2016_preVFP.2016_postVFP.2017.2018
-    units: ''
-  values:
-  - value: 2.0334393115649037
-    errors:
-    - symerror: 0.2424469147956295
-      label: stat
-    - symerror: 0.470700878041581
-      label: syst
-  - value: 0.014349326883580378
-    errors:
-    - symerror: 0.009440715785021508
-      label: stat
-    - symerror: 0.005784848447088975
-      label: syst
-  - value: 0.41866483117369224
-    errors:
-    - symerror: 0.14852976841907922
-      label: stat
-    - symerror: 0.10488019153364221
-      label: syst
-  - value: 1.5370748399859422
-    errors:
-    - symerror: 0.23131960189858158
-      label: stat
-    - symerror: 0.35561246601818386
-      label: syst
+    - label: Statistical
+      symerror: 1.41421
   - value: 0.0
     errors:
-    - symerror: 0.20593886324659413
-      label: stat
-    - symerror: 0.0
-      label: syst
-  - value: 0.2899731508190587
+    - label: Statistical
+      asymerror:
+        minus: 0.0
+        plus: 1.83258
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: Total background
+  values:
+  - value: 67.2995
     errors:
-    - symerror: 0.11141128307001712
-      label: stat
-    - symerror: 0.06639135386940286
-      label: syst
-  - value: 0.5226902076304161
+    - label: Statistical
+      symerror: 2.99478
+    - label: Systematic
+      symerror: 22.952
+  - value: 8.14282
     errors:
-    - symerror: 0.15255112337201562
-      label: stat
-    - symerror: 0.13883361705637987
-      label: syst
+    - label: Statistical
+      symerror: 0.895864
+    - label: Systematic
+      symerror: 1.99691
+  - value: 2.14295
+    errors:
+    - label: Statistical
+      symerror: 0.478933
+    - label: Systematic
+      symerror: 0.706299
+  - value: 2.46384
+    errors:
+    - label: Statistical
+      symerror: 0.306326
+    - label: Systematic
+      symerror: 1.32289
+  - value: 0.690008
+    errors:
+    - label: Statistical
+      symerror: 0.177569
+    - label: Systematic
+      symerror: 0.289094
+  - value: 0.466742
+    errors:
+    - label: Statistical
+      symerror: 0.166193
+    - label: Systematic
+      symerror: 0.299585
+  - value: 1.19623
+    errors:
+    - label: Statistical
+      symerror: 0.21198
+    - label: Systematic
+      symerror: 0.537228
+  - value: 0.15467
+    errors:
+    - label: Statistical
+      symerror: 0.083813
+    - label: Systematic
+      symerror: 0.0944867
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=100$ GeV, $c\tau_0=100$ mm
+  values:
+  - value: 5.67681
+    errors:
+    - label: Statistical
+      symerror: 0.165403
+    - label: Systematic
+      symerror: 1.42231
+  - value: 0.114797
+    errors:
+    - label: Statistical
+      symerror: 0.0244884
+    - label: Systematic
+      symerror: 0.0320043
+  - value: 1.39375
+    errors:
+    - label: Statistical
+      symerror: 0.0936971
+    - label: Systematic
+      symerror: 0.281954
+  - value: 5.18439
+    errors:
+    - label: Statistical
+      symerror: 0.155935
+    - label: Systematic
+      symerror: 1.27112
+  - value: 0.170624
+    errors:
+    - label: Statistical
+      symerror: 0.0290538
+    - label: Systematic
+      symerror: 0.0508151
+  - value: 1.36073
+    errors:
+    - label: Statistical
+      symerror: 0.0914901
+    - label: Systematic
+      symerror: 0.283243
+  - value: 1.89091
+    errors:
+    - label: Statistical
+      symerror: 0.0982518
+    - label: Systematic
+      symerror: 0.447553
+  - value: 0.0407212
+    errors:
+    - label: Statistical
+      symerror: 0.0139615
+    - label: Systematic
+      symerror: 0.00993572
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=100$ GeV, $c\tau_0=10$ mm
+  values:
+  - value: 3.86434
+    errors:
+    - label: Statistical
+      symerror: 0.138505
+    - label: Systematic
+      symerror: 0.899616
+  - value: 0.147492
+    errors:
+    - label: Statistical
+      symerror: 0.0269477
+    - label: Systematic
+      symerror: 0.0384879
+  - value: 1.17011
+    errors:
+    - label: Statistical
+      symerror: 0.0856718
+    - label: Systematic
+      symerror: 0.227275
+  - value: 3.97385
+    errors:
+    - label: Statistical
+      symerror: 0.143822
+    - label: Systematic
+      symerror: 0.994883
+  - value: 0.164235
+    errors:
+    - label: Statistical
+      symerror: 0.0303924
+    - label: Systematic
+      symerror: 0.0473334
+  - value: 1.30317
+    errors:
+    - label: Statistical
+      symerror: 0.0940328
+    - label: Systematic
+      symerror: 0.270798
+  - value: 2.14205
+    errors:
+    - label: Statistical
+      symerror: 0.111256
+    - label: Systematic
+      symerror: 0.514037
+  - value: 0.0753472
+    errors:
+    - label: Statistical
+      symerror: 0.0199128
+    - label: Systematic
+      symerror: 0.0275224
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=100$ GeV, $c\tau_0=1000$ mm
+  values:
+  - value: 2.03344
+    errors:
+    - label: Statistical
+      symerror: 0.242447
+    - label: Systematic
+      symerror: 0.470701
+  - value: 0.0143493
+    errors:
+    - label: Statistical
+      symerror: 0.00944072
+    - label: Systematic
+      symerror: 0.00578485
+  - value: 0.418665
+    errors:
+    - label: Statistical
+      symerror: 0.14853
+    - label: Systematic
+      symerror: 0.10488
+  - value: 1.53707
+    errors:
+    - label: Statistical
+      symerror: 0.23132
+    - label: Systematic
+      symerror: 0.355612
   - value: 0.0
     errors:
-    - symerror: 0.20593886324659413
-      label: stat
-    - symerror: 0.0
-      label: syst
-  - value: 4.816191668057593
+    - label: Statistical
+      symerror: 0.205939
+    - label: Systematic
+      symerror: 0.0
+  - value: 0.289973
     errors:
-    - symerror: 0.4124606686400144
-      label: stat
-    - symerror: 1.0593727848769654
-      label: syst
+    - label: Statistical
+      symerror: 0.111411
+    - label: Systematic
+      symerror: 0.0663914
+  - value: 0.52269
+    errors:
+    - label: Statistical
+      symerror: 0.152551
+    - label: Systematic
+      symerror: 0.138834
+  - value: 0.0
+    errors:
+    - label: Statistical
+      symerror: 0.205939
+    - label: Systematic
+      symerror: 0.0
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=100$ GeV, $c\tau_0=50$ mm
+  values:
+  - value: 7.33725
+    errors:
+    - label: Statistical
+      symerror: 0.185419
+    - label: Systematic
+      symerror: 1.82428
+  - value: 0.280776
+    errors:
+    - label: Statistical
+      symerror: 0.0371866
+    - label: Systematic
+      symerror: 0.0792322
+  - value: 1.84459
+    errors:
+    - label: Statistical
+      symerror: 0.104172
+    - label: Systematic
+      symerror: 0.363029
+  - value: 7.07666
+    errors:
+    - label: Statistical
+      symerror: 0.183389
+    - label: Systematic
+      symerror: 1.78807
+  - value: 0.197659
+    errors:
+    - label: Statistical
+      symerror: 0.0322946
+    - label: Systematic
+      symerror: 0.0536208
+  - value: 2.00396
+    errors:
+    - label: Statistical
+      symerror: 0.112328
+    - label: Systematic
+      symerror: 0.430203
+  - value: 2.99303
+    errors:
+    - label: Statistical
+      symerror: 0.122884
+    - label: Systematic
+      symerror: 0.703448
+  - value: 0.0316906
+    errors:
+    - label: Statistical
+      symerror: 0.0123863
+    - label: Systematic
+      symerror: 0.0088111
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=200$ GeV, $c\tau_0=100$ mm
+  values:
+  - value: 1.52698
+    errors:
+    - label: Statistical
+      symerror: 0.0254343
+    - label: Systematic
+      symerror: 0.37156
+  - value: 1.01733
+    errors:
+    - label: Statistical
+      symerror: 0.021103
+    - label: Systematic
+      symerror: 0.233789
+  - value: 0.888795
+    errors:
+    - label: Statistical
+      symerror: 0.0215844
+    - label: Systematic
+      symerror: 0.169529
+  - value: 2.23648
+    errors:
+    - label: Statistical
+      symerror: 0.0306
+    - label: Systematic
+      symerror: 0.536501
+  - value: 2.02993
+    errors:
+    - label: Statistical
+      symerror: 0.0292137
+    - label: Systematic
+      symerror: 0.479192
+  - value: 1.28802
+    errors:
+    - label: Statistical
+      symerror: 0.0258436
+    - label: Systematic
+      symerror: 0.245226
+  - value: 2.08933
+    errors:
+    - label: Statistical
+      symerror: 0.0304621
+    - label: Systematic
+      symerror: 0.45903
+  - value: 1.52522
+    errors:
+    - label: Statistical
+      symerror: 0.0257955
+    - label: Systematic
+      symerror: 0.346986
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=200$ GeV, $c\tau_0=10$ mm
+  values:
+  - value: 0.845838
+    errors:
+    - label: Statistical
+      symerror: 0.0188635
+    - label: Systematic
+      symerror: 0.197958
+  - value: 0.683131
+    errors:
+    - label: Statistical
+      symerror: 0.0171842
+    - label: Systematic
+      symerror: 0.152923
+  - value: 0.640924
+    errors:
+    - label: Statistical
+      symerror: 0.0184326
+    - label: Systematic
+      symerror: 0.120872
+  - value: 1.10288
+    errors:
+    - label: Statistical
+      symerror: 0.0213833
+    - label: Systematic
+      symerror: 0.260467
+  - value: 1.43079
+    errors:
+    - label: Statistical
+      symerror: 0.0247116
+    - label: Systematic
+      symerror: 0.331055
+  - value: 0.878408
+    errors:
+    - label: Statistical
+      symerror: 0.0214659
+    - label: Systematic
+      symerror: 0.166684
+  - value: 1.01997
+    errors:
+    - label: Statistical
+      symerror: 0.0216239
+    - label: Systematic
+      symerror: 0.219528
+  - value: 1.11966
+    errors:
+    - label: Statistical
+      symerror: 0.0223827
+    - label: Systematic
+      symerror: 0.248422
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=200$ GeV, $c\tau_0=1000$ mm
+  values:
+  - value: 0.692242
+    errors:
+    - label: Statistical
+      symerror: 0.0423072
+    - label: Systematic
+      symerror: 0.173025
+  - value: 0.45083
+    errors:
+    - label: Statistical
+      symerror: 0.0354783
+    - label: Systematic
+      symerror: 0.106612
+  - value: 0.267004
+    errors:
+    - label: Statistical
+      symerror: 0.0317957
+    - label: Systematic
+      symerror: 0.0534163
+  - value: 1.03715
+    errors:
+    - label: Statistical
+      symerror: 0.0532258
+    - label: Systematic
+      symerror: 0.254013
+  - value: 0.805697
+    errors:
+    - label: Statistical
+      symerror: 0.0464774
+    - label: Systematic
+      symerror: 0.194099
+  - value: 0.502781
+    errors:
+    - label: Statistical
+      symerror: 0.0418355
+    - label: Systematic
+      symerror: 0.0930412
+  - value: 0.818945
+    errors:
+    - label: Statistical
+      symerror: 0.0493472
+    - label: Systematic
+      symerror: 0.186807
+  - value: 0.534511
+    errors:
+    - label: Statistical
+      symerror: 0.0401512
+    - label: Systematic
+      symerror: 0.128627
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=200$ GeV, $c\tau_0=50$ mm
+  values:
+  - value: 1.77008
+    errors:
+    - label: Statistical
+      symerror: 0.0272696
+    - label: Systematic
+      symerror: 0.423704
+  - value: 1.2593
+    errors:
+    - label: Statistical
+      symerror: 0.0232695
+    - label: Systematic
+      symerror: 0.28745
+  - value: 1.07962
+    errors:
+    - label: Statistical
+      symerror: 0.023661
+    - label: Systematic
+      symerror: 0.204143
+  - value: 2.51576
+    errors:
+    - label: Statistical
+      symerror: 0.0323717
+    - label: Systematic
+      symerror: 0.604963
+  - value: 2.47028
+    errors:
+    - label: Statistical
+      symerror: 0.0323335
+    - label: Systematic
+      symerror: 0.575311
+  - value: 1.62496
+    errors:
+    - label: Statistical
+      symerror: 0.029056
+    - label: Systematic
+      symerror: 0.309404
+  - value: 2.43562
+    errors:
+    - label: Statistical
+      symerror: 0.0330155
+    - label: Systematic
+      symerror: 0.536176
+  - value: 1.9268
+    errors:
+    - label: Statistical
+      symerror: 0.029005
+    - label: Systematic
+      symerror: 0.435002
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=300$ GeV, $c\tau_0=100$ mm
+  values:
+  - value: 0.299209
+    errors:
+    - label: Statistical
+      symerror: 0.00524093
+    - label: Systematic
+      symerror: 0.0709982
+  - value: 0.304412
+    errors:
+    - label: Statistical
+      symerror: 0.00540097
+    - label: Systematic
+      symerror: 0.0682672
+  - value: 0.420454
+    errors:
+    - label: Statistical
+      symerror: 0.00693163
+    - label: Systematic
+      symerror: 0.0804259
+  - value: 0.563584
+    errors:
+    - label: Statistical
+      symerror: 0.00717454
+    - label: Systematic
+      symerror: 0.133926
+  - value: 1.00997
+    errors:
+    - label: Statistical
+      symerror: 0.00983282
+    - label: Systematic
+      symerror: 0.228538
+  - value: 0.924446
+    errors:
+    - label: Statistical
+      symerror: 0.0102265
+    - label: Systematic
+      symerror: 0.175773
+  - value: 1.00585
+    errors:
+    - label: Statistical
+      symerror: 0.0100128
+    - label: Systematic
+      symerror: 0.218161
+  - value: 1.98196
+    errors:
+    - label: Statistical
+      symerror: 0.0141741
+    - label: Systematic
+      symerror: 0.411252
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=300$ GeV, $c\tau_0=10$ mm
+  values:
+  - value: 0.150258
+    errors:
+    - label: Statistical
+      symerror: 0.0036015
+    - label: Systematic
+      symerror: 0.0348088
+  - value: 0.176553
+    errors:
+    - label: Statistical
+      symerror: 0.00404583
+    - label: Systematic
+      symerror: 0.0388434
+  - value: 0.248042
+    errors:
+    - label: Statistical
+      symerror: 0.00518696
+    - label: Systematic
+      symerror: 0.0471349
+  - value: 0.247743
+    errors:
+    - label: Statistical
+      symerror: 0.00465009
+    - label: Systematic
+      symerror: 0.0577257
+  - value: 0.56845
+    errors:
+    - label: Statistical
+      symerror: 0.00718887
+    - label: Systematic
+      symerror: 0.1253
+  - value: 0.52228
+    errors:
+    - label: Statistical
+      symerror: 0.00746013
+    - label: Systematic
+      symerror: 0.0968163
+  - value: 0.349274
+    errors:
+    - label: Statistical
+      symerror: 0.00574323
+    - label: Systematic
+      symerror: 0.0742209
+  - value: 1.07026
+    errors:
+    - label: Statistical
+      symerror: 0.0102468
+    - label: Systematic
+      symerror: 0.214161
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=300$ GeV, $c\tau_0=1000$ mm
+  values:
+  - value: 0.139061
+    errors:
+    - label: Statistical
+      symerror: 0.00874574
+    - label: Systematic
+      symerror: 0.0319626
+  - value: 0.140154
+    errors:
+    - label: Statistical
+      symerror: 0.00931578
+    - label: Systematic
+      symerror: 0.0330086
+  - value: 0.188371
+    errors:
+    - label: Statistical
+      symerror: 0.011929
+    - label: Systematic
+      symerror: 0.0354703
+  - value: 0.297506
+    errors:
+    - label: Statistical
+      symerror: 0.0126873
+    - label: Systematic
+      symerror: 0.0701863
+  - value: 0.486528
+    errors:
+    - label: Statistical
+      symerror: 0.0171452
+    - label: Systematic
+      symerror: 0.111788
+  - value: 0.399456
+    errors:
+    - label: Statistical
+      symerror: 0.017258
+    - label: Systematic
+      symerror: 0.075832
+  - value: 0.450408
+    errors:
+    - label: Statistical
+      symerror: 0.0162496
+    - label: Systematic
+      symerror: 0.0954638
+  - value: 0.818115
+    errors:
+    - label: Statistical
+      symerror: 0.0229773
+    - label: Systematic
+      symerror: 0.172494
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=300$ GeV, $c\tau_0=50$ mm
+  values:
+  - value: 0.328378
+    errors:
+    - label: Statistical
+      symerror: 0.00633461
+    - label: Systematic
+      symerror: 0.0770554
+  - value: 0.341421
+    errors:
+    - label: Statistical
+      symerror: 0.00662244
+    - label: Systematic
+      symerror: 0.075735
+  - value: 0.50224
+    errors:
+    - label: Statistical
+      symerror: 0.0087951
+    - label: Systematic
+      symerror: 0.0952292
+  - value: 0.582162
+    errors:
+    - label: Statistical
+      symerror: 0.00841138
+    - label: Systematic
+      symerror: 0.137473
+  - value: 1.13713
+    errors:
+    - label: Statistical
+      symerror: 0.012068
+    - label: Systematic
+      symerror: 0.255019
+  - value: 1.09708
+    errors:
+    - label: Statistical
+      symerror: 0.0130691
+    - label: Systematic
+      symerror: 0.209908
+  - value: 1.01367
+    errors:
+    - label: Statistical
+      symerror: 0.0116686
+    - label: Systematic
+      symerror: 0.215108
+  - value: 2.28897
+    errors:
+    - label: Statistical
+      symerror: 0.0176819
+    - label: Systematic
+      symerror: 0.46926
 independent_variables:
 - header:
-    name: Bin
+    name: $SR bins$
     units: ''
   values:
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-  - value: '9'
-  - value: '10'
-  - value: total
-
-dependent_variables:
-- header:
-    name: Yield_2016_preVFP.2016_postVFP.2017.2018
-    units: ''
-  values:
-  - value: 7.337246472138535
-    errors:
-    - symerror: 0.1854188630417594
-      label: stat
-    - symerror: 1.8242777794911473
-      label: syst
-  - value: 0.2807764225508381
-    errors:
-    - symerror: 0.03718663538728741
-      label: stat
-    - symerror: 0.07923215110407905
-      label: syst
-  - value: 1.8445935884137095
-    errors:
-    - symerror: 0.1041716255127241
-      label: stat
-    - symerror: 0.363029127405527
-      label: syst
-  - value: 7.076658736513615
-    errors:
-    - symerror: 0.18338911249512432
-      label: stat
-    - symerror: 1.7880667669606074
-      label: syst
-  - value: 0.1976591798434208
-    errors:
-    - symerror: 0.03229455767219937
-      label: stat
-    - symerror: 0.05362084115543506
-      label: syst
-  - value: 2.0039598153613563
-    errors:
-    - symerror: 0.11232762049001611
-      label: stat
-    - symerror: 0.43020326473146003
-      label: syst
-  - value: 2.993034275415126
-    errors:
-    - symerror: 0.12288403714764339
-      label: stat
-    - symerror: 0.7034475493251774
-      label: syst
-  - value: 0.03169062970819619
-    errors:
-    - symerror: 0.01238627702244964
-      label: stat
-    - symerror: 0.008811095382173085
-      label: syst
-  - value: 21.7656191199448
-    errors:
-    - symerror: 0.33039466398719386
-      label: stat
-    - symerror: 5.074193028336587
-      label: syst
-independent_variables:
-- header:
-    name: Bin
-    units: ''
-  values:
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-  - value: '9'
-  - value: '10'
-  - value: total
-
-dependent_variables:
-- header:
-    name: Yield_2016_preVFP.2016_postVFP.2017.2018
-    units: ''
-  values:
-  - value: 1.5269783300395965
-    errors:
-    - symerror: 0.025434329998352975
-      label: stat
-    - symerror: 0.37156022419434825
-      label: syst
-  - value: 1.0173318442003039
-    errors:
-    - symerror: 0.021103011106223087
-      label: stat
-    - symerror: 0.23378921515104573
-      label: syst
-  - value: 0.8887946420002091
-    errors:
-    - symerror: 0.0215843770823293
-      label: stat
-    - symerror: 0.16952927216003427
-      label: syst
-  - value: 2.2364751198467725
-    errors:
-    - symerror: 0.030599952943591878
-      label: stat
-    - symerror: 0.5365011648608943
-      label: syst
-  - value: 2.0299306390714587
-    errors:
-    - symerror: 0.029213738658787184
-      label: stat
-    - symerror: 0.4791921487902551
-      label: syst
-  - value: 1.2880174831071156
-    errors:
-    - symerror: 0.025843592188721433
-      label: stat
-    - symerror: 0.24522579850188783
-      label: syst
-  - value: 2.0893294587762226
-    errors:
-    - symerror: 0.030462127476095165
-      label: stat
-    - symerror: 0.4590304111228206
-      label: syst
-  - value: 1.5252158568908358
-    errors:
-    - symerror: 0.025795485761600553
-      label: stat
-    - symerror: 0.3469864932468277
-      label: syst
-  - value: 12.602073373932514
-    errors:
-    - symerror: 0.0748943706434895
-      label: stat
-    - symerror: 2.765686025199031
-      label: syst
-independent_variables:
-- header:
-    name: Bin
-    units: ''
-  values:
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-  - value: '9'
-  - value: '10'
-  - value: total
-
-dependent_variables:
-- header:
-    name: Yield_2016_preVFP.2016_postVFP.2017.2018
-    units: ''
-  values:
-  - value: 0.8458378730632218
-    errors:
-    - symerror: 0.01886349325136808
-      label: stat
-    - symerror: 0.19795763529198207
-      label: syst
-  - value: 0.6831310964012048
-    errors:
-    - symerror: 0.017184189070641606
-      label: stat
-    - symerror: 0.15292269837401523
-      label: syst
-  - value: 0.6409237153121952
-    errors:
-    - symerror: 0.018432567916118955
-      label: stat
-    - symerror: 0.12087220021218145
-      label: syst
-  - value: 1.1028796327012926
-    errors:
-    - symerror: 0.02138332390548374
-      label: stat
-    - symerror: 0.2604670084454792
-      label: syst
-  - value: 1.4307949208389215
-    errors:
-    - symerror: 0.024711623841740818
-      label: stat
-    - symerror: 0.3310552805293728
-      label: syst
-  - value: 0.8784084487701134
-    errors:
-    - symerror: 0.02146593827421493
-      label: stat
-    - symerror: 0.16668400408868245
-      label: syst
-  - value: 1.019974520491441
-    errors:
-    - symerror: 0.021623875568217363
-      label: stat
-    - symerror: 0.21952830656308492
-      label: syst
-  - value: 1.1196553884346911
-    errors:
-    - symerror: 0.022382650375324727
-      label: stat
-    - symerror: 0.24842237315923968
-      label: syst
-  - value: 7.721605596013082
-    errors:
-    - symerror: 0.0590606444613586
-      label: stat
-    - symerror: 1.6475689597101204
-      label: syst
-independent_variables:
-- header:
-    name: Bin
-    units: ''
-  values:
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-  - value: '9'
-  - value: '10'
-  - value: total
-
-dependent_variables:
-- header:
-    name: Yield_2016_preVFP.2016_postVFP.2017.2018
-    units: ''
-  values:
-  - value: 0.6922416784990761
-    errors:
-    - symerror: 0.042307170010493514
-      label: stat
-    - symerror: 0.1730248591398527
-      label: syst
-  - value: 0.45082984190569364
-    errors:
-    - symerror: 0.03547831994977791
-      label: stat
-    - symerror: 0.10661156240540745
-      label: syst
-  - value: 0.2670044584402031
-    errors:
-    - symerror: 0.0317957470126706
-      label: stat
-    - symerror: 0.053416264708214874
-      label: syst
-  - value: 1.0371522831592244
-    errors:
-    - symerror: 0.0532257517168208
-      label: stat
-    - symerror: 0.2540129643489984
-      label: syst
-  - value: 0.8056969386336699
-    errors:
-    - symerror: 0.046477357134313925
-      label: stat
-    - symerror: 0.194098700042933
-      label: syst
-  - value: 0.5027812214679181
-    errors:
-    - symerror: 0.04183545814314033
-      label: stat
-    - symerror: 0.09304122170825092
-      label: syst
-  - value: 0.8189447364882401
-    errors:
-    - symerror: 0.04934717125046289
-      label: stat
-    - symerror: 0.18680701360587715
-      label: syst
-  - value: 0.5345111544824876
-    errors:
-    - symerror: 0.040151167843652955
-      label: stat
-    - symerror: 0.12862682654418897
-      label: syst
-  - value: 5.109162313076514
-    errors:
-    - symerror: 0.12186126484055024
-      label: stat
-    - symerror: 1.1506299024268125
-      label: syst
-independent_variables:
-- header:
-    name: Bin
-    units: ''
-  values:
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-  - value: '9'
-  - value: '10'
-  - value: total
-
-dependent_variables:
-- header:
-    name: Yield_2016_preVFP.2016_postVFP.2017.2018
-    units: ''
-  values:
-  - value: 1.770075837087845
-    errors:
-    - symerror: 0.02726959790570835
-      label: stat
-    - symerror: 0.4237042971390305
-      label: syst
-  - value: 1.2593047308477288
-    errors:
-    - symerror: 0.023269544675196135
-      label: stat
-    - symerror: 0.28744957185513936
-      label: syst
-  - value: 1.079617948358668
-    errors:
-    - symerror: 0.02366098219819162
-      label: stat
-    - symerror: 0.20414329771202955
-      label: syst
-  - value: 2.5157601931794193
-    errors:
-    - symerror: 0.03237170044124477
-      label: stat
-    - symerror: 0.6049632698570359
-      label: syst
-  - value: 2.4702780936457334
-    errors:
-    - symerror: 0.03233346874476111
-      label: stat
-    - symerror: 0.5753105838212853
-      label: syst
-  - value: 1.6249640811886812
-    errors:
-    - symerror: 0.029055975940965553
-      label: stat
-    - symerror: 0.30940414579114417
-      label: syst
-  - value: 2.435617181641465
-    errors:
-    - symerror: 0.03301547773358006
-      label: stat
-    - symerror: 0.5361758808683815
-      label: syst
-  - value: 1.926799742767734
-    errors:
-    - symerror: 0.029005029848381818
-      label: stat
-    - symerror: 0.43500218266842927
-      label: syst
-  - value: 15.082417808717274
-    errors:
-    - symerror: 0.0819383195629691
-      label: stat
-    - symerror: 3.2837178014454547
-      label: syst
-independent_variables:
-- header:
-    name: Bin
-    units: ''
-  values:
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-  - value: '9'
-  - value: '10'
-  - value: total
-
-dependent_variables:
-- header:
-    name: Yield_2016_preVFP.2016_postVFP.2017.2018
-    units: ''
-  values:
-  - value: 0.2992088567018606
-    errors:
-    - symerror: 0.005240930463899756
-      label: stat
-    - symerror: 0.07099824070257299
-      label: syst
-  - value: 0.30441198407715087
-    errors:
-    - symerror: 0.005400968252142325
-      label: stat
-    - symerror: 0.06826720193966747
-      label: syst
-  - value: 0.4204539465270425
-    errors:
-    - symerror: 0.0069316296256906555
-      label: stat
-    - symerror: 0.08042591997986952
-      label: syst
-  - value: 0.5635837421179244
-    errors:
-    - symerror: 0.00717453514392544
-      label: stat
-    - symerror: 0.1339257329215446
-      label: syst
-  - value: 1.009971544711185
-    errors:
-    - symerror: 0.009832824069348357
-      label: stat
-    - symerror: 0.2285383530962889
-      label: syst
-  - value: 0.9244459777008481
-    errors:
-    - symerror: 0.010226528407484977
-      label: stat
-    - symerror: 0.17577326825019454
-      label: syst
-  - value: 1.0058525985788647
-    errors:
-    - symerror: 0.01001275860302773
-      label: stat
-    - symerror: 0.21816088951851634
-      label: syst
-  - value: 1.9819592289968266
-    errors:
-    - symerror: 0.014174113013818797
-      label: stat
-    - symerror: 0.4112522007507057
-      label: syst
-  - value: 6.5098878794117025
-    errors:
-    - symerror: 0.025662937887274757
-      label: stat
-    - symerror: 1.3556444370062013
-      label: syst
-independent_variables:
-- header:
-    name: Bin
-    units: ''
-  values:
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-  - value: '9'
-  - value: '10'
-  - value: total
-
-dependent_variables:
-- header:
-    name: Yield_2016_preVFP.2016_postVFP.2017.2018
-    units: ''
-  values:
-  - value: 0.15025848569961886
-    errors:
-    - symerror: 0.0036015038382907665
-      label: stat
-    - symerror: 0.034808799341893196
-      label: syst
-  - value: 0.17655314930129312
-    errors:
-    - symerror: 0.004045826235699991
-      label: stat
-    - symerror: 0.03884336320570966
-      label: syst
-  - value: 0.24804196211164548
-    errors:
-    - symerror: 0.0051869569944115726
-      label: stat
-    - symerror: 0.047134925968301905
-      label: syst
-  - value: 0.24774334679813145
-    errors:
-    - symerror: 0.004650086642191508
-      label: stat
-    - symerror: 0.0577256649658294
-      label: syst
-  - value: 0.5684499895603392
-    errors:
-    - symerror: 0.007188874995700914
-      label: stat
-    - symerror: 0.1252996699155318
-      label: syst
-  - value: 0.5222799488191001
-    errors:
-    - symerror: 0.007460132777966365
-      label: stat
-    - symerror: 0.09681629176139142
-      label: syst
-  - value: 0.34927408087199346
-    errors:
-    - symerror: 0.005743227136532747
-      label: stat
-    - symerror: 0.07422087851375542
-      label: syst
-  - value: 1.070263452014943
-    errors:
-    - symerror: 0.01024676231037992
-      label: stat
-    - symerror: 0.2141609239524084
-      label: syst
-  - value: 3.3328644151770646
-    errors:
-    - symerror: 0.017977254212598624
-      label: stat
-    - symerror: 0.6724852482607047
-      label: syst
-independent_variables:
-- header:
-    name: Bin
-    units: ''
-  values:
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-  - value: '9'
-  - value: '10'
-  - value: total
-
-dependent_variables:
-- header:
-    name: Yield_2016_preVFP.2016_postVFP.2017.2018
-    units: ''
-  values:
-  - value: 0.1390606491848551
-    errors:
-    - symerror: 0.008745740321027332
-      label: stat
-    - symerror: 0.03196256108189941
-      label: syst
-  - value: 0.14015364263850172
-    errors:
-    - symerror: 0.00931578190284692
-      label: stat
-    - symerror: 0.03300857802616686
-      label: syst
-  - value: 0.18837107778760542
-    errors:
-    - symerror: 0.011929031974113756
-      label: stat
-    - symerror: 0.03547027999607058
-      label: syst
-  - value: 0.2975058962317394
-    errors:
-    - symerror: 0.012687305701643054
-      label: stat
-    - symerror: 0.07018626553153835
-      label: syst
-  - value: 0.48652830446323103
-    errors:
-    - symerror: 0.017145192791167458
-      label: stat
-    - symerror: 0.11178803683893651
-      label: syst
-  - value: 0.399456044432978
-    errors:
-    - symerror: 0.017257953739348887
-      label: stat
-    - symerror: 0.0758319920333875
-      label: syst
-  - value: 0.45040797243911435
-    errors:
-    - symerror: 0.016249646642402096
-      label: stat
-    - symerror: 0.0954638359871131
-      label: syst
-  - value: 0.8181152145184797
-    errors:
-    - symerror: 0.02297734063670638
-      label: stat
-    - symerror: 0.17249434390924462
-      label: syst
-  - value: 2.919598801696505
-    errors:
-    - symerror: 0.04301563782956846
-      label: stat
-    - symerror: 0.6108650798152327
-      label: syst
-independent_variables:
-- header:
-    name: Bin
-    units: ''
-  values:
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-  - value: '9'
-  - value: '10'
-  - value: total
-
-dependent_variables:
-- header:
-    name: Yield_2016_preVFP.2016_postVFP.2017.2018
-    units: ''
-  values:
-  - value: 0.3283783968108972
-    errors:
-    - symerror: 0.006334609441111749
-      label: stat
-    - symerror: 0.07705542406258138
-      label: syst
-  - value: 0.34142058583269486
-    errors:
-    - symerror: 0.006622444646675218
-      label: stat
-    - symerror: 0.07573500006460436
-      label: syst
-  - value: 0.5022398828787776
-    errors:
-    - symerror: 0.008795103152738008
-      label: stat
-    - symerror: 0.09522915912557749
-      label: syst
-  - value: 0.5821623266128407
-    errors:
-    - symerror: 0.008411378746197311
-      label: stat
-    - symerror: 0.13747286741423909
-      label: syst
-  - value: 1.1371300339468702
-    errors:
-    - symerror: 0.012067985482749195
-      label: stat
-    - symerror: 0.25501910851238574
-      label: syst
-  - value: 1.0970818676437954
-    errors:
-    - symerror: 0.013069118926507736
-      label: stat
-    - symerror: 0.20990778509279423
-      label: syst
-  - value: 1.0136678062811253
-    errors:
-    - symerror: 0.011668564096843461
-      label: stat
-    - symerror: 0.21510783847116582
-      label: syst
-  - value: 2.2889733240165206
-    errors:
-    - symerror: 0.01768193037224423
-      label: stat
-    - symerror: 0.4692599448630075
-      label: syst
-  - value: 7.291054224023522
-    errors:
-    - symerror: 0.031580585406972214
-      label: stat
-    - symerror: 1.4993283110768874
-      label: syst
-independent_variables:
-- header:
-    name: Bin
-    units: ''
-  values:
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-  - value: '9'
-  - value: '10'
-  - value: total
-
+  - low: 1.0
+    high: 2.0
+  - low: 2.0
+    high: 3.0
+  - low: 3.0
+    high: 4.0
+  - low: 4.0
+    high: 5.0
+  - low: 5.0
+    high: 6.0
+  - low: 6.0
+    high: 7.0
+  - low: 7.0
+    high: 8.0
+  - low: 8.0
+    high: 9.0

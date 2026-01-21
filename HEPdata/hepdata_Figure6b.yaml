@@ -1,68 +1,98 @@
 dependent_variables:
 - header:
-    name: Postfit misidentified events
-  values:
-  - value: 67.3531494140625
-    errors: []
-  - value: 7.640556812286377
-    errors: []
-  - value: 2.414203405380249
-    errors: []
-  - value: 2.573625326156616
-    errors: []
-  - value: 0.6612790822982788
-    errors: []
-  - value: 0.5573307871818542
-    errors: []
-  - value: 1.2212284803390503
-    errors: []
-  - value: 0.14464256167411804
-    errors: []
-independent_variables:
-- header:
-    name: Bin
-    units: ''
-  values:
-  - value: '1'
-  - value: '2'
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-
-dependent_variables:
-- header:
-    name: Postfit observed data
+    name: Events
+  qualifiers:
+  - name: Process
+    value: Data
   values:
   - value: 66.0
-    errors: []
+    errors:
+    - label: Statistical
+      symerror: 8.12404
   - value: 4.0
-    errors: []
+    errors:
+    - label: Statistical
+      symerror: 2.0
   - value: 5.0
-    errors: []
+    errors:
+    - label: Statistical
+      symerror: 2.23607
   - value: 2.0
-    errors: []
-  - value: 0.0025100000202655792
-    errors: []
+    errors:
+    - label: Statistical
+      symerror: 1.41421
+  - value: 0.00251
+    errors:
+    - label: Statistical
+      symerror: 0.0500999
   - value: 2.0
-    errors: []
+    errors:
+    - label: Statistical
+      symerror: 1.41421
   - value: 2.0
-    errors: []
-  - value: 0.0025100000202655792
-    errors: []
+    errors:
+    - label: Statistical
+      symerror: 1.41421
+  - value: 0.00251
+    errors:
+    - label: Statistical
+      symerror: 0.0500999
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: Total Background
+  values:
+  - value: 67.3531
+    errors:
+    - label: Statistical
+      symerror: 7.53593
+  - value: 7.64056
+    errors:
+    - label: Statistical
+      symerror: 1.348
+  - value: 2.4142
+    errors:
+    - label: Statistical
+      symerror: 0.66913
+  - value: 2.57363
+    errors:
+    - label: Statistical
+      symerror: 0.692964
+  - value: 0.661279
+    errors:
+    - label: Statistical
+      symerror: 0.217882
+  - value: 0.557331
+    errors:
+    - label: Statistical
+      symerror: 0.253052
+  - value: 1.22123
+    errors:
+    - label: Statistical
+      symerror: 0.397184
+  - value: 0.144643
+    errors:
+    - label: Statistical
+      symerror: 0.103929
 independent_variables:
 - header:
-    name: Bin
+    name: $SR bins$
     units: ''
   values:
-  - value: '1'
-  - value: '2'
-  - value: '3'
-  - value: '4'
-  - value: '5'
-  - value: '6'
-  - value: '7'
-  - value: '8'
-
+  - low: 1.0
+    high: 2.0
+  - low: 2.0
+    high: 3.0
+  - low: 3.0
+    high: 4.0
+  - low: 4.0
+    high: 5.0
+  - low: 5.0
+    high: 6.0
+  - low: 6.0
+    high: 7.0
+  - low: 7.0
+    high: 8.0
+  - low: 8.0
+    high: 9.0

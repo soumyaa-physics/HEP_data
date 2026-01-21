@@ -3,94 +3,136 @@ import ROOT
 import ctypes
 import argparse
 import os
+import math
 
-class FlowStyleList(list):
-    pass
-
-def flow_style_list_representer(dumper, data):
-    return dumper.represent_sequence('tag:yaml.org,2002:seq', data, flow_style=True)
-
-yaml.add_representer(FlowStyleList, flow_style_list_representer)
-
-parser = argparse.ArgumentParser(description="Convert yield plots")
+parser = argparse.ArgumentParser(description="Convert yield ROOT to HEPData format")
 parser.add_argument("input_file", help="Path to the ROOT file")
-# parser.add_argument("-o", "--output_dir", default=".", help="Directory to save the single YAML file")
 args = parser.parse_args()
 
 input_path = args.input_file
-output_dir = "./examples"
+output_dir = "./HEPdata"
+os.makedirs(output_dir, exist_ok=True)
 
-f = ROOT.TFile(input_path)
+BIN_EDGES = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0]
+
+X_AXIS_LABEL = "$SR bins$"
+X_AXIS_UNITS = ""
+Y_AXIS_LABEL = "Events"
+
+outname = os.path.join(output_dir, "hepdata_Figure6b.yaml")
+
+f = ROOT.TFile.Open(input_path)
+
+def make_bin_ranges(edges):
+    return [{"low": edges[i], "high": edges[i+1]}
+            for i in range(len(edges)-1)]
+
+def fmt(x):
+    return float(f"{x:.6g}")
+
+bin_ranges = make_bin_ranges(BIN_EDGES)
+
+independent_variables = [{
+    "header": {
+        "name": X_AXIS_LABEL,
+        "units": X_AXIS_UNITS
+    },
+    "values": bin_ranges
+}]
 
 graphs = {
-    "postfit_misid": {
-        "path": "BRT2_added_postfit_misid",
-        "description": "Postfit misidentified events",
-    },
     "postfit_data_obs": {
         "path": "BRT2_added_postfit_data_obs",
-        "description": "Postfit observed data",
+        "process": "Data"
+    },
+    "postfit_misid": {
+        "path": "BRT2_added_postfit_misid",
+        "process": "Total Background"
     },
 }
 
-
-tables = []
-
-# figure_metadata = {
-#     "name": "Figure 6b (postfit yields)",
-#     "description": (
-#         "Observed and predicted event yields in the eight SR bins as defined in Table 2 "
-#         "The signal distributions yields in the maximally mixed scenario for a few "
-#         "representative sets of $(m_{\\tilde{\\tau}} [\\text{GeV}], c\\tau_{0} [\\text{mm}])$ "
-#         "values are overlaid: (100, 50), (100, 100), (200, 50), and (200, 100). "
-#         "The predicted yields and uncertainties are after the maximum likelihood fit to data "
-#         "under the background-only hypothesis, as described in Section 8. "
-#         # "In bins where the observed yield is zero, the Poissonian upper limit at 68% CL "
-#         # "is shown as a positive uncertainty. The last bin includes the overflow."
-#     ),
-#     "keywords": [{"name": "cmenergies", "values": [13000.0]}],
-#     "data_file": "hepdata_Figure6b.yaml"
-# }
+dependent_variables = []
 
 
-for label, info in graphs.items():
-    graph = f.Get(info["path"])
-    if not graph:
-        print(f"NOT FOUND: {info['path']}")
+for key, info in graphs.items():
+
+    process_name = info["process"]
+
+    # Skip misid (same as YAML version)
+    if process_name == "misid":
         continue
 
-    n_bins = graph.GetNbinsX()
-    x_vals = [graph.GetBinCenter(i) for i in range(1, n_bins+1)]
-    z_vals = [graph.GetBinContent(i) for i in range(1, n_bins+1)]
+    hist = f.Get(info["path"])
+    if not hist:
+        raise RuntimeError(f"Missing histogram: {info['path']}")
 
-    indep_vars = [
-        {"header": {"name": "Bin", "units": ""}, 
-         "values": [{"value": str(int(b))} for b in x_vals]}
-    ]
+    n_bins = hist.GetNbinsX()
 
-    dep_vars = [
-        {
-            "header": {"name": info["description"]},
-            "values": [{"value": zv, "errors": FlowStyleList([])} for zv in z_vals]
-        }
-    ]
+    is_data = (process_name == "Data")
 
-    table = {
-        # "name": label,
-        # "description": info["description"],
-        # "keywords": figure_metadata["keywords"],
-        "dependent_variables": dep_vars,
-        "independent_variables": indep_vars,
-    }
-    tables.append(table)
+    dep_values = []
 
-outname = "hepdata_Figure6b.yaml"
+    for i in range(1, n_bins + 1):
+
+        value = fmt(hist.GetBinContent(i))
+
+        errors = []
+
+        # ---------- DATA ----------
+        if is_data:
+
+            if value > 0.0:
+                stat = fmt(math.sqrt(value))
+                errors.append({
+                    "label": "Statistical",
+                    "symerror": stat
+                })
+
+            else:
+                # one-sided Poisson convention
+                errors.append({
+                    "label": "Statistical",
+                    "asymerror": {
+                        "minus": 0.0,
+                        "plus": 1.83258
+                    }
+                })
+
+        # ---------- BACKGROUND ----------
+        else:
+
+            stat_err = hist.GetBinError(i)
+
+            if stat_err > 0:
+                errors.append({
+                    "label": "Statistical",
+                    "symerror": fmt(stat_err)
+                })
+
+        dep_values.append({
+            "value": value,
+            "errors": errors
+        })
+
+    dependent_variables.append({
+        "header": {
+            "name": Y_AXIS_LABEL
+        },
+        "qualifiers": [
+            {
+                "name": "Process",
+                "value": process_name
+            }
+        ],
+        "values": dep_values
+    })
+
+table = {
+    "dependent_variables": dependent_variables,
+    "independent_variables": independent_variables
+}
 
 with open(outname, "w") as f_out:
+    yaml.dump(table, f_out, sort_keys=False)
 
-    # Append tables
-    for table in tables:
-        yaml.dump(table, f_out, sort_keys=False)
-        f_out.write("\n")
-
-print(f"Converted {input_path} → {outname}")
+print(f"Written HEPData file: {outname}")

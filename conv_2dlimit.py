@@ -5,11 +5,14 @@ import os
 
 # for FIGURE 7
 
-input_file = "EXO-24-020_HEPData/data/Figure7a_Figure8_limits.root"
+input_file = "EXO-24-020_HEPData/data/Figure7b_Figure9_limits.root"
 f = ROOT.TFile(input_file)
 
-with open("7adictionary.yaml") as fi:
+with open("7bdictionary.yaml") as fi:
     table_metadata = yaml.safe_load(fi)
+
+def fmt(x):
+    return float(f"{x:.6g}")
 
 graphs = {
     "observed": {
@@ -86,14 +89,14 @@ for label, info in graphs.items():
         y = ctypes.c_double()
         for i in range(n):
             graph.GetPoint(i, x, y)
-            x_vals.append(x.value)
-            z_vals.append(y.value)  # TGraph: y-values go into dependent variable
-        indep_vars = [{"header": {"name": "m_stau", "units": "GeV"},
+            x_vals.append(fmt(x.value))
+            z_vals.append(fmt(y.value))  # TGraph: y-values go into dependent variable
+        indep_vars = [{"header": {"name": "$m_{\\tilde{\\tau}}$", "units": "GeV"},
                        "values": [{"value": xv} for xv in x_vals]}]
-        dep_vars = [{"header": {"name": "95% CL limit"},
+        dep_vars = [{"header": {"name": "$c\\tau_{0}$", "units": "mm"},
                      "qualifiers": [
-                         {"name": "RE", "value": "pp → \\tilde{τ}\\tilde{τ}"},
-                         {"name": "MODEL", "value": "GMSB maximally mixed  stau scenario"},
+                        #  {"name": "RE", "value": "pp → \\tilde{τ}\\tilde{τ}"},
+                         {"name": "MODEL", "value": "Mass-degenerate scenario"},
                          {"name": "SQRT(S)", "value": "13 TeV"},
                          {"name": "LUMI", "value": "138 fb^{-1}"},
                          {"name": "CL", "value": "95%"},
@@ -105,17 +108,17 @@ for label, info in graphs.items():
         n_y = graph.GetNbinsY()
         for i in range(1, n_x + 1):
             for j in range(1, n_y + 1):
-                x_vals.append(graph.GetXaxis().GetBinCenter(i))
-                y_vals.append(graph.GetYaxis().GetBinCenter(j))
-                z_vals.append(graph.GetBinContent(i, j))
+                x_vals.append(fmt(graph.GetXaxis().GetBinCenter(i)))
+                y_vals.append(fmt(graph.GetYaxis().GetBinCenter(j)))
+                z_vals.append(fmt(graph.GetBinContent(i, j)))
         indep_vars = [
-            {"header": {"name": "Mass of stau", "units": "GeV"}, "values": [{"value": xv} for xv in x_vals]},
-            {"header": {"name": "Proper lifetime", "units": "mm"}, "values": [{"value": yv} for yv in y_vals]},
+            {"header": {"name": "$m_{\\tilde{\\tau}}$", "units": "GeV"}, "values": [{"value": xv} for xv in x_vals]},
+            {"header": {"name":  "$c\\tau_0$", "units": "mm"}, "values": [{"value": yv} for yv in y_vals]},
         ]
-        dep_vars = [{"header": {"name": "95% CL limit"},
+        dep_vars = [{"header": {"name": "$c\\tau_{0}$", "units": "mm"},
                      "qualifiers": [
-                         {"name": "RE", "value": "pp → \\tilde{τ}\\tilde{τ}"},
-                         {"name": "MODEL", "value": "GMSB maximally mixed stau scenario"},
+                        #  {"name": "RE", "value": "pp → \\tilde{τ}\\tilde{τ}"},
+                         {"name": "MODEL", "value": "Mass-degenerate scenario"},
                          {"name": "SQRT(S)", "value": "13 TeV"},
                          {"name": "LUMI", "value": "138 fb^{-1}"},
                          {"name": "CL", "value": "95%"},
@@ -125,6 +128,6 @@ for label, info in graphs.items():
     # Write table to its own YAML file (filename = metadata 'data_file')
     outpath = os.path.join(output_dir, data_file)
     with open(outpath, "w") as f_out:
-        yaml.dump({"independent_variables": indep_vars,
-                   "dependent_variables": dep_vars}, f_out, sort_keys=False)
+        yaml.dump({"dependent_variables": dep_vars,
+                   "independent_variables": indep_vars},  f_out, sort_keys=False),
     print(f"Written table {label} -> {outpath}")

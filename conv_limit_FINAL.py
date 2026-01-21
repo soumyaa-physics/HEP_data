@@ -5,179 +5,181 @@ import ctypes
 import string
 import os
 
-input_file = "EXO-24-020_HEPData/data/Figure7b_Figure9_limits.root"
-f = ROOT.TFile(input_file)
-ctau = [10,30,50,100,200,300]
+# figure 8 and 9:
+
+input_file = "EXO-24-020_HEPData/data/Figure7a_Figure8_limits.root"
+f = ROOT.TFile.Open(input_file)
+
+ctau = [10, 30, 50, 100, 200, 300]
+
+def fmt(x):
+    return float(f"{x:.6g}")
 
 with open("8dictionary.yaml") as fi:
     table_metadata = yaml.safe_load(fi)
 
-# used for figure 8 and 9
-
-letters = string.ascii_lowercase[:len(ctau)]  
+letters = string.ascii_lowercase[:len(ctau)]
 
 output_dir = "./HEPdata"
 os.makedirs(output_dir, exist_ok=True)
 
-for i, c in enumerate(ctau):
-    letter = letters[i]
-    outname = os.path.join(output_dir, f"hepdata_Figure9{letter}.yaml")
-    data_file_name = os.path.basename(outname)
+for idx, c in enumerate(ctau):
+
+    letter = letters[idx]
+    outname = os.path.join(output_dir, f"hepdata_Figure8{letter}.yaml")
 
     graphs = {
         "observed": f"{c}mm/g1_xsecul_obs_{c}mm",
-        # "obs_plus1sigma": f"",
-        # "obs_minus1sigma": f"",
         "expected": f"{c}mm/g1_xsecul_exp_{c}mm",
-        "p1": f"{c}mm/g1_xsecul_exp_p1_{c}mm",
-        "m1": f"{c}mm/g1_xsecul_exp_m1_{c}mm",
-        "p2": f"{c}mm/g1_xsecul_exp_p2_{c}mm",
-        "m2": f"{c}mm/g1_xsecul_exp_m2_{c}mm",
-        "theory": f"{c}mm/g1_xsec_theory_{c}mm"
+        "p1":       f"{c}mm/g1_xsecul_exp_p1_{c}mm",
+        "m1":       f"{c}mm/g1_xsecul_exp_m1_{c}mm",
+        "p2":       f"{c}mm/g1_xsecul_exp_p2_{c}mm",
+        "m2":       f"{c}mm/g1_xsecul_exp_m2_{c}mm",
+        "theory":   f"{c}mm/g1_xsec_theory_{c}mm"
     }
+
     g = {k: f.Get(v) for k, v in graphs.items()}
+
     for k, gr in g.items():
         if not gr:
             raise RuntimeError(f"Missing graph: {graphs[k]}")
-    
+
+
     x_vals = []
     x = ctypes.c_double()
     y = ctypes.c_double()
 
-    for i in range(g["expected"].GetN()):
+    npoints = g["expected"].GetN()
+
+    for i in range(npoints):
         g["expected"].GetPoint(i, x, y)
-        x_vals.append(x.value)
+        x_vals.append(fmt(x.value))
+    
+    # bin_edges = x_vals + [x_vals[-1] + (x_vals[-1]-x_vals[-2])]
+    last_width = x_vals[-1] - x_vals[-2]
+    bin_edges = x_vals + [fmt(x_vals[-1] + last_width)]
 
-    meta = table_metadata.get(c)
+    independent_variables = [{
+        "header": {
+            "name": "m_{\\tilde{\\tau}}",
+            "units": "GeV"
+        },
+        "values": [
+            {"low": bin_edges[i], "high": bin_edges[i+1]}
+            for i in range(len(x_vals))
+        ]
+    }]
 
-    tables = []
-    # Observed table
+    dependent_variables = []
+
     obs_values = []
-    for i in range(g["observed"].GetN()):
-        g["observed"].GetPoint(i, x, y)
-        obs_values.append({"value": y.value})
 
-    tables.append({
-        # "name": meta["name"] + "(observed)",
-        # "description": meta["description"],     
-        # "data_file": meta["data_file"],
-        # "keywords": [{"name": "cmenergies", "values": [13000.0]}],
-        "dependent_variables": [{
-            "header": {"name": "Upper limit on cross section", "units": "fb"},
-            "qualifiers": [
-                {"name": "Quantile", "value": "Observed"},
-                {"name": "RE", "value": "pp -> stau stau"},
-                {"name": "MODEL", "value": "GMSB mass-degenerate stau scenario"},
-                {"name": "CTAU", "value": f"{c} mm"},
-                {"name": "SQRT(S)", "value": "13 TeV"},
-                {"name": "LUMINOSITY", "value": "138 fb^{-1}"},
-                {"name": "CL", "value": "95%"},
-            ],
-            "values": obs_values,
-        }],
-        "independent_variables": [{
-            "header": {"name": "m_stau", "units": "GeV"},
-            "values": [{"value": xv} for xv in x_vals],
-        }],
+    for i in range(npoints):
+        g["observed"].GetPoint(i, x, y)
+        obs_values.append({"value": fmt(y.value)})
+
+    dependent_variables.append({
+        "header": {
+            "name": "Upper limit on cross section (Observed)",
+            "units": "fb"
+        },
+        "qualifiers": [
+            {"name": "QUANTILE", "value": "Observed"},
+            {"name": "PROCESS", "value": "pp → stau stau"},
+            {"name": "MODEL", "value": "Maximally mixed scenario"},
+            {"name": "CTAU", "value": f"{c} mm"},
+            {"name": "SQRT(S)", "value": "13 TeV"},
+            {"name": "LUMINOSITY", "value": "138 fb^{-1}"},
+            {"name": "CL", "value": "95%"}
+        ],
+        "values": obs_values
     })
 
-    # Expected table
     exp_values = []
 
-    for i in range(g["expected"].GetN()):
+    for i in range(npoints):
+
+        xp = ctypes.c_double()
         yp = ctypes.c_double()
+        xm = ctypes.c_double()
         ym = ctypes.c_double()
-        y2p = ctypes.c_double()
-        y2m = ctypes.c_double()
+        xp2 = ctypes.c_double()
+        yp2 = ctypes.c_double()
+        xm2 = ctypes.c_double()
+        ym2 = ctypes.c_double()
 
         g["expected"].GetPoint(i, x, y)
-        g["p1"].GetPoint(i, ctypes.c_double(), yp)
-        g["m1"].GetPoint(i, ctypes.c_double(), ym)
-        g["p2"].GetPoint(i, ctypes.c_double(), y2p)
-        g["m2"].GetPoint(i, ctypes.c_double(), y2m)
+        g["p1"].GetPoint(i, xp, yp)
+        g["m1"].GetPoint(i, xm, ym)
+        g["p2"].GetPoint(i, xp2, yp2)
+        g["m2"].GetPoint(i, xm2, ym2)
+
+        central = fmt(y.value)
 
         exp_values.append({
-            "value": y.value,
+            "value": central,
             "errors": [
                 {
-                    "label": "1 s.d.",
+                    "label": "1 sigma",
                     "asymerror": {
-                        "minus": y.value - ym.value,
-                        "plus":  yp.value - y.value,
-                    },
+                        "minus": fmt(central - float(ym.value)),
+                        "plus":  fmt(float(yp.value) - central)
+                    }
                 },
                 {
-                    "label": "2 s.d.",
+                    "label": "2 sigma",
                     "asymerror": {
-                        "minus": y.value - y2m.value,
-                        "plus":  y2p.value - y.value,
-                    },
-                },
-            ],
+                        "minus": fmt(central - float(ym2.value)),
+                        "plus": fmt(float(yp2.value) - central)
+                    }
+                }
+            ]
         })
 
-    tables.append({
-        # "name": meta["name"] + "(expected)",
-        # "description": meta["description"],     
-        # "data_file": meta["data_file"],
-        # "keywords": [{"name": "cmenergies", "values": [13000.0]}],
-        "dependent_variables": [{
-            "header": {"name": "Upper limit on cross section", "units": "fb"},
-            "qualifiers": [
-                {"name": "Quantile", "value": "Expected"},
-                {"name": "RE", "value": "pp -> stau stau"},
-                {"name": "MODEL", "value": "GMSB  mass-degenerate stau scenario"},
-                {"name": "CTAU", "value": f"{c} mm"},
-                {"name": "SQRT(S)", "value": "13 TeV"},
-                {"name": "LUMINOSITY", "value": "138 fb^{-1}"},
-                {"name": "CL", "value": "95%"},
-            ],
-            "values": exp_values,
-        }],
-        "independent_variables": [{
-            "header": {"name": "m_stau", "units": "GeV"},
-            "values": [{"value": xv} for xv in x_vals],
-        }],
+    dependent_variables.append({
+        "header": {
+            "name": "Upper limit on cross section (Expected)",
+            "units": "fb"
+        },
+        "qualifiers": [
+            {"name": "QUANTILE", "value": "Expected"},
+            {"name": "PROCESS", "value": "pp → stau stau"},
+            {"name": "MODEL", "value": "Maximally mixed scenario"},
+            {"name": "CTAU", "value": f"{c} mm"},
+            {"name": "SQRT(S)", "value": "13 TeV"},
+            {"name": "LUMINOSITY", "value": "138 fb^{-1}"},
+            {"name": "CL", "value": "95%"}
+        ],
+        "values": exp_values
     })
-
-    # Theory table
 
     theory_values = []
-    for i in range(g["theory"].GetN()):
-        g["theory"].GetPoint(i, x, y)
-        theory_values.append({"value": y.value})
 
-    tables.append({
-        # "name": meta["name"] + "(theory)",
-        # "description": meta["description"],     
-        # "data_file": meta["data_file"],
-        # "keywords": [{"name": "cmenergies", "values": [13000.0]}],
-        "dependent_variables": [{
-            "header": {"name": "Cross section", "units": "fb"},
-            "qualifiers": [
-                {"name": "TYPE", "value": "Theory"},
-                {"name": "RE", "value": "pp -> stau stau"},
-                {"name": "MODEL", "value": "GMSB mass-degenerate scenario"},
-                {"name": "CTAU", "value": f"{c} mm"},
-                {"name": "SQRT(S)", "value": "13 TeV"},
-            ],
-            "values": theory_values,
-        }],
-        "independent_variables": [{
-            "header": {"name": "m_stau", "units": "GeV"},
-            "values": [{"value": xv} for xv in x_vals],
-        }],
+    for i in range(npoints):
+        g["theory"].GetPoint(i, x, y)
+        theory_values.append({"value": fmt(y.value)})
+
+    dependent_variables.append({
+        "header": {
+            "name": "Upper limit on cross section (Theory)",
+            "units": "fb"
+        },
+        "qualifiers": [
+            {"name": "TYPE", "value": "Theory"},
+            {"name": "PROCESS", "value": "pp → stau stau"},
+            {"name": "MODEL", "value": "Maximally mixed scenario"},
+            {"name": "SQRT(S)", "value": "13 TeV"}
+        ],
+        "values": theory_values
     })
 
-    
+
+    table = {
+        "dependent_variables": dependent_variables,
+        "independent_variables": independent_variables
+    }
+
     with open(outname, "w") as f_out:
-        for table in tables:
-            table_to_dump = {
-                "dependent_variables": table["dependent_variables"],
-                "independent_variables": table["independent_variables"],
-            }
-            yaml.dump(table_to_dump, f_out, sort_keys=False)
-            f_out.write("\n")
+        yaml.dump(table, f_out, sort_keys=False)
 
     print(f"Output written to {outname}")
-

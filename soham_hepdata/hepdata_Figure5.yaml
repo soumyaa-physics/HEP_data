@@ -1,0 +1,330 @@
+dependent_variables:
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: Data
+  values:
+  - value: 1032.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 156.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 44.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 81.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 20.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 10.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 37.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 4.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: Total background
+  values:
+  - value: 1217.7324137426363
+    errors:
+    - label: Statistical
+      symerror: 24.75665741606424
+    - label: Systematic
+      symerror: 229.99499086284547
+  - value: 133.14718031791176
+    errors:
+    - label: Statistical
+      symerror: 8.035819299322142
+    - label: Systematic
+      symerror: 27.052564903815796
+  - value: 45.71243762331674
+    errors:
+    - label: Statistical
+      symerror: 4.687776552523747
+    - label: Systematic
+      symerror: 9.793871267036764
+  - value: 85.12752877690528
+    errors:
+    - label: Statistical
+      symerror: 5.20226452840326
+    - label: Systematic
+      symerror: 22.588329594195702
+  - value: 27.726442595225336
+    errors:
+    - label: Statistical
+      symerror: 3.331671506452011
+    - label: Systematic
+      symerror: 7.7213782661417145
+  - value: 9.347114020358116
+    errors:
+    - label: Statistical
+      symerror: 1.4446611498441255
+    - label: Systematic
+      symerror: 2.7316223906763386
+  - value: 25.22222041525495
+    errors:
+    - label: Statistical
+      symerror: 2.3001312547038255
+    - label: Systematic
+      symerror: 9.250260011680185
+  - value: 7.007241339082393
+    errors:
+    - label: Statistical
+      symerror: 1.2688683178325006
+    - label: Systematic
+      symerror: 2.334684547866429
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=100$ GeV, $c\tau_0=100$ mm
+  values:
+  - value: 1.4561074651865549
+    errors:
+    - label: Statistical
+      symerror: 0.08222812153335265
+    - label: Systematic
+      symerror: 0.2746313932360329
+  - value: 0.0954908097724822
+    errors:
+    - label: Statistical
+      symerror: 0.020519515399203152
+    - label: Systematic
+      symerror: 0.029028469675836905
+  - value: 0.4225034332172709
+    errors:
+    - label: Statistical
+      symerror: 0.05104732892607787
+    - label: Systematic
+      symerror: 0.06848773755667778
+  - value: 0.562401974748183
+    errors:
+    - label: Statistical
+      symerror: 0.05243228729573482
+    - label: Systematic
+      symerror: 0.11581426920148127
+  - value: 0.08391461585994636
+    errors:
+    - label: Statistical
+      symerror: 0.01808022769649037
+    - label: Systematic
+      symerror: 0.018135499813364195
+  - value: 0.17694901922681444
+    errors:
+    - label: Statistical
+      symerror: 0.03457358744184448
+    - label: Systematic
+      symerror: 0.03582011405251495
+  - value: 0.0730658121354505
+    errors:
+    - label: Statistical
+      symerror: 0.015900378001021176
+    - label: Systematic
+      symerror: 0.016412741976672
+  - value: 0.047533406176026895
+    errors:
+    - label: Statistical
+      symerror: 0.013471463050859058
+    - label: Systematic
+      symerror: 0.00675559624312098
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=100$ GeV, $c\tau_0=50$ mm
+  values:
+  - value: 1.8050534922574943
+    errors:
+    - label: Statistical
+      symerror: 0.09049444893470276
+    - label: Systematic
+      symerror: 0.3530360636994257
+  - value: 0.14573852610385127
+    errors:
+    - label: Statistical
+      symerror: 0.026734002733560035
+    - label: Systematic
+      symerror: 0.030323758657337704
+  - value: 0.519751869586885
+    errors:
+    - label: Statistical
+      symerror: 0.05533510427672902
+    - label: Systematic
+      symerror: 0.07176291315978212
+  - value: 0.6162136438029895
+    errors:
+    - label: Statistical
+      symerror: 0.05222592722233508
+    - label: Systematic
+      symerror: 0.11883321655762633
+  - value: 0.08775297992789358
+    errors:
+    - label: Statistical
+      symerror: 0.01876328721552035
+    - label: Systematic
+      symerror: 0.016930173227686456
+  - value: 0.20796494084359937
+    errors:
+    - label: Statistical
+      symerror: 0.034159079481744806
+    - label: Systematic
+      symerror: 0.030759703600133033
+  - value: 0.16555705714575353
+    errors:
+    - label: Statistical
+      symerror: 0.028616041361705345
+    - label: Systematic
+      symerror: 0.024419694018244228
+  - value: 0.052280927059639534
+    errors:
+    - label: Statistical
+      symerror: 0.014558491251762451
+    - label: Systematic
+      symerror: 0.00769391295569964
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=200$ GeV, $c\tau_0=100$ mm
+  values:
+  - value: 0.34334770769819234
+    errors:
+    - label: Statistical
+      symerror: 0.011872809758594196
+    - label: Systematic
+      symerror: 0.06448953867224003
+  - value: 0.1738849440395779
+    errors:
+    - label: Statistical
+      symerror: 0.008448869506024591
+    - label: Systematic
+      symerror: 0.030421051336593834
+  - value: 0.1996932901741988
+    errors:
+    - label: Statistical
+      symerror: 0.0102825343556878
+    - label: Systematic
+      symerror: 0.02335005974579512
+  - value: 0.1726398983767457
+    errors:
+    - label: Statistical
+      symerror: 0.008285573380450762
+    - label: Systematic
+      symerror: 0.031360395259272714
+  - value: 0.14208871842386217
+    errors:
+    - label: Statistical
+      symerror: 0.007693075580187946
+    - label: Systematic
+      symerror: 0.02626212960599136
+  - value: 0.10598229817694926
+    errors:
+    - label: Statistical
+      symerror: 0.007447989904734269
+    - label: Systematic
+      symerror: 0.01187120456678048
+  - value: 0.06644814821085589
+    errors:
+    - label: Statistical
+      symerror: 0.005258656775091886
+    - label: Systematic
+      symerror: 0.01068575994694525
+  - value: 0.059023406150834734
+    errors:
+    - label: Statistical
+      symerror: 0.005128430078814307
+    - label: Systematic
+      symerror: 0.009351218323405132
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: $m_{\tilde{\tau}}=200$ GeV, $c\tau_0=50$ mm
+  values:
+  - value: 0.40091133204321194
+    errors:
+    - label: Statistical
+      symerror: 0.01292793803781473
+    - label: Systematic
+      symerror: 0.07202970644407186
+  - value: 0.2074480515684162
+    errors:
+    - label: Statistical
+      symerror: 0.009429249846966104
+    - label: Systematic
+      symerror: 0.03448036536637887
+  - value: 0.23640282401213525
+    errors:
+    - label: Statistical
+      symerror: 0.010949707427862925
+    - label: Systematic
+      symerror: 0.02638591878351008
+  - value: 0.21740411963459622
+    errors:
+    - label: Statistical
+      symerror: 0.009476790641122827
+    - label: Systematic
+      symerror: 0.038800624817322917
+  - value: 0.17906923207048714
+    errors:
+    - label: Statistical
+      symerror: 0.008615574174067555
+    - label: Systematic
+      symerror: 0.0329509500695856
+  - value: 0.13349466214893313
+    errors:
+    - label: Statistical
+      symerror: 0.008350730523481618
+    - label: Systematic
+      symerror: 0.01574702637543681
+  - value: 0.09286570638305489
+    errors:
+    - label: Statistical
+      symerror: 0.006346751659270645
+    - label: Systematic
+      symerror: 0.014568388891565007
+  - value: 0.0749296628008447
+    errors:
+    - label: Statistical
+      symerror: 0.0056652191190871394
+    - label: Systematic
+      symerror: 0.010473762792271475
+independent_variables:
+- header:
+    name: '$BRT1 bins$'
+    units: ""
+  values:
+  - low: 1.0
+    high: 2.0
+  - low: 2.0
+    high: 3.0
+  - low: 3.0
+    high: 4.0
+  - low: 4.0
+    high: 5.0
+  - low: 5.0
+    high: 6.0
+  - low: 6.0
+    high: 7.0
+  - low: 7.0
+    high: 8.0
+  - low: 8.0
+    high: 9.0

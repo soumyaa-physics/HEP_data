@@ -1,0 +1,281 @@
+dependent_variables:
+- header:
+    name: Upper limit on cross section (Observed)
+    units: fb
+  qualifiers:
+  - name: QUANTILE
+    value: Observed
+  - name: PROCESS
+    value: "pp \u2192 stau stau"
+  - name: MODEL
+    value: Mass-degenerate scenario
+  - name: CTAU
+    value: 50 mm
+  - name: SQRT(S)
+    value: 13 TeV
+  - name: LUMINOSITY
+    value: 138 fb^{-1}
+  - name: CL
+    value: 95%
+  values:
+  - value: 186.67141232000003
+  - value: 123.491547186
+  - value: 53.083634535
+  - value: 27.1575170718
+  - value: 13.902208162800001
+  - value: 8.439377388
+  - value: 5.5302546354
+  - value: 4.1703885934
+  - value: 3.2311460588000003
+  - value: 2.606658146263224
+  - value: 1.8807803010001474
+  - value: 1.5254275155646484
+  - value: 1.2923660711086449
+  - value: 1.123546335347096
+  - value: 1.0134477713368015
+  - value: 0.9298340636329514
+- header:
+    name: Upper limit on cross section (Expected)
+    units: fb
+  qualifiers:
+  - name: QUANTILE
+    value: Expected
+  - name: PROCESS
+    value: "pp \u2192 stau stau"
+  - name: MODEL
+    value: Mass-degenerate scenario
+  - name: CTAU
+    value: 50 mm
+  - name: SQRT(S)
+    value: 13 TeV
+  - name: LUMINOSITY
+    value: 138 fb^{-1}
+  - name: CL
+    value: 95%
+  values:
+  - value: 97.78016334
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -22.222812244999986
+        plus: 40.00116731
+    - label: 2 sigma
+      asymerror:
+        minus: -31.111726605
+        plus: 115.558518405
+  - value: 64.686170433
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -14.701618479000004
+        plus: 32.34290235600001
+    - label: 2 sigma
+      asymerror:
+        minus: -20.582046438000006
+        plus: 76.447026351
+  - value: 32.997953025
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -8.608125375
+        plus: 14.346986895
+    - label: 2 sigma
+      asymerror:
+        minus: -11.477556135
+        plus: 35.867383785
+  - value: 17.846363383400003
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -4.655576844200002
+        plus: 7.759265701599997
+    - label: 2 sigma
+      asymerror:
+        minus: -5.431520837600003
+        plus: 19.3982513702
+  - value: 9.9922090076
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -3.041104926199999
+        plus: 3.9099991552000013
+    - label: 2 sigma
+      asymerror:
+        minus: -3.9099991551999995
+        plus: 10.4266312468
+  - value: 5.716992696
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -1.3611771888000002
+        plus: 2.7223846920000003
+    - label: 2 sigma
+      asymerror:
+        minus: -1.9056541272
+        plus: 6.7995189310533934
+  - value: 3.8711724216
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -0.9217123410000001
+        plus: 1.4747397456
+    - label: 2 sigma
+      asymerror:
+        minus: -1.2903972774000003
+        plus: 4.359863064576179
+  - value: 2.6905749532
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -0.5381175747000002
+        plus: 1.210761313
+    - label: 2 sigma
+      asymerror:
+        minus: -0.8071699019
+        plus: 3.2196173768831264
+  - value: 2.0846106468
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -0.3126947031999998
+        plus: 0.8338407088000004
+    - label: 2 sigma
+      asymerror:
+        minus: -0.5211548803999999
+        plus: 2.336611701844384
+  - value: 1.6939857236900002
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -0.3388008972400003
+        plus: 0.6448596138854092
+    - label: 2 sigma
+      asymerror:
+        minus: -0.3388008972400003
+        plus: 1.8145417335176919
+  - value: 1.2019592847361853
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -0.17019115083763237
+        plus: 0.4343924548113516
+    - label: 2 sigma
+      asymerror:
+        minus: -0.2752840377461854
+        plus: 1.2385322310814062
+  - value: 0.9590517564548312
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -0.12894119330055587
+        plus: 0.32227469101642214
+    - label: 2 sigma
+      asymerror:
+        minus: -0.17009837725483123
+        plus: 0.9636469623108147
+  - value: 0.8059976098450499
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -0.10820899875344003
+        plus: 0.2540559959836697
+    - label: 2 sigma
+      asymerror:
+        minus: -0.15703035887200456
+        plus: 0.7843169172449107
+  - value: 0.7090725255186809
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -0.07993741869509174
+        plus: 0.20551437857205768
+    - label: 2 sigma
+      asymerror:
+        minus: -0.13081877870187097
+        plus: 0.6732389540481625
+  - value: 0.6471590548107
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -0.0699823665449899
+        plus: 0.17576047689894414
+    - label: 2 sigma
+      asymerror:
+        minus: -0.11251247509783457
+        plus: 0.5959816418807082
+  - value: 0.5982969161471171
+    errors:
+    - label: 1 sigma
+      asymerror:
+        minus: -0.057995802961879006
+        plus: 0.159839870970926
+    - label: 2 sigma
+      asymerror:
+        minus: -0.09586863933636103
+        plus: 0.5468665932713134
+- header:
+    name: Upper limit on cross section (Theory)
+    units: fb
+  qualifiers:
+  - name: TYPE
+    value: Theory
+  - name: PROCESS
+    value: "pp \u2192 stau stau"
+  - name: MODEL
+    value: Mass-degenerate scenario
+  - name: SQRT(S)
+    value: 13 TeV
+  values:
+  - value: 526.345
+  - value: 365.721
+  - value: 166.905
+  - value: 87.1162
+  - value: 49.7506
+  - value: 30.3144
+  - value: 19.4106
+  - value: 12.9203
+  - value: 8.8748
+  - value: 6.25417
+  - value: 3.30329
+  - value: 1.8592
+  - value: 1.09799
+  - value: 0.673633
+  - value: 0.425957
+  - value: 0.27635
+independent_variables:
+- header:
+    name: $m_{\tilde{\tau}}$
+    units: GeV
+  values:
+  - low: 90.0
+    high: 100.0
+  - low: 100.0
+    high: 125.0
+  - low: 125.0
+    high: 150.0
+  - low: 150.0
+    high: 175.0
+  - low: 175.0
+    high: 200.0
+  - low: 200.0
+    high: 225.0
+  - low: 225.0
+    high: 250.0
+  - low: 250.0
+    high: 275.0
+  - low: 275.0
+    high: 300.0
+  - low: 300.0
+    high: 350.0
+  - low: 350.0
+    high: 400.0
+  - low: 400.0
+    high: 450.0
+  - low: 450.0
+    high: 500.0
+  - low: 500.0
+    high: 550.0
+  - low: 550.0
+    high: 600.0
+  - low: 600.0
+    high: 650.0

@@ -1,117 +1,159 @@
 import yaml
 import argparse
 import os
+import re
+import math
 
-class FlowStyleList(list):
-    pass
-
-def flow_style_list_representer(dumper, data):
-    return dumper.represent_sequence('tag:yaml.org,2002:seq', data, flow_style=True)
-
-yaml.add_representer(FlowStyleList, flow_style_list_representer)
-
-parser = argparse.ArgumentParser(description="Convert yield plots")
-parser.add_argument("input_file", help="Path to the raw YAML file")
-# parser.add_argument("-o", "--output_dir", default=".", help="Directory to save the single YAML file")
+parser = argparse.ArgumentParser(description="Convert yield YAML to HEPData format")
+parser.add_argument("input_file")
 args = parser.parse_args()
 
 input_path = args.input_file
-output_dir = "./examples"
+output_dir = "./HEPdata"
+os.makedirs(output_dir, exist_ok=True)
+
+BIN_EDGES = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0]
+# BIN_EDGES = [0.0, 54.0, 102.0, 150.0, 204.0, 300.0]
+
+X_AXIS_LABEL =  "$SR bins$"
+X_AXIS_UNITS = ""
+Y_AXIS_LABEL = "Events"
+outname = os.path.join(output_dir, "hepdata_Figure6a.yaml")
+
+def make_bin_ranges(edges):
+    return [{"low": edges[i], "high": edges[i+1]}
+            for i in range(len(edges) - 1)]
+
+def fmt(x):
+    return float(f"{x:0.6g}")
+
+def get_sorted_bins(proc_dict):
+    bins = []
+    for k in proc_dict:
+        if k == "total":
+            continue
+        try:
+            bins.append(int(k))
+        except ValueError:
+            pass
+    return sorted(bins)
+
+
+def format_process_name(name):
+
+    if name == "obs":
+        return "Data"
+
+    if name == "total_bkg":
+        return "Total background"
+
+    m = re.search(r"MStau-(\d+).*ctau-(\d+)mm", name)
+    if m:
+        mass = m.group(1)
+        ctau = m.group(2)
+        return f"$m_{{\\tilde{{\\tau}}}}={mass}$ GeV, $c\\tau_0={ctau}$ mm"
+
+    return name
 
 with open(input_path) as f:
     raw = yaml.safe_load(f)
 
-eras = list(raw.keys())             
-categories = list(raw[eras[0]].keys()) 
+era_key = list(raw.keys())[0]
+era_block = raw[era_key]
 
-def get_sorted_bins(cat_dict):
-    bin_keys = [k for k, v in cat_dict.items() if isinstance(v, dict)]
-    
-    def sort_key(x):
-        try:
-            return (0, int(x))
-        except ValueError:
-            return (1, str(x)) 
-    
-    return sorted(bin_keys, key=sort_key)
 
-tables = []
+bin_ranges = make_bin_ranges(BIN_EDGES)
 
-# figure_metadata = {
-#     "name": "Figure 6a (prefit yields)",
-#     "description": (
-#         "Observed and predicted event yields in the eight SR bins as defined in Table 2 "
-#         "The signal distributions yields in the maximally mixed scenario for a few "
-#         "representative sets of $(m_{\\tilde{\\tau}} [\\text{GeV}], c\\tau_{0} [\\text{mm}])$ "
-#         "values are overlaid: (100, 50), (100, 100), (200, 50), and (200, 100). "
-#         "The predicted yields and uncertainties are before the maximum likelihood fit to data "
-#         "under the background-only hypothesis, as described in Section 8. "
-#         # "In bins where the observed yield is zero, the Poissonian upper limit at 68% CL "
-#         # "is shown as a positive uncertainty. The last bin includes the overflow."
-#     ),
-#     "keywords": [{"name": "cmenergies", "values": [13000.0]}],
-#     "data_file": "hepdata_Figure6a.yaml"
-# }
+# defining variables:
 
-for category in categories:
-    if not all(isinstance(raw[era][category], dict) for era in eras):
+independent_variables = [{
+    "header": {
+        "name": X_AXIS_LABEL,
+        "units": X_AXIS_UNITS
+    },
+    "values": bin_ranges
+}]
+
+dependent_variables = []
+
+for process_name, proc_dict in era_block.items():
+
+    if not isinstance(proc_dict, dict):
         continue
 
-    bins = get_sorted_bins(raw[eras[0]][category])
+    if process_name == "misid":
+        continue
 
-    independent_variables = [{
-        "header": {"name": "Bin", "units": ""},
-        "values": [{"value": str(b)} for b in bins]
-    }]
+    bins = get_sorted_bins(proc_dict)
+    is_data = (process_name == "obs")
 
-#should be like this:  - {symerror: 79, label: 'sys,detector'} - {symerror: 15, label: 'sys,background'}
-    dependent_variables = []
-    for era in eras:
-        dep_values = []
-        for b in bins:
-            bin_data = raw[era][category][b]
-            errors = []
+    dep_values = []
+    for b in bins:
 
-            # Statistical uncertainty
+        bin_data = proc_dict.get(b, proc_dict.get(str(b)))        
+        value = fmt(bin_data["yield"])
+
+        errors = []
+        if is_data:
+            if value > 0.0:
+                data_stat = fmt(math.sqrt(value))
+                errors.append({
+                    "label": "Statistical",
+                    "symerror": data_stat
+                })
+
+            else:
+                plus = fmt(bin_data.get("unc_stat_plus", 1.83258))
+                minus = fmt(bin_data.get("unc_stat_minus", 0.0))
+
+                errors.append({
+                    "label": "Statistical",
+                    "asymerror": {
+                        "minus": minus,
+                        "plus": plus
+                    }
+                    })
+
+        else: 
             if "unc_stat" in bin_data:
-                errors.append({"symerror": bin_data["unc_stat"], "label": "stat"})
+                errors.append({
+                    "label": "Statistical",
+                    "symerror": fmt(bin_data["unc_stat"])
+                })
 
-            # Systematic uncertainty
             if "unc_syst" in bin_data:
-                errors.append({"symerror": bin_data["unc_syst"], "label": "syst"})
+                errors.append({
+                    "label": "Systematic",
+                    "symerror": fmt(bin_data["unc_syst"])
+                })
 
-            dep_values.append({
-                "value": bin_data["yield"],
-                "errors": errors
-            })
-
+        dep_values.append({
+            "value": fmt(bin_data["yield"]),
+            "errors": errors
+        })
+        
     dependent_variables.append({
-        "header": {"name": f"Yield_{era}", "units": ""},
+        "header": {
+            "name": Y_AXIS_LABEL
+        },
+        "qualifiers": [
+            {
+                "name": "Process",
+                "value": format_process_name(process_name)
+            }
+        ],
         "values": dep_values
     })
 
-    table = {
-        # "name": category,
-        "dependent_variables": dependent_variables,
-        "independent_variables": independent_variables,
-        # "description": f"Yields for {category}",
-        # "keywords": figure_metadata["keywords"],
-    }
-    tables.append(table)
 
-outname = "hepdata_Figure5.yaml"
+table = {
+    "dependent_variables": dependent_variables,
+    "independent_variables": independent_variables
+
+}
+
 
 with open(outname, "w") as f_out:
-    # Then append tables
-    for table in tables:
-        table_to_dump = {
-            "dependent_variables": table["dependent_variables"],
-            "independent_variables": table["independent_variables"],
-            # "description": table.get("description", ""),
-            # "keywords": table.get("keywords", []),
-            # "name": table.get("name", ""),
-        }
-        yaml.dump(table_to_dump, f_out, sort_keys=False)
-        f_out.write("\n")  # separate multiple tables if needed
+    yaml.dump(table, f_out, sort_keys=False)
 
-print(f"Converted {input_path} → {outname} (all methods in one file)")
+print(f"Written HEPData file: {outname}")

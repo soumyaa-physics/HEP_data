@@ -1,0 +1,103 @@
+dependent_variables:
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: Total background
+  values:
+  - value: 67.3531494140625
+    errors:
+    - label: Total error
+      symerror: 7.53593159
+  - value: 7.640556812286377
+    errors:
+    - label: Total error
+      symerror: 1.34799945
+  - value: 2.414203405380249
+    errors:
+    - label: Total error
+      symerror: 0.66913021
+  - value: 2.573625326156616
+    errors:
+    - label: Total error
+      symerror: 0.69296408
+  - value: 0.6612790822982788
+    errors:
+    - label: Total error
+      symerror: 0.21788245
+  - value: 0.5573307871818542
+    errors:
+    - label: Total error
+      symerror: 0.25305176
+  - value: 1.2212284803390503
+    errors:
+    - label: Total error
+      symerror: 0.39718366
+  - value: 0.14464256167411804
+    errors:
+    - label: Total error
+      symerror: 0.10392918
+- header:
+    name: Events
+  qualifiers:
+  - name: Process
+    value: Data
+  values:
+  - value: 66.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 4.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 5.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 2.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 0.0
+    errors:
+    - label: Statistical
+      asymerror:
+        minus: 0.0
+        plus: 1.83258
+  - value: 2.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 2.0
+    errors:
+    - label: Statistical
+      symerror: 0.0
+  - value: 0.0
+    errors:
+    - label: Statistical
+      asymerror:
+        minus: 0.0
+        plus: 1.83258
+independent_variables:
+- header:
+    name: SR bins
+    units: ''
+  values:
+  - low: 1.0
+    high: 2.0
+  - low: 2.0
+    high: 3.0
+  - low: 3.0
+    high: 4.0
+  - low: 4.0
+    high: 5.0
+  - low: 5.0
+    high: 6.0
+  - low: 6.0
+    high: 7.0
+  - low: 7.0
+    high: 8.0
+  - low: 8.0
+    high: 9.0
+

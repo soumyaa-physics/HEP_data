@@ -1,14 +1,14 @@
 dependent_variables:
 - header:
-    name: Upper limit on cross section
+    name: Upper limit on cross section (Observed)
     units: fb
   qualifiers:
-  - name: Quantile
+  - name: QUANTILE
     value: Observed
-  - name: RE
-    value: pp -> stau stau
+  - name: PROCESS
+    value: "pp \u2192 stau stau"
   - name: MODEL
-    value: GMSB maximally mixed stau scenario
+    value: Maximally mixed scenario
   - name: CTAU
     value: 200 mm
   - name: SQRT(S)
@@ -18,55 +18,32 @@ dependent_variables:
   - name: CL
     value: 95%
   values:
-  - value: 491.2220614621562
-  - value: 375.0948328451248
-  - value: 152.63406918875262
-  - value: 58.47547608791147
-  - value: 28.83925362802875
-  - value: 16.99660381555334
-  - value: 11.454466078902012
-  - value: 7.809418779866939
-  - value: 5.652370949410359
-  - value: 4.629842752511809
-  - value: 3.141599451288508
-  - value: 2.3806702529623394
-  - value: 1.9029017813954625
-  - value: 1.636945768044344
-  - value: 1.4181132907768657
-  - value: 1.262191304887614
-independent_variables:
+  - value: 491.222
+  - value: 375.095
+  - value: 152.634
+  - value: 58.4755
+  - value: 28.8393
+  - value: 16.9966
+  - value: 11.4545
+  - value: 7.80942
+  - value: 5.65237
+  - value: 4.62984
+  - value: 3.1416
+  - value: 2.38067
+  - value: 1.9029
+  - value: 1.63695
+  - value: 1.41811
+  - value: 1.26219
 - header:
-    name: m_stau
-    units: GeV
-  values:
-  - value: 90.0
-  - value: 100.0
-  - value: 125.0
-  - value: 150.0
-  - value: 175.0
-  - value: 200.0
-  - value: 225.0
-  - value: 250.0
-  - value: 275.0
-  - value: 300.0
-  - value: 350.0
-  - value: 400.0
-  - value: 450.0
-  - value: 500.0
-  - value: 550.0
-  - value: 600.0
-
-dependent_variables:
-- header:
-    name: Upper limit on cross section
+    name: Upper limit on cross section (Expected)
     units: fb
   qualifiers:
-  - name: Quantile
+  - name: QUANTILE
     value: Expected
-  - name: RE
-    value: pp -> stau stau
+  - name: PROCESS
+    value: "pp \u2192 stau stau"
   - name: MODEL
-    value: GMSB maximally mixed stau scenario
+    value: Maximally mixed scenario
   - name: CTAU
     value: 200 mm
   - name: SQRT(S)
@@ -76,201 +53,176 @@ dependent_variables:
   - name: CL
     value: 95%
   values:
-  - value: 263.42795364842897
+  - value: 263.428
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 72.52890990847774
-        plus: 143.94439064259848
-    - label: 2 s.d.
+        minus: 72.529
+        plus: 143.944
+    - label: 2 sigma
       asymerror:
-        minus: 106.6657127982192
-        plus: 402.5794684584516
-  - value: 207.7344265972328
+        minus: 106.666
+        plus: 402.579
+  - value: 207.734
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 52.44793218490079
-        plus: 104.71450870198458
-    - label: 2 s.d.
+        minus: 52.4475
+        plus: 104.715
+    - label: 2 sigma
       asymerror:
-        minus: 76.22982902798864
-        plus: 290.1985551122182
-  - value: 87.0511851767877
+        minus: 76.2294
+        plus: 290.199
+  - value: 87.0512
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 20.564082629737428
-        plus: 39.776064030393485
-    - label: 2 s.d.
+        minus: 20.5641
+        plus: 39.776
+    - label: 2 sigma
       asymerror:
-        minus: 31.534760128301826
-        plus: 102.33917287502902
-  - value: 38.854351463388674
+        minus: 31.5348
+        plus: 102.339
+  - value: 38.8544
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 9.435976916787084
-        plus: 18.293658035239154
-    - label: 2 s.d.
+        minus: 9.43603
+        plus: 18.2936
+    - label: 2 sigma
       asymerror:
-        minus: 12.693839932206426
-        plus: 46.7304616826439
-  - value: 20.076519399592634
+        minus: 12.6939
+        plus: 46.7304
+  - value: 20.0765
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 4.880780198812591
-        plus: 9.354295813599325
-    - label: 2 s.d.
+        minus: 4.88076
+        plus: 9.35432
+    - label: 2 sigma
       asymerror:
-        minus: 6.6529287173166445
-        plus: 23.927784982172263
-  - value: 11.769916735357132
+        minus: 6.65291
+        plus: 23.9278
+  - value: 11.7699
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 2.6823501319445153
-        plus: 5.178186446330212
-    - label: 2 s.d.
+        minus: 2.68233
+        plus: 5.1782
+    - label: 2 sigma
       asymerror:
-        minus: 3.932929016603002
-        plus: 13.867770947450882
-  - value: 7.647015889471575
+        minus: 3.93291
+        plus: 13.8678
+  - value: 7.64702
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 1.7662047257322255
-        plus: 3.5374505985317537
-    - label: 2 s.d.
+        minus: 1.76621
+        plus: 3.53745
+    - label: 2 sigma
       asymerror:
-        minus: 2.371075180305028
-        plus: 9.258865082798234
-  - value: 5.265350887259717
+        minus: 2.37108
+        plus: 9.25886
+  - value: 5.26535
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 1.0511301066838943
-        plus: 2.271504055841141
-    - label: 2 s.d.
+        minus: 1.05113
+        plus: 2.2715
+    - label: 2 sigma
       asymerror:
-        minus: 1.502570129945576
-        plus: 6.102692459444849
-  - value: 3.6716220359899236
+        minus: 1.50257
+        plus: 6.10269
+  - value: 3.67162
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 0.7209336592978945
-        plus: 1.4878273269613262
-    - label: 2 s.d.
+        minus: 0.720932
+        plus: 1.48783
+    - label: 2 sigma
       asymerror:
-        minus: 1.1125149600387902
-        plus: 4.1461739406706535
-  - value: 2.972969928409714
+        minus: 1.11251
+        plus: 4.14618
+  - value: 2.97297
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 0.5657066379475788
-        plus: 1.227527287675819
-    - label: 2 s.d.
+        minus: 0.565707
+        plus: 1.22753
+    - label: 2 sigma
       asymerror:
-        minus: 0.8287271066269137
-        plus: 3.3330306967454475
-  - value: 1.9650150652191836
+        minus: 0.828727
+        plus: 3.33303
+  - value: 1.96502
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 0.2969416300264591
-        plus: 0.7500437938178774
-    - label: 2 s.d.
+        minus: 0.296947
+        plus: 0.750039
+    - label: 2 sigma
       asymerror:
-        minus: 0.4766543370660534
-        plus: 2.099773120471846
-  - value: 1.478757814763047
+        minus: 0.476659
+        plus: 2.09977
+  - value: 1.47876
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 0.21559769675160934
-        plus: 0.5046388293366193
-    - label: 2 s.d.
+        minus: 0.2156
+        plus: 0.504637
+    - label: 2 sigma
       asymerror:
-        minus: 0.3346059814200295
-        plus: 1.5092747466950935
-  - value: 1.192686743178042
+        minus: 0.334608
+        plus: 1.50927
+  - value: 1.19269
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 0.14755308317200488
-        plus: 0.37848875593897846
-    - label: 2 s.d.
+        minus: 0.147556
+        plus: 0.378485
+    - label: 2 sigma
       asymerror:
-        minus: 0.21259550474921507
-        plus: 1.177918910823733
-  - value: 1.0216095683098856
+        minus: 0.212599
+        plus: 1.17792
+  - value: 1.02161
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 0.10854885764923994
-        plus: 0.28850407683007306
-    - label: 2 s.d.
+        minus: 0.108549
+        plus: 0.288504
+    - label: 2 sigma
       asymerror:
-        minus: 0.1458053859743741
-        plus: 0.9665993664501364
-  - value: 0.897947803737354
+        minus: 0.145806
+        plus: 0.966599
+  - value: 0.897948
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 0.0986823994231345
-        plus: 0.25213317621222353
-    - label: 2 s.d.
+        minus: 0.0986826
+        plus: 0.252133
+    - label: 2 sigma
       asymerror:
-        minus: 0.17438726988016062
-        plus: 0.8478230030871129
-  - value: 0.8054198502154549
+        minus: 0.174387
+        plus: 0.847823
+  - value: 0.80542
     errors:
-    - label: 1 s.d.
+    - label: 1 sigma
       asymerror:
-        minus: 0.08437687105086744
-        plus: 0.212298018013105
-    - label: 2 s.d.
+        minus: 0.084377
+        plus: 0.212298
+    - label: 2 sigma
       asymerror:
-        minus: 0.142048981687926
-        plus: 0.7484948297647335
-independent_variables:
+        minus: 0.142049
+        plus: 0.748495
 - header:
-    name: m_stau
-    units: GeV
-  values:
-  - value: 90.0
-  - value: 100.0
-  - value: 125.0
-  - value: 150.0
-  - value: 175.0
-  - value: 200.0
-  - value: 225.0
-  - value: 250.0
-  - value: 275.0
-  - value: 300.0
-  - value: 350.0
-  - value: 400.0
-  - value: 450.0
-  - value: 500.0
-  - value: 550.0
-  - value: 600.0
-
-dependent_variables:
-- header:
-    name: Cross section
+    name: Upper limit on cross section (Theory)
     units: fb
   qualifiers:
   - name: TYPE
     value: Theory
-  - name: RE
-    value: pp -> stau stau
+  - name: PROCESS
+    value: "pp \u2192 stau stau"
   - name: MODEL
-    value: GMSB maximally mixed stau scenario
-  - name: CTAU
-    value: 200 mm
+    value: Maximally mixed scenario
   - name: SQRT(S)
     value: 13 TeV
   values:
@@ -292,23 +244,38 @@ dependent_variables:
   - value: 0.0933425
 independent_variables:
 - header:
-    name: m_stau
+    name: m_{\tilde{\tau}}
     units: GeV
   values:
-  - value: 90.0
-  - value: 100.0
-  - value: 125.0
-  - value: 150.0
-  - value: 175.0
-  - value: 200.0
-  - value: 225.0
-  - value: 250.0
-  - value: 275.0
-  - value: 300.0
-  - value: 350.0
-  - value: 400.0
-  - value: 450.0
-  - value: 500.0
-  - value: 550.0
-  - value: 600.0
-
+  - low: 90.0
+    high: 100.0
+  - low: 100.0
+    high: 125.0
+  - low: 125.0
+    high: 150.0
+  - low: 150.0
+    high: 175.0
+  - low: 175.0
+    high: 200.0
+  - low: 200.0
+    high: 225.0
+  - low: 225.0
+    high: 250.0
+  - low: 250.0
+    high: 275.0
+  - low: 275.0
+    high: 300.0
+  - low: 300.0
+    high: 350.0
+  - low: 350.0
+    high: 400.0
+  - low: 400.0
+    high: 450.0
+  - low: 450.0
+    high: 500.0
+  - low: 500.0
+    high: 550.0
+  - low: 550.0
+    high: 600.0
+  - low: 600.0
+    high: 650.0
